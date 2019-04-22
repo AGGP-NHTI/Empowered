@@ -9,9 +9,8 @@ public class KnightClass : PlayerPawn
     public float RotationSpeed = 40;
     public GameObject Slash;
     public GameObject attackpoint;
-   
-
     Rigidbody rb;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
