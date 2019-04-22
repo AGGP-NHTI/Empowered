@@ -37,12 +37,12 @@ public class InputPlayer : PlayInfo
         _Self = this;
     }
 
-    public virtual InputCollection GetPlayerInput(int PlayerNumber)
+    public virtual InputCollection GetPlayerInput(int InputPlayerNumber)
     {
-        if (PlayerNumber == 0) { return GetPlayer1Input(); }
-        if (PlayerNumber == 1) { return GetPlayer2Input(); }
-        if (PlayerNumber == 2) { return GetPlayer3Input(); }
-        if (PlayerNumber == 3) { return GetPlayer4Input(); }
+        if (InputPlayerNumber == 0) { return GetPlayer1Input(); }
+        if (InputPlayerNumber == 1) { return GetPlayer2Input(); }
+        if (InputPlayerNumber == 2) { return GetPlayer3Input(); }
+        if (InputPlayerNumber == 3) { return GetPlayer4Input(); }
 
         
 
