@@ -38,8 +38,10 @@ public class CharacterSelect2 : EmpController
 
     public void Update()
     {
-        backgroundColor.color = Color.Lerp(backgroundColor.color, desiredColor, Time.deltaTime * backgroundColorTransitionSpeed);
-
+        if (this.gameObject.tag == "CharacterSelection")
+        {
+            backgroundColor.color = Color.Lerp(backgroundColor.color, desiredColor, Time.deltaTime * backgroundColorTransitionSpeed);
+        }
     }
 
     public void ConfirmSelection()
@@ -48,9 +50,12 @@ public class CharacterSelect2 : EmpController
         // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
         this.SpawnPreFab = characterList[selectedCharacterIndex1].selectedchar;
-        
-            SceneTransition.SelectedCharacterConfirm += 1;
-       
+
+        if (SceneTransition.SelectedCharacter2Confirm != 1)
+        {
+            SceneTransition.SelectedCharacter2Confirm++;
+        }
+
     }
 
 

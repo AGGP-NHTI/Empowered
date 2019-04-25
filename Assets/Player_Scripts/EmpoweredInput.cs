@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class EmpoweredInput : InputPlayer
 {
-    private void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
+    
 
     public override InputCollection GetPlayer1Input()
     {

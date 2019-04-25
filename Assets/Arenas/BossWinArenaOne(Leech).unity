@@ -176,7 +176,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &289256442
 GameObject:
@@ -329,120 +329,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a3f39df2ac2b034998a5dd391248976, type: 3}
---- !u!1001 &933850038
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1850008352158454397, guid: 84bf20a72a6eef8499b150ba3adfd1d3,
-        type: 3}
-      propertyPath: m_Name
-      value: ManagerObject
-      objectReference: {fileID: 0}
-    - target: {fileID: 1850008352158454397, guid: 84bf20a72a6eef8499b150ba3adfd1d3,
-        type: 3}
-      propertyPath: m_TagString
-      value: BossWinArenaOne(Leech)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1850008352158454375, guid: 84bf20a72a6eef8499b150ba3adfd1d3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.50781834
-      objectReference: {fileID: 0}
-    - target: {fileID: 1850008352158454375, guid: 84bf20a72a6eef8499b150ba3adfd1d3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.09056717
-      objectReference: {fileID: 0}
-    - target: {fileID: 1850008352158454375, guid: 84bf20a72a6eef8499b150ba3adfd1d3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.054695066
-      objectReference: {fileID: 0}
-    - target: {fileID: 1850008352158454375, guid: 84bf20a72a6eef8499b150ba3adfd1d3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1850008352158454375, guid: 84bf20a72a6eef8499b150ba3adfd1d3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1850008352158454375, guid: 84bf20a72a6eef8499b150ba3adfd1d3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1850008352158454375, guid: 84bf20a72a6eef8499b150ba3adfd1d3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1850008352158454375, guid: 84bf20a72a6eef8499b150ba3adfd1d3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1850008352158454375, guid: 84bf20a72a6eef8499b150ba3adfd1d3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1850008352158454375, guid: 84bf20a72a6eef8499b150ba3adfd1d3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1850008352158454375, guid: 84bf20a72a6eef8499b150ba3adfd1d3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1850008352158454371, guid: 84bf20a72a6eef8499b150ba3adfd1d3,
-        type: 3}
-      propertyPath: NextPlayerArenaCountText
-      value: 
-      objectReference: {fileID: 1156188874}
-    - target: {fileID: 1850008352158454371, guid: 84bf20a72a6eef8499b150ba3adfd1d3,
-        type: 3}
-      propertyPath: NextBossArenaCountText
-      value: 
-      objectReference: {fileID: 2042118919}
-    - target: {fileID: 1850008352158454374, guid: 84bf20a72a6eef8499b150ba3adfd1d3,
-        type: 3}
-      propertyPath: NextPlayerArenaCountText
-      value: 
-      objectReference: {fileID: 1156188874}
-    - target: {fileID: 1850008352158454374, guid: 84bf20a72a6eef8499b150ba3adfd1d3,
-        type: 3}
-      propertyPath: NextBossArenaCountText
-      value: 
-      objectReference: {fileID: 2042118919}
-    - target: {fileID: 1850008352158454369, guid: 84bf20a72a6eef8499b150ba3adfd1d3,
-        type: 3}
-      propertyPath: NextPlayerArenaCountText
-      value: 
-      objectReference: {fileID: 1156188874}
-    - target: {fileID: 1850008352158454369, guid: 84bf20a72a6eef8499b150ba3adfd1d3,
-        type: 3}
-      propertyPath: NextBossArenaCountText
-      value: 
-      objectReference: {fileID: 2042118919}
-    - target: {fileID: 1850008352158454370, guid: 84bf20a72a6eef8499b150ba3adfd1d3,
-        type: 3}
-      propertyPath: NextPlayerArenaCountText
-      value: 
-      objectReference: {fileID: 1156188874}
-    - target: {fileID: 1850008352158454370, guid: 84bf20a72a6eef8499b150ba3adfd1d3,
-        type: 3}
-      propertyPath: NextBossArenaCountText
-      value: 
-      objectReference: {fileID: 2042118919}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 84bf20a72a6eef8499b150ba3adfd1d3, type: 3}
 --- !u!1 &1156188872
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,7 +501,7 @@ RectTransform:
   - {fileID: 1156188873}
   - {fileID: 2042118918}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

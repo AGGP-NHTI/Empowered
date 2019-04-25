@@ -38,8 +38,10 @@ public class BossSelect : EmpController
 
     public void Update()
     {
-        backgroundColor.color = Color.Lerp(backgroundColor.color, desiredColor, Time.deltaTime * backgroundColorTransitionSpeed);
-
+        if (this.gameObject.tag == "CharacterSelection")
+        {
+            backgroundColor.color = Color.Lerp(backgroundColor.color, desiredColor, Time.deltaTime * backgroundColorTransitionSpeed);
+        }
     }
 
     public void ConfirmSelection()
@@ -47,11 +49,13 @@ public class BossSelect : EmpController
         Debug.Log(string.Format("Character {0}:{1} has been chosen", selectedCharacterIndex, characterList[selectedCharacterIndex].characterName));
         // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
-        this.SpawnPreFab = characterList[selectedCharacterIndex].selectedchar;
+        Controller.SpawnPreFab = characterList[selectedCharacterIndex].selectedchar;
 
-            SceneTransition.SelectedCharacterConfirm++;
-       
-       
+        if (SceneTransition.SelectedCharacter4Confirm != 1)
+        {
+            SceneTransition.SelectedCharacter4Confirm++;
+        }
+
     }
 
 

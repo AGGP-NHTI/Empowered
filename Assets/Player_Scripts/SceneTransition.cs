@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 public class SceneTransition : MonoBehaviour
 {
    [SerializeField] public static int SelectedCharacterConfirm = 0;
+    [SerializeField] public static int SelectedCharacter2Confirm = 0;
+    [SerializeField] public static int SelectedCharacter3Confirm = 0;
+    [SerializeField] public static int SelectedCharacter4Confirm = 0;
     public static int NextPlayerArenaCount = 0;
     public static int NextBossArenaCount = 0;
   
@@ -21,7 +24,7 @@ public class SceneTransition : MonoBehaviour
     {
         if (this.gameObject.tag == "CharacterSelection")
         {
-            if(SelectedCharacterConfirm == 4)
+            if(SelectedCharacterConfirm == 1 && SelectedCharacter2Confirm == 1 && SelectedCharacter3Confirm == 1 && SelectedCharacter4Confirm == 1)
             {
                 this.gameObject.tag = "StartingArena";
                 SceneManager.LoadScene(ArenaStarting);
