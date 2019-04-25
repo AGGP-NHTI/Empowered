@@ -9,6 +9,7 @@ TagManager:
   - BossWinArenaOne(Leech)
   - PlayerWinArenaTwo(Pit)
   - BossWinArenaTwo(Pit)
+  - CharacterSelection
   layers:
   - Default
   - TransparentFX

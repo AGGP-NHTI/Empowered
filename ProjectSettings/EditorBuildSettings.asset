@@ -15,6 +15,15 @@ EditorBuildSettings:
     path: Assets/Arenas/CharacterSelection.unity
     guid: cb9ea12a8538f894ab0f724c7da0e864
   - enabled: 1
+    path: Assets/Arenas/CharacterSelection2.unity
+    guid: 826968b99dda93e4e8e4e3bb161a610d
+  - enabled: 1
+    path: Assets/Arenas/CharacterSelection3.unity
+    guid: 07e68453bb34da04fbf77a53386066cd
+  - enabled: 1
+    path: Assets/Arenas/BossSelection.unity
+    guid: 64133475a99231f47bf37f72e11ec78a
+  - enabled: 1
     path: Assets/Arenas/StartingArena.unity
     guid: 1bb8f5ee1e5914245b87055d7c118f9d
   - enabled: 1

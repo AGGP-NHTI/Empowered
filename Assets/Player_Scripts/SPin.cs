@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SPin : MonoBehaviour
 {
+
+    public float spinspeed;
     public GameObject spin;
     void Start()
     {
@@ -13,6 +15,6 @@ public class SPin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        spin.transform.Rotate(Vector3.up);
+        spin.transform.Rotate(Vector3.up * spinspeed);
     }
 }

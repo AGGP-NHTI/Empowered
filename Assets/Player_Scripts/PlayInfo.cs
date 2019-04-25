@@ -78,8 +78,6 @@ public class PlayInfo : MonoBehaviour
         Debug.Log(s);
     }
 
-
-
     public void LOG_ERROR(string s)
     {
         Debug.LogError(s);

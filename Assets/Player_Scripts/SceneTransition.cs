@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class SceneTransition : MonoBehaviour
 {
+   [SerializeField] public static int SelectedCharacterConfirm = 0;
     public static int NextPlayerArenaCount = 0;
     public static int NextBossArenaCount = 0;
-    public Text NextPlayerArenaCountText;
-    public Text NextBossArenaCountText;
+  
+    string CharacterSelect = "CharacterSelection";
     string ArenaStarting = "StartingArena";
     string ArenaTwoScenePlayer1 = "PlayerWinArenaOne(Leech)";
     string ArenaTwoSceneBoss1 = "BossWinArenaOne(Leech)";
@@ -18,6 +19,14 @@ public class SceneTransition : MonoBehaviour
     string Menu = "MainMenu";
     public void Update()
     {
+        if (this.gameObject.tag == "CharacterSelection")
+        {
+            if(SelectedCharacterConfirm == 4)
+            {
+                this.gameObject.tag = "StartingArena";
+                SceneManager.LoadScene(ArenaStarting);
+            }
+        }
         if (this.gameObject.tag == "StartingArena")
         {
             if (NextPlayerArenaCount == 1)
@@ -88,7 +97,7 @@ public class SceneTransition : MonoBehaviour
                 SceneManager.LoadScene(ArenaStarting);
             }
         }
-        NextBossArenaCountText.text = "Player Deaths: " + NextBossArenaCount;
-        NextPlayerArenaCountText.text = "Boss Death: " + NextPlayerArenaCount;
+      
     }
+
 }
