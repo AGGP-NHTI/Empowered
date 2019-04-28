@@ -5,21 +5,36 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PriestClass : PlayerPawn
 {
-    public float MovementSpeed = 15;
-    public float RotationSpeed = 268;
-    public GameObject Slash;
-    public GameObject attackpoint;
+    public float MovementSpeed = 14;
+    public float RotationSpeed = 280;
 
+    public GameObject SacredGround;
+    public GameObject SacredGroundPoint;
+    public GameObject Holy;
+    public GameObject HolyPoint;
+  
+
+    public Vector3 jump;
+    public float jumpForce = 2.0f;
+    public bool isGrounded;
 
     Rigidbody rb;
-    void Start()
+
+    new void Start()
     {
         rb = GetComponent<Rigidbody>();
-
+       
+        jump = new Vector3(0.0f, 2.0f, 0.0f);
     }
+
+    void OnCollisionStay()
+    {
+        isGrounded = true;
+    }
+
     private void Update()
     {
-        if (KnightHealth <= 0)
+        if (PriestHealth <= 0)
         {
             Destroy(gameObject);
         }
@@ -44,19 +59,55 @@ public class PriestClass : PlayerPawn
     }
     public override void Fire1(bool value)
     {
-        GameObject spam = Instantiate(Slash, attackpoint.transform.position, attackpoint.transform.rotation);
+        GameObject Smite = Instantiate(Holy, HolyPoint.transform.position, HolyPoint.transform.rotation);
     }
 
     public override void Fire2(bool value)
     {
 
+        if (KnightHealth >= 420.0f || KnightHealth >= 350.0f)
+        {
+            KnightHealth = 420.0f;
+        }
+        else if (KnightHealth <= 350.0f)
+        {
+            KnightHealth += 70.0f;
+        }
+
+        if (RangerHealth >= 385.0f || KnightHealth >= 315.0f)
+        {
+            RangerHealth = 385.0f;
+        }
+        else if (RangerHealth <= 315.0f)
+        {
+            RangerHealth += 70.0f;
+        }
+
+        if (MageHealth >= 365.0f || MageHealth >= 295.0f)
+        {
+            MageHealth = 365.0f;
+        }
+        else if (MageHealth <= 295.0f)
+        {
+            MageHealth += 70.0f;
+        }
+
+        if (PriestHealth >= 365.0f || PriestHealth >= 295.0f)
+        {
+            PriestHealth = 365.0f;
+        }
+        else if (PriestHealth <= 295.0f)
+        {
+            PriestHealth += 70.0f;
+        }    
     }
     public override void Fire3(bool value)
     {
-
+        GameObject Consecration = Instantiate(SacredGround, SacredGroundPoint.transform.position, SacredGroundPoint.transform.rotation);
     }
     public override void Fire4(bool value)
     {
-
+        rb.AddForce(jump * jumpForce, ForceMode.Impulse);
+        isGrounded = false;
     }
 }

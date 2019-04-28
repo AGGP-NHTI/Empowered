@@ -5,21 +5,38 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class RangerClass : PlayerPawn
 {
-    public float MovementSpeed = 30;
-    public float RotationSpeed = 260;
-    public GameObject Slash;
-    public GameObject attackpoint;
+    public float MovementSpeed = 14;
+    public float RotationSpeed = 280;
 
+    public GameObject Stab;
+    public GameObject StabPoint;
+    public GameObject Arrow;
+    public GameObject BowPoint;
+
+   
+    public float ChargeStab = 5;
+
+    public Vector3 jump;
+    public float jumpForce = 2.0f;
+    public bool isGrounded;
 
     Rigidbody rb;
-    void Start()
+
+    new void Start()
     {
         rb = GetComponent<Rigidbody>();
-
+        IgnoresDamage = false;
+        jump = new Vector3(0.0f, 2.0f, 0.0f);
     }
+
+    void OnCollisionStay()
+    {
+        isGrounded = true;
+    }
+
     private void Update()
     {
-        if (KnightHealth <= 0)
+        if (MageHealth <= 0)
         {
             Destroy(gameObject);
         }
@@ -44,19 +61,30 @@ public class RangerClass : PlayerPawn
     }
     public override void Fire1(bool value)
     {
-        GameObject spam = Instantiate(Slash, attackpoint.transform.position, attackpoint.transform.rotation);
+        rb.AddForce(transform.forward * ChargeStab);
+        GameObject Eviscerate = Instantiate(Stab, StabPoint.transform.position, StabPoint.transform.rotation);
     }
 
     public override void Fire2(bool value)
     {
-
+        GameObject PiercingBolt = Instantiate(Arrow, BowPoint.transform.position, BowPoint.transform.rotation);
     }
     public override void Fire3(bool value)
     {
-
+        float Cloaktimer = 11.0f;
+        if (IgnoresDamage == false && Cloaktimer == 11.0f)
+        {
+            IgnoresDamage = true;
+            Cloaktimer -= Time.deltaTime;
+            if (IgnoresDamage = true && Cloaktimer == 0.0f)
+            {
+                IgnoresDamage = false;
+            }
+        }
     }
     public override void Fire4(bool value)
     {
-
+        rb.AddForce(jump * jumpForce, ForceMode.Impulse);
+        isGrounded = false;
     }
 }

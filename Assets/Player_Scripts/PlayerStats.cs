@@ -125,8 +125,7 @@ public class PlayerStats : Controller
         AddButton("Fire2", Fire2);
         AddButton("Fire3", Fire3);
         AddButton("Fire4", Fire4);
-        AddButton("Fire5", Fire5);
-        AddButton("Fire6", Fire6);
+      
     }
 
     public virtual void Horizontal(float value)
@@ -177,23 +176,5 @@ public class PlayerStats : Controller
         }
     }
 
-    public virtual void Fire5(bool value)
-    {
-        if (value)
-        {
-            LOG("Del-Fire5");
-        }
-    }
-    public virtual void Fire6(bool value)
-    {
-        if (value)
-        {
-            LOG("Del-Fire6");
-        }
-    }
-    public override void OnDeath()
-    {
-        RequestSpectate();
-       
-    }
+  
 }

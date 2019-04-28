@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneTransition : MonoBehaviour
 {
-   [SerializeField] public static int SelectedCharacterConfirm = 0;
+    [SerializeField] public static int SelectedCharacterConfirm = 0;
     [SerializeField] public static int SelectedCharacter2Confirm = 0;
     [SerializeField] public static int SelectedCharacter3Confirm = 0;
     [SerializeField] public static int SelectedCharacter4Confirm = 0;
@@ -19,7 +19,7 @@ public class SceneTransition : MonoBehaviour
     string ArenaTwoSceneBoss1 = "BossWinArenaOne(Leech)";
     string ArenaThreeScenePlayer2 = "PlayerWinArenaTwo(Pit)";
     string ArenaThreeSceneBoss2 = "BossWinArenaTwo(Pit)";
-    string Menu = "MainMenu";
+   
     public void Update()
     {
         if (this.gameObject.tag == "CharacterSelection")
@@ -62,7 +62,7 @@ public class SceneTransition : MonoBehaviour
         {
             if (NextPlayerArenaCount == 1)
             {
-                SceneManager.LoadScene(Menu);
+                SceneManager.LoadScene(CharacterSelect);
             }
         }
         if (this.gameObject.tag == "PlayerWinArenaTwo(Pit)")
@@ -90,7 +90,7 @@ public class SceneTransition : MonoBehaviour
         {
             if (NextBossArenaCount == 3)
             {
-                SceneManager.LoadScene(Menu);
+                SceneManager.LoadScene(CharacterSelect);
             }
         }
         if (this.gameObject.tag == "BossWinArenaOne(Leech)")

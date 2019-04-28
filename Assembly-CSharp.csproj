@@ -63,15 +63,23 @@
     <Compile Include="Assets\Player_Scripts\Attack.cs" />
     <Compile Include="Assets\Player_Scripts\AttackDamageType.cs" />
     <Compile Include="Assets\Player_Scripts\BaseDamageType.cs" />
+    <Compile Include="Assets\Player_Scripts\BossController.cs" />
     <Compile Include="Assets\Player_Scripts\BossSelect.cs" />
+    <Compile Include="Assets\Player_Scripts\BossStats.cs" />
     <Compile Include="Assets\Player_Scripts\CharacterSelect2.cs" />
     <Compile Include="Assets\Player_Scripts\CharacterSelect3.cs" />
     <Compile Include="Assets\Player_Scripts\CharacterSelection.cs" />
     <Compile Include="Assets\Player_Scripts\Class.cs" />
     <Compile Include="Assets\Player_Scripts\Controller.cs" />
+    <Compile Include="Assets\Player_Scripts\Controller2.cs" />
+    <Compile Include="Assets\Player_Scripts\Controller3.cs" />
+    <Compile Include="Assets\Player_Scripts\Controller4.cs" />
     <Compile Include="Assets\Player_Scripts\DamageEventInfo.cs" />
+    <Compile Include="Assets\Player_Scripts\DontDestroy.cs" />
     <Compile Include="Assets\Player_Scripts\DragonClass.cs" />
     <Compile Include="Assets\Player_Scripts\EmpController.cs" />
+    <Compile Include="Assets\Player_Scripts\EmpController2.cs" />
+    <Compile Include="Assets\Player_Scripts\EmpController3.cs" />
     <Compile Include="Assets\Player_Scripts\EmpoweredInput.cs" />
     <Compile Include="Assets\Player_Scripts\FrameworkHUD.cs" />
     <Compile Include="Assets\Player_Scripts\InputCollection.cs" />
@@ -80,9 +88,10 @@
     <Compile Include="Assets\Player_Scripts\MageClass.cs" />
     <Compile Include="Assets\Player_Scripts\MainMenu.cs" />
     <Compile Include="Assets\Player_Scripts\Pawn.cs" />
-    <Compile Include="Assets\Player_Scripts\PlayerController.cs" />
     <Compile Include="Assets\Player_Scripts\PlayerPawn.cs" />
     <Compile Include="Assets\Player_Scripts\PlayerStats.cs" />
+    <Compile Include="Assets\Player_Scripts\PlayerStats2.cs" />
+    <Compile Include="Assets\Player_Scripts\PlayerStats3.cs" />
     <Compile Include="Assets\Player_Scripts\PlayInfo.cs" />
     <Compile Include="Assets\Player_Scripts\PriestClass.cs" />
     <Compile Include="Assets\Player_Scripts\RangerClass.cs" />
@@ -365,9 +374,6 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>C:/GitHub/Empowered/Library/PackageCache/com.unity.ads@2.0.8/UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>C:/GitHub/Empowered/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
@@ -376,9 +382,6 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>C:/GitHub/Empowered/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-      <HintPath>C:/GitHub/Empowered/Library/PackageCache/com.unity.purchasing@2.0.3/UnityEngine.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

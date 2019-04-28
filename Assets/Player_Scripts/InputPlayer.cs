@@ -39,16 +39,29 @@ public class InputPlayer : PlayInfo
 
     public virtual InputCollection GetPlayerInput(int PlayerNumber)
     {
-        if (PlayerNumber == 0) { return GetPlayer1Input(); }
-        if (PlayerNumber == 1) { return GetPlayer2Input(); }
-        if (PlayerNumber == 2) { return GetPlayer3Input(); }
-        if (PlayerNumber == 3) { return GetPlayer4Input(); }
+        if (PlayerNumber == 0) { return GetPlayer0Input(); }
+        if (PlayerNumber == 1) { return GetPlayer1Input(); }
+        if (PlayerNumber == 2) { return GetPlayer2Input(); }
+        if (PlayerNumber == 3) { return GetPlayer3Input(); }
+        if (PlayerNumber == 4) { return GetPlayer4Input(); }
 
         
 
         // Error Check... What the heck player did you give me?
 
         return new InputCollection();
+    }
+
+    /// <summary>
+    /// Input Setup Method for Specific Player. Add Implementation in Inherited Class for Application
+    /// </summary>
+    /// <returns>InputState for Requested Player</returns>
+    public virtual InputCollection GetPlayer0Input()
+    {
+        // Example Input binding. 
+        InputCollection IC = InputCollection.GetBlankState();
+
+        return IC;
     }
 
     /// <summary>

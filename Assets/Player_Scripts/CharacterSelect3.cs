@@ -5,35 +5,35 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class CharacterSelect3 : EmpController
+public class CharacterSelect3 : MonoBehaviour
 {
-    private int selectedCharacterIndex;
+    protected int selectedCharacterIndex3;
     private Color desiredColor;
 
-
+   
 
     [Header("List of Characters")]
-    [SerializeField] private List<CharacterSelectObject> characterList = new List<CharacterSelectObject>();
+    [SerializeField] protected List<CharacterSelectObject> characterList = new List<CharacterSelectObject>();
 
     [Header("UI References")]
-    [SerializeField] private TextMeshProUGUI characterName;
-    [SerializeField] private Image characterSplash;
-    [SerializeField] private Image backgroundColor;
+    [SerializeField] protected TextMeshProUGUI characterName;
+    [SerializeField] protected Image characterSplash;
+    [SerializeField] protected Image backgroundColor;
 
 
     [Header("Sounds")]
-    [SerializeField] private AudioClip arrowClickSfx;
-    [SerializeField] private AudioClip CharSelectMusic;
+    [SerializeField] protected AudioClip arrowClickSfx;
+    [SerializeField] protected AudioClip CharSelectMusic;
 
     [Header("Options")]
-    [SerializeField] private float backgroundColorTransitionSpeed = 5f;
+    [SerializeField] protected float backgroundColorTransitionSpeed = 5f;
 
 
 
     private void Start()
     {
         UpdateCharacterSelectionUI();
-
+       
     }
 
     public void Update()
@@ -46,10 +46,10 @@ public class CharacterSelect3 : EmpController
 
     public void ConfirmSelection()
     {
-        Debug.Log(string.Format("Character {0}:{1} has been chosen", selectedCharacterIndex, characterList[selectedCharacterIndex].characterName));
+        Debug.Log(string.Format("Character {0}:{1} has been chosen", selectedCharacterIndex3, characterList[selectedCharacterIndex3].characterName));
         // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
-        this.SpawnPreFab = characterList[selectedCharacterIndex].selectedchar;
+        EmpController3.SpawnPreFab3 = characterList[selectedCharacterIndex3].selectedchar;
 
         if (SceneTransition.SelectedCharacter3Confirm != 1)
         {
@@ -60,20 +60,20 @@ public class CharacterSelect3 : EmpController
 
     public void LeftArrow()
     {
-        selectedCharacterIndex--;
-        if (selectedCharacterIndex < 0)
+        selectedCharacterIndex3--;
+        if (selectedCharacterIndex3 < 0)
         {
-            selectedCharacterIndex = characterList.Count - 1;
+            selectedCharacterIndex3 = characterList.Count - 1;
         }
 
         UpdateCharacterSelectionUI();
     }
     public void RightArrow()
     {
-        selectedCharacterIndex++;
-        if (selectedCharacterIndex == characterList.Count)
+        selectedCharacterIndex3++;
+        if (selectedCharacterIndex3 == characterList.Count)
         {
-            selectedCharacterIndex = 0;
+            selectedCharacterIndex3 = 0;
         }
 
         UpdateCharacterSelectionUI();
@@ -82,9 +82,9 @@ public class CharacterSelect3 : EmpController
 
     private void UpdateCharacterSelectionUI()
     {
-        characterSplash.sprite = characterList[selectedCharacterIndex].splash;
-        characterName.text = characterList[selectedCharacterIndex].characterName;
-        desiredColor = characterList[selectedCharacterIndex].characterColor;
+        characterSplash.sprite = characterList[selectedCharacterIndex3].splash;
+        characterName.text = characterList[selectedCharacterIndex3].characterName;
+        desiredColor = characterList[selectedCharacterIndex3].characterColor;
 
 
     }

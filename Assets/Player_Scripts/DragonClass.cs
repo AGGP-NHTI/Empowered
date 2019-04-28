@@ -5,27 +5,32 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class DragonClass : PlayerPawn
 {
-    public float MovementSpeed = 25;
-    public float RotationSpeed = 260;
+    public float MovementSpeed = 45;
+    public float RotationSpeed = 450;
 
     public GameObject Slash;
     public GameObject attackpoint;
 
 
     Rigidbody rb;
-    void Start()
+    new void Start()
     {
         rb = GetComponent<Rigidbody>();
 
     }
     private void Update()
     {
-        if (KnightHealth <= 0)
+        if (DragonHealth <= 0)
         {
             Destroy(gameObject);
         }
     }
-    public override void Horizontal(float value)
+
+    public void DragonPassive()
+    {
+
+    }
+    public override void P4Horizontal(float value)
     {
         if (Mathf.Abs(value) < .05)
         {
@@ -34,7 +39,7 @@ public class DragonClass : PlayerPawn
         gameObject.transform.Rotate(0, (value * RotationSpeed * Time.deltaTime), 0);
     }
 
-    public override void Vertical(float value)
+    public override void P4Vertical(float value)
     {
         if (Mathf.Abs(value) < .05)
         {
@@ -43,20 +48,28 @@ public class DragonClass : PlayerPawn
         }
         rb.velocity = gameObject.transform.forward * value * MovementSpeed;
     }
-    public override void Fire1(bool value)
+    public override void P4Fire1(bool value)
     {
         GameObject spam = Instantiate(Slash, attackpoint.transform.position, attackpoint.transform.rotation);
     }
 
-    public override void Fire2(bool value)
+    public override void P4Fire2(bool value)
     {
 
     }
-    public override void Fire3(bool value)
+    public override void P4Fire3(bool value)
     {
 
     }
-    public override void Fire4(bool value)
+    public override void P4Fire4(bool value)
+    {
+
+    }
+    public override void Fire5(bool value)
+    {
+        
+    }
+    public override void Fire6(bool value)
     {
 
     }

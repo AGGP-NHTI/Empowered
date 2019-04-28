@@ -1,0 +1,181 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerStats3 : Controller3
+{
+    public static bool LogMissingInputDelegates = true;
+    public static bool LogInputStateInfo = true;
+    public static bool LogHUDUpdateError = false;
+
+    protected delegate void InputAxis(float value);
+    protected delegate void InputButton(bool value);
+
+    protected Dictionary<string, InputAxis> AxisDelegates;
+    protected Dictionary<string, InputButton> ButtonDelegates;
+
+    protected InputPlayer IP;
+    protected InputCollection IC;
+    protected InputCollection ICprevious;
+    public FrameworkHUD HUD;
+
+
+    protected override void Start()
+    {
+        base.Start();
+        IsHuman = true;
+
+        IP = InputPlayer.Self;
+        if (!IP)
+        {
+            LOG_ERROR("****PLAYER CONTROLER: No Input Poller in Scene");
+            return;
+        }
+        AxisDelegates = new Dictionary<string, InputAxis>();
+        ButtonDelegates = new Dictionary<string, InputButton>();
+        IC = InputCollection.GetBlankState();
+        ICprevious = InputCollection.GetBlankState();
+        DefaultBinds();
+    }
+
+    protected void FixedUpdate()
+    {
+
+        GetInput();
+
+        // Do not pass Pawn info to HUD if one or the other is missing. 
+        if (!HUD && !PossesedPawn)
+        {
+            if (LogHUDUpdateError)
+            {
+                LOG_ERROR("Missing Pawn or Hud for HUD Update");
+            }
+
+            return;
+        }
+        UpdateHUD();
+    }
+
+    /// <summary>
+    /// Override this Method to pass information from your Pawn to your HUD
+    /// </summary>
+    protected virtual void UpdateHUD()
+    {
+
+    }
+
+    protected virtual void GetInput()
+    {
+        if (!IP)
+        {
+            LOG_ERROR("****PLAYER CONTROLER (" + gameObject.name + "): No Input Poller in Scene");
+            return;
+        }
+
+        IC = InputPlayer.Self.GetPlayerInput(InputPlayerNumber);
+        if (LogInputStateInfo)
+        {
+            LOG(IC.ToString());
+        }
+        ProcessInputState();
+        ICprevious = IC;
+    }
+
+
+
+    protected virtual void ProcessInputState()
+    {
+        // Process Buttons
+        foreach (KeyValuePair<string, bool> item in IC.Buttons)
+        {
+            if (!ButtonDelegates.ContainsKey(item.Key) && LogMissingInputDelegates)
+            {
+                LOG_ERROR("****PLAYER CONTROLER (" + gameObject.name + "): " + item.Key + " has no defined Input Delegate");
+                break;
+            }
+            ButtonDelegates[item.Key].Invoke(item.Value);
+        }
+
+        // Process Axis
+        foreach (KeyValuePair<string, float> item in IC.Axes)
+        {
+            if (!AxisDelegates.ContainsKey(item.Key) && LogMissingInputDelegates)
+            {
+                LOG_ERROR("****PLAYER CONTROLER (" + gameObject.name + "): " + item.Key + " has no defined Input Delegate");
+                break;
+            }
+            AxisDelegates[item.Key].Invoke(item.Value);
+        }
+    }
+
+    protected virtual void AddButton(string command, InputButton delegateMethod)
+    {
+        ButtonDelegates.Add(command, delegateMethod);
+    }
+    protected virtual void AddAxis(string command, InputAxis delegateMethod)
+    {
+        AxisDelegates.Add(command, delegateMethod);
+    }
+
+    public virtual void DefaultBinds()
+    {
+        AddAxis("P3Horizontal", P3Horizontal);
+        AddAxis("P3Vertical", P3Vertical);
+        AddButton("P3Fire1", P3Fire1);
+        AddButton("P3Fire2", P3Fire2);
+        AddButton("P3Fire3", P3Fire3);
+        AddButton("P3Fire4", P3Fire4);
+
+    }
+
+    public virtual void P3Horizontal(float value)
+    {
+        if (value != 0)
+        {
+            LOG("Del-Horizontal (" + value + ")");
+        }
+    }
+
+    public virtual void P3Vertical(float value)
+    {
+        if (value != 0)
+        {
+            LOG("Del-Vertical (" + value + ")");
+        }
+    }
+
+    public virtual void P3Fire1(bool value)
+    {
+        if (value)
+        {
+            LOG("Del-Fire1");
+        }
+    }
+
+    public virtual void P3Fire2(bool value)
+    {
+        if (value)
+        {
+            LOG("Del-Fire2");
+        }
+    }
+
+    public virtual void P3Fire3(bool value)
+    {
+        if (value)
+        {
+            LOG("Del-Fire3");
+        }
+    }
+
+    public virtual void P3Fire4(bool value)
+    {
+        if (value)
+        {
+            LOG("Del-Fire4");
+        }
+    }
+
+
+
+}

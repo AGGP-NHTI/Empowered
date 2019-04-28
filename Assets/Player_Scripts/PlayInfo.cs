@@ -16,7 +16,7 @@ public class PlayInfo : MonoBehaviour
     /// <param name="Rotation">Quaternion. Global Space Rotation</param>
     /// <param name="NewOwner">Optional Controller if needed to attach player information</param>
     /// <returns></returns>
-    public static GameObject Factory(GameObject PlayerPrefab, Vector3 Location, Quaternion Rotation, Controller NewOwner = null)
+    public static GameObject Factory1(GameObject PlayerPrefab, Vector3 Location, Quaternion Rotation, Controller NewOwner = null)
     {
         GameObject NewActor = Instantiate(PlayerPrefab, Location, Rotation);
         if (NewActor)
@@ -31,6 +31,50 @@ public class PlayInfo : MonoBehaviour
         return NewActor;
     }
 
+    public static GameObject Factory2(GameObject PlayerPrefab, Vector3 Location, Quaternion Rotation, Controller2 NewOwner = null)
+    {
+        GameObject NewActor = Instantiate(PlayerPrefab, Location, Rotation);
+        if (NewActor)
+        {
+            Class cLass = NewActor.GetComponent<Class>();
+            if (cLass)
+            {
+                cLass.Owner2 = NewOwner;
+            }
+        }
+
+        return NewActor;
+    }
+
+    public static GameObject Factory3(GameObject PlayerPrefab, Vector3 Location, Quaternion Rotation, Controller3 NewOwner = null)
+    {
+        GameObject NewActor = Instantiate(PlayerPrefab, Location, Rotation);
+        if (NewActor)
+        {
+            Class cLass = NewActor.GetComponent<Class>();
+            if (cLass)
+            {
+                cLass.Owner3 = NewOwner;
+            }
+        }
+
+        return NewActor;
+    }
+
+    public static GameObject Factory4(GameObject PlayerPrefab, Vector3 Location, Quaternion Rotation, Controller4 NewOwner = null)
+    {
+        GameObject NewActor = Instantiate(PlayerPrefab, Location, Rotation);
+        if (NewActor)
+        {
+            Class cLass = NewActor.GetComponent<Class>();
+            if (cLass)
+            {
+                cLass.Owner4 = NewOwner;
+            }
+        }
+
+        return NewActor;
+    }
     /// <summary>
     /// Property, Easy Access to Get\Set gameObject.name
     /// </summary>

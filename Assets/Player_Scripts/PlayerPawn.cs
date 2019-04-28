@@ -5,12 +5,20 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class PlayerPawn : Pawn
 {
+
     protected float DragonHealth = 2559.00f;
     protected float KnightHealth = 420.0f;
     protected float MageHealth = 365.0f;
     protected float PriestHealth = 365.0f;
     protected float RangerHealth = 385.0f;
-    
+
+
+    protected float DragonMAXHealth = 2559.00f;
+    protected float KnightMAXHealth = 420.0f;
+    protected float MageMAXHealth = 365.0f;
+    protected float PriestMAXHealth = 365.0f;
+    protected float RangerMAXHealth = 385.0f;
+
     protected override bool ProcessDamage(Class Source, float Value, DamageEventInfo EventInfo, Controller Instigator)
     {
         KnightHealth -= Value;
@@ -54,9 +62,7 @@ public class PlayerPawn : Pawn
     }
     public void Start()
     {
-        {
-            IgnoresDamage = false;
-        }
+        IgnoresDamage = false;  
     }
     public virtual void Horizontal(float value)
     {
@@ -84,6 +90,96 @@ public class PlayerPawn : Pawn
     }
 
     public virtual void Fire4(bool value)
+    {
+
+    }
+
+    public virtual void P2Horizontal(float value)
+    {
+
+    }
+
+    public virtual void P2Vertical(float value)
+    {
+
+    }
+
+    public virtual void P2Fire1(bool value)
+    {
+
+    }
+
+    public virtual void P2Fire2(bool value)
+    {
+
+    }
+
+    public virtual void P2Fire3(bool value)
+    {
+
+    }
+
+    public virtual void P2Fire4(bool value)
+    {
+
+    }
+
+    public virtual void P3Horizontal(float value)
+    {
+
+    }
+
+    public virtual void P3Vertical(float value)
+    {
+
+    }
+
+    public virtual void P3Fire1(bool value)
+    {
+
+    }
+
+    public virtual void P3Fire2(bool value)
+    {
+
+    }
+
+    public virtual void P3Fire3(bool value)
+    {
+
+    }
+
+    public virtual void P3Fire4(bool value)
+    {
+
+    }
+
+    public virtual void P4Horizontal(float value)
+    {
+
+    }
+
+    public virtual void P4Vertical(float value)
+    {
+
+    }
+
+    public virtual void P4Fire1(bool value)
+    {
+
+    }
+
+    public virtual void P4Fire2(bool value)
+    {
+
+    }
+
+    public virtual void P4Fire3(bool value)
+    {
+
+    }
+
+    public virtual void P4Fire4(bool value)
     {
 
     }

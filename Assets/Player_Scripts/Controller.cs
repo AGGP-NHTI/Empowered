@@ -13,7 +13,7 @@ public class Controller : PlayInfo
 
     public static bool LogPossessionFailures = true;
     public bool StartWithSpectator = true;
-    public GameObject SpawnPreFab;
+    public static GameObject SpawnPreFab;
     public GameObject SpectatorPreFab;
     protected GameObject SpectatorActor;
     //protected Pawn SpeactatorPawn; 
@@ -29,7 +29,7 @@ public class Controller : PlayInfo
     public int PlayerNumber = 0;
 
     protected Pawn PossesedPawn;
-
+ 
     protected virtual void Start()
     {
         if (!UseSpawnSystem)
@@ -40,7 +40,7 @@ public class Controller : PlayInfo
         // Create Spectator Prefab
         if (SpectatorPreFab)
         {
-            SpectatorActor = Factory(SpectatorPreFab, Vector3.zero, new Quaternion(), this);
+            SpectatorActor = Factory1(SpectatorPreFab, Vector3.zero, new Quaternion(), this);
         }
 
         if (StartWithSpectator)
@@ -120,7 +120,7 @@ public class Controller : PlayInfo
             LOG_ERROR("No Spawn Prefab Set for Spawning");
             return null;
         }
-        GameObject Pawn = Factory(SpawnPreFab, SpawnPoint.position, SpawnPoint.rotation, this);
+        GameObject Pawn = Factory1(SpawnPreFab, SpawnPoint.position, SpawnPoint.rotation, this);
         PossesPawn(Pawn);
         return Pawn;
     }
