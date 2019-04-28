@@ -1,2 +1,0 @@
-C:\NHTI-Class-Files\AGGP131\FinalProject(Empowered)\FinalProject(Empowered)\FinalProject(Empowered)\Empowered_Ver1\obj\Release\Assembly-CSharp.csprojAssemblyReference.cache
-C:\NHTI-Class-Files\AGGP131\FinalProject(Empowered)\FinalProject(Empowered)\FinalProject(Empowered)\Empowered_Ver1\obj\Release\Assembly-CSharp.csproj.CoreCompileInputs.cache
