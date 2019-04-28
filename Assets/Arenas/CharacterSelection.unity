@@ -417,7 +417,7 @@ MonoBehaviour:
   - splash: {fileID: 21300000, guid: 1ab2141481a847a4fb9390ee8efef189, type: 3}
     characterName: Mage
     characterColor: {r: 0, g: 0.025779486, b: 1, a: 1}
-    selectedchar: {fileID: 7041920081120368891, guid: 8f9b0bd9f7882d4459027c5d0d903d31,
+    selectedchar: {fileID: 6784025010955859123, guid: 3ddf75e3709ceab4bba33ef27f038abc,
       type: 3}
   - splash: {fileID: 21300000, guid: 81641540f58de0a4083c9b8ab882fdb7, type: 3}
     characterName: Ranger
@@ -446,7 +446,7 @@ MonoBehaviour:
   - splash: {fileID: 21300000, guid: 1ab2141481a847a4fb9390ee8efef189, type: 3}
     characterName: Mage
     characterColor: {r: 0.060046747, g: 0.033018887, b: 1, a: 1}
-    selectedchar: {fileID: 7041920081120368891, guid: 8f9b0bd9f7882d4459027c5d0d903d31,
+    selectedchar: {fileID: 6784025010955859123, guid: 3ddf75e3709ceab4bba33ef27f038abc,
       type: 3}
   - splash: {fileID: 21300000, guid: 81641540f58de0a4083c9b8ab882fdb7, type: 3}
     characterName: Ranger
@@ -475,7 +475,7 @@ MonoBehaviour:
   - splash: {fileID: 21300000, guid: 1ab2141481a847a4fb9390ee8efef189, type: 3}
     characterName: Mage
     characterColor: {r: 0, g: 0.09511185, b: 1, a: 1}
-    selectedchar: {fileID: 7041920081120368891, guid: 8f9b0bd9f7882d4459027c5d0d903d31,
+    selectedchar: {fileID: 6784025010955859123, guid: 3ddf75e3709ceab4bba33ef27f038abc,
       type: 3}
   - splash: {fileID: 21300000, guid: 81641540f58de0a4083c9b8ab882fdb7, type: 3}
     characterName: Ranger
@@ -2753,7 +2753,6 @@ MonoBehaviour:
   IsHuman: 0
   UseSpawnSystem: 1
   StartWithSpectator: 1
-  SpawnPreFab: {fileID: 0}
   SpectatorPreFab: {fileID: 3442260282083416676, guid: 96135b9d461f32640bbfd8051b543831,
     type: 3}
   InputPlayerNumber: 4
@@ -2774,7 +2773,6 @@ MonoBehaviour:
   IsHuman: 0
   UseSpawnSystem: 1
   StartWithSpectator: 1
-  SpawnPreFab: {fileID: 0}
   SpectatorPreFab: {fileID: 8455392756239643591, guid: 3b40e763aff73124e8e988a884e73708,
     type: 3}
   InputPlayerNumber: 3
@@ -2795,7 +2793,6 @@ MonoBehaviour:
   IsHuman: 0
   UseSpawnSystem: 1
   StartWithSpectator: 1
-  SpawnPreFab: {fileID: 0}
   SpectatorPreFab: {fileID: 3366840260799384883, guid: 65fb3e44e74309147a0c775020433e14,
     type: 3}
   InputPlayerNumber: 2
@@ -2816,7 +2813,6 @@ MonoBehaviour:
   IsHuman: 0
   UseSpawnSystem: 1
   StartWithSpectator: 1
-  SpawnPreFab: {fileID: 0}
   SpectatorPreFab: {fileID: 607958620616154931, guid: e29aa850e0d2bd4429f2dd6ab138515e,
     type: 3}
   InputPlayerNumber: 1

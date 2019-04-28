@@ -75,4 +75,41 @@ public class MageClass : PlayerPawn
         rb.AddForce(jump * jumpForce, ForceMode.Impulse);
         isGrounded = false;
     }
+
+    public override void P2Horizontal(float value)
+    {
+        if (Mathf.Abs(value) < .05)
+        {
+            return;
+        }
+        gameObject.transform.Rotate(0, (value * RotationSpeed * Time.deltaTime), 0);
+    }
+
+    public override void P2Vertical(float value)
+    {
+        if (Mathf.Abs(value) < .05)
+        {
+            rb.velocity = Vector3.zero;
+            return;
+        }
+        rb.velocity = gameObject.transform.forward * value * MovementSpeed;
+    }
+    public override void P2Fire1(bool value)
+    {
+        GameObject FireBolt = Instantiate(Fire, FirePoint.transform.position, FirePoint.transform.rotation);
+    }
+
+    public override void P2Fire2(bool value)
+    {
+        GameObject LightningBolt = Instantiate(Lightning, LightningPoint.transform.position, LightningPoint.transform.rotation);
+    }
+    public override void P2Fire3(bool value)
+    {
+        ArcaneShieldPoint.SetActive(true);
+    }
+    public override void P2Fire4(bool value)
+    {
+        rb.AddForce(jump * jumpForce, ForceMode.Impulse);
+        isGrounded = false;
+    }
 }
