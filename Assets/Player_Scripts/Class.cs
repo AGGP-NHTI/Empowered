@@ -34,30 +34,12 @@ public class Class : PlayInfo
         set { _Owner = value; }
     }
 
-    public Controller2 Owner2
-    {
-        get { return _Owner2; }
-        set { _Owner2 = value; }
-    }
-
-    public Controller3 Owner3
-    {
-        get { return _Owner3; }
-        set { _Owner3 = value; }
-    }
-
-    public Controller4 Owner4
-    {
-        get { return _Owner4; }
-        set { _Owner4 = value; }
-    }
+    
     /// <summary>
     /// Protected Variable Use Public Interface
     /// </summary>
     protected Controller _Owner;
-    protected Controller2 _Owner2;
-    protected Controller3 _Owner3;
-    protected Controller4 _Owner4;
+ 
 
     /// <summary>
     /// Public Method for Actors to take Damage, unless IgnoresDamage is true

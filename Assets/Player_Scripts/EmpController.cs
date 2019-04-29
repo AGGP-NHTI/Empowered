@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-public class EmpController : PlayerStats
+public class EmpController : PlayerController
 {
     
     
@@ -63,7 +63,25 @@ public class EmpController : PlayerStats
         }
     }
 
-    
+    public override void Fire5(bool value)
+    {
+        if (value)
+        {
+            ((PlayerPawn)PossesedPawn).Fire5(value);
+        }
+    }
+
+    public override void Fire6(bool value)
+    {
+        if (value)
+        {
+            ((PlayerPawn)PossesedPawn).Fire6(value);
+        }
+    }
+
+
+
+
 
 
 }

@@ -64,6 +64,7 @@ public class PlayerPawn : Pawn
     {
         IgnoresDamage = false;  
     }
+
     public virtual void Horizontal(float value)
     {
 
@@ -90,6 +91,35 @@ public class PlayerPawn : Pawn
     }
 
     public virtual void Fire4(bool value)
+    {
+
+    }
+    public virtual void P1Horizontal(float value)
+    {
+
+    }
+
+    public virtual void P1Vertical(float value)
+    {
+
+    }
+
+    public virtual void P1Fire1(bool value)
+    {
+
+    }
+
+    public virtual void P1Fire2(bool value)
+    {
+
+    }
+
+    public virtual void P1Fire3(bool value)
+    {
+
+    }
+
+    public virtual void P1Fire4(bool value)
     {
 
     }

@@ -38,7 +38,7 @@ public class SpawnSystem : PlayInfo
         if (UseRandomSpawnPoint) { SpawnLocation = GetRandomSpawnPoint(); }
         else { SpawnLocation = GetNextSpawnPoint(); }
 
-        GameObject NewPawn = Factory1(SpawnPreFab, SpawnLocation.position, SpawnLocation.rotation, c);
+        GameObject NewPawn = Factory(SpawnPreFab, SpawnLocation.position, SpawnLocation.rotation, c);
         if (!NewPawn)
         {
             LOG_ERROR("SPAWN SYSTEM: Request Spawn: Could not Spawn New Pawn");
@@ -50,77 +50,7 @@ public class SpawnSystem : PlayInfo
         return NewPawn;
     }
 
-    public virtual GameObject RequestSpawn(Controller2 c, GameObject SpawnPreFab)
-    {
-        if (!SpawnPreFab || !c)
-        {
-            LOG_ERROR("SPAWN SYSTEM: Request Spawn: Missing Controller or Spawn Prefab");
-            return null;
-        }
-
-        Transform SpawnLocation;
-        if (UseRandomSpawnPoint) { SpawnLocation = GetRandomSpawnPoint(); }
-        else { SpawnLocation = GetNextSpawnPoint(); }
-
-        GameObject NewPawn = Factory2(SpawnPreFab, SpawnLocation.position, SpawnLocation.rotation, c);
-        if (!NewPawn)
-        {
-            LOG_ERROR("SPAWN SYSTEM: Request Spawn: Could not Spawn New Pawn");
-            return null;
-        }
-
-        c.PossesPawn(NewPawn);
-
-        return NewPawn;
-    }
-
-    public virtual GameObject RequestSpawn(Controller3 c, GameObject SpawnPreFab)
-    {
-        if (!SpawnPreFab || !c)
-        {
-            LOG_ERROR("SPAWN SYSTEM: Request Spawn: Missing Controller or Spawn Prefab");
-            return null;
-        }
-
-        Transform SpawnLocation;
-        if (UseRandomSpawnPoint) { SpawnLocation = GetRandomSpawnPoint(); }
-        else { SpawnLocation = GetNextSpawnPoint(); }
-
-        GameObject NewPawn = Factory3(SpawnPreFab, SpawnLocation.position, SpawnLocation.rotation, c);
-        if (!NewPawn)
-        {
-            LOG_ERROR("SPAWN SYSTEM: Request Spawn: Could not Spawn New Pawn");
-            return null;
-        }
-
-        c.PossesPawn(NewPawn);
-
-        return NewPawn;
-    }
-
-    public virtual GameObject RequestSpawn(Controller4 c, GameObject SpawnPreFab)
-    {
-        if (!SpawnPreFab || !c)
-        {
-            LOG_ERROR("SPAWN SYSTEM: Request Spawn: Missing Controller or Spawn Prefab");
-            return null;
-        }
-
-        Transform SpawnLocation;
-        if (UseRandomSpawnPoint) { SpawnLocation = GetRandomSpawnPoint(); }
-        else { SpawnLocation = GetNextSpawnPoint(); }
-
-        GameObject NewPawn = Factory4(SpawnPreFab, SpawnLocation.position, SpawnLocation.rotation, c);
-        if (!NewPawn)
-        {
-            LOG_ERROR("SPAWN SYSTEM: Request Spawn: Could not Spawn New Pawn");
-            return null;
-        }
-
-        c.PossesPawn(NewPawn);
-
-        return NewPawn;
-    }
+  
 
     /// <summary>
     /// Public Access to the Spawn Points Information
@@ -202,30 +132,10 @@ public class SpawnSystem : PlayInfo
             {
                 LOG("GENERATED SPAWN POINT AT ORIGIN");
 
-                Factory1(SpawnPointPrefab, Vector3.zero, new Quaternion());
+                Factory(SpawnPointPrefab, Vector3.zero, new Quaternion());
                 SP = GetSpawnPoints();
             }
-            if (SpawnPointPrefab2)
-            {
-                LOG("GENERATED SPAWN POINT AT ORIGIN");
-
-                Factory2(SpawnPointPrefab, Vector3.zero, new Quaternion());
-                SP = GetSpawnPoints();
-            }
-            if (SpawnPointPrefab3)
-            {
-                LOG("GENERATED SPAWN POINT AT ORIGIN");
-
-                Factory3(SpawnPointPrefab, Vector3.zero, new Quaternion());
-                SP = GetSpawnPoints();
-            }
-            if (SpawnPointPrefab4)
-            {
-                LOG("GENERATED SPAWN POINT AT ORIGIN");
-
-                Factory4(SpawnPointPrefab, Vector3.zero, new Quaternion());
-                SP = GetSpawnPoints();
-            }
+ 
             else
             {
                 LOG("Could not Generate Spawn Point.");

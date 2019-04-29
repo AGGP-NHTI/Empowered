@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.23236784, g: 0.23553982, b: 0.27230316, a: 1}
+  m_IndirectSpecularColor: {r: 0.23236811, g: 0.23554483, b: 0.27229944, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2798,25 +2798,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &161365548609796240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 161365548609796254}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1116a8e82f25d8a4fbf1eb5fa8f2ddf6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IgnoresDamage: 0
-  LogDamageEvents: 1
-  IsSpectator: 1
-  MovementSpeed: 10
-  RotationSpeed: 180
-  Slash: {fileID: 1054012617287076508, guid: 20f28583ed43e8f4bbab99dcd391c460, type: 3}
-  attackpoint: {fileID: 8850809818415687918}
 --- !u!1 &161365548609796254
 GameObject:
   m_ObjectHideFlags: 0
@@ -2827,7 +2808,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4604308833315059868}
   - component: {fileID: 7572045406696944264}
-  - component: {fileID: 161365548609796240}
   - component: {fileID: 7153033591983711599}
   m_Layer: 0
   m_Name: UnfinishedClass(ranger) (1)
@@ -4927,25 +4907,6 @@ Transform:
   m_Father: {fileID: 5749202170607775079}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &974256010412373521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6685324948829914182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2215ab9fbb350684f963255899006da4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IgnoresDamage: 0
-  LogDamageEvents: 1
-  IsSpectator: 1
-  MovementSpeed: 10
-  RotationSpeed: 180
-  Slash: {fileID: 1899204243491452158, guid: afe53669669def64b8400996477af9a2, type: 3}
-  attackpoint: {fileID: 2470553175091119237}
 --- !u!4 &1002903923114238583
 Transform:
   m_ObjectHideFlags: 0
@@ -7009,7 +6970,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1009300086411733391}
-  - component: {fileID: 4624542901232914592}
   - component: {fileID: 6954357167589936538}
   m_Layer: 0
   m_Name: RangerBase (3)
@@ -7651,7 +7611,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 468788095651286728}
-  - component: {fileID: 5236864045799667687}
   - component: {fileID: 7494675468404026077}
   m_Layer: 0
   m_Name: RangerBase (5)
@@ -8010,7 +7969,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8532878118509651307}
-  - component: {fileID: 7202000431789113119}
   - component: {fileID: 9222436417544060974}
   - component: {fileID: 8346476217860564572}
   m_Layer: 0
@@ -8642,25 +8600,6 @@ Transform:
   m_Father: {fileID: 8176735239727114992}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4401526716497730126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6600587012749095994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1116a8e82f25d8a4fbf1eb5fa8f2ddf6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IgnoresDamage: 0
-  LogDamageEvents: 1
-  IsSpectator: 1
-  MovementSpeed: 30
-  RotationSpeed: 260
-  Slash: {fileID: 0}
-  attackpoint: {fileID: 0}
 --- !u!33 &4403917541441573855
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8873,25 +8812,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &4624542901232914592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2783522075946565332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1116a8e82f25d8a4fbf1eb5fa8f2ddf6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IgnoresDamage: 0
-  LogDamageEvents: 1
-  IsSpectator: 1
-  MovementSpeed: 30
-  RotationSpeed: 260
-  Slash: {fileID: 0}
-  attackpoint: {fileID: 0}
 --- !u!4 &4628934705921780633
 Transform:
   m_ObjectHideFlags: 0
@@ -13204,25 +13124,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8061339137345068224}
   m_Mesh: {fileID: 4300000, guid: 123763994cb4dc14bb2ed476b01a0f13, type: 3}
---- !u!114 &5236864045799667687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3324140079784204691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1116a8e82f25d8a4fbf1eb5fa8f2ddf6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IgnoresDamage: 0
-  LogDamageEvents: 1
-  IsSpectator: 1
-  MovementSpeed: 30
-  RotationSpeed: 260
-  Slash: {fileID: 0}
-  attackpoint: {fileID: 0}
 --- !u!1 &5261063642244380378
 GameObject:
   m_ObjectHideFlags: 0
@@ -13525,7 +13426,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5376612602389108168}
-  - component: {fileID: 5376612602389108171}
   - component: {fileID: 5376612602389108170}
   m_Layer: 0
   m_Name: UnfinishedClass(Mage) (1)
@@ -13566,25 +13466,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 114
   m_CollisionDetection: 0
---- !u!114 &5376612602389108171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5376612602389108165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 174e0a61fea8e4c4a94208a282dd11b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IgnoresDamage: 0
-  LogDamageEvents: 1
-  IsSpectator: 1
-  MovementSpeed: 14
-  RotationSpeed: 280
-  Slash: {fileID: 1054012617287076508, guid: 20f28583ed43e8f4bbab99dcd391c460, type: 3}
-  attackpoint: {fileID: 5376612602295501336}
 --- !u!1 &5376612602798256444
 GameObject:
   m_ObjectHideFlags: 0
@@ -14885,7 +14766,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8302721723545969505}
-  - component: {fileID: 4401526716497730126}
   - component: {fileID: 2142066911445518196}
   m_Layer: 0
   m_Name: RangerBase (4)
@@ -14946,7 +14826,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1737609770642992229}
-  - component: {fileID: 974256010412373521}
   - component: {fileID: 1264183968065112352}
   - component: {fileID: 2135628128839003986}
   m_Layer: 0
@@ -15579,25 +15458,6 @@ Transform:
   m_Father: {fileID: 7028181368000197857}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7202000431789113119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3652681046040022344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2215ab9fbb350684f963255899006da4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IgnoresDamage: 0
-  LogDamageEvents: 1
-  IsSpectator: 1
-  MovementSpeed: 10
-  RotationSpeed: 180
-  Slash: {fileID: 1899204243491452158, guid: afe53669669def64b8400996477af9a2, type: 3}
-  attackpoint: {fileID: 5494055731228429707}
 --- !u!65 &7215715440158017790
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16281,25 +16141,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &7833103658737106159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7833103658737106161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76b94d8341cba614abafdfb8d38b1987, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IgnoresDamage: 0
-  LogDamageEvents: 1
-  IsSpectator: 1
-  MovementSpeed: 10
-  RotationSpeed: 180
-  Slash: {fileID: 1054012617287076508, guid: 20f28583ed43e8f4bbab99dcd391c460, type: 3}
-  attackpoint: {fileID: 7833103658737106160}
 --- !u!1 &7833103658737106160
 GameObject:
   m_ObjectHideFlags: 0
@@ -16326,7 +16167,6 @@ GameObject:
   m_Component:
   - component: {fileID: 187095760724822512}
   - component: {fileID: 2450902121987369758}
-  - component: {fileID: 7833103658737106159}
   - component: {fileID: 7688292037824094979}
   m_Layer: 0
   m_Name: UnfinishedClass(priest) (1)

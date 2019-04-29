@@ -7,11 +7,10 @@ using UnityEngine.SceneManagement;
 public class SceneTransition : MonoBehaviour
 {
     [SerializeField] public static int SelectedCharacterConfirm = 0;
-    [SerializeField] public static int SelectedCharacter2Confirm = 0;
-    [SerializeField] public static int SelectedCharacter3Confirm = 0;
-    [SerializeField] public static int SelectedCharacter4Confirm = 0;
+
     public static int NextPlayerArenaCount = 0;
     public static int NextBossArenaCount = 0;
+    static bool[] PlayersConfirmed = new bool[4];
   
     string CharacterSelect = "CharacterSelection";
     string ArenaStarting = "StartingArena";
@@ -19,12 +18,42 @@ public class SceneTransition : MonoBehaviour
     string ArenaTwoSceneBoss1 = "BossWinArenaOne(Leech)";
     string ArenaThreeScenePlayer2 = "PlayerWinArenaTwo(Pit)";
     string ArenaThreeSceneBoss2 = "BossWinArenaTwo(Pit)";
-   
+
+    public static void ResetConfirmedArray()
+    {
+        int index = 0; 
+        foreach (bool b in PlayersConfirmed)
+        {
+            PlayersConfirmed[index] = false;
+            index++; //hack 
+        }
+    }
+
+    public static int GetConfirmedPlayers()
+    {
+        int result = 0;
+        foreach (bool b in PlayersConfirmed)
+        {
+            if (b)
+            {
+                result++; 
+            }
+        }
+
+        return result; 
+    }
+
+
+    public static void PlayerHasConfirmed(int PlayerNumber)
+    {
+        PlayersConfirmed[PlayerNumber] = true; 
+    }
+
     public void Update()
     {
         if (this.gameObject.tag == "CharacterSelection")
         {
-            if(SelectedCharacterConfirm == 1 && SelectedCharacter2Confirm == 1 && SelectedCharacter3Confirm == 1 && SelectedCharacter4Confirm == 1)
+            if(GetConfirmedPlayers() == 4)
             {
                 this.gameObject.tag = "StartingArena";
                 SceneManager.LoadScene(ArenaStarting);

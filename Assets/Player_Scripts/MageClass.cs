@@ -39,7 +39,7 @@ public class MageClass : PlayerPawn
             Destroy(gameObject);
         }
     }
-    public override void Horizontal(float value)
+    public override void P1Horizontal(float value)
     {
         if (Mathf.Abs(value) < .05)
         {
@@ -48,7 +48,7 @@ public class MageClass : PlayerPawn
         gameObject.transform.Rotate(0, (value * RotationSpeed * Time.deltaTime), 0);
     }
 
-    public override void Vertical(float value)
+    public override void P1Vertical(float value)
     {
         if (Mathf.Abs(value) < .05)
         {
@@ -57,20 +57,20 @@ public class MageClass : PlayerPawn
         }
         rb.velocity = gameObject.transform.forward * value * MovementSpeed;
     }
-    public override void Fire1(bool value)
+    public override void P1Fire1(bool value)
     {
         GameObject FireBolt = Instantiate(Fire, FirePoint.transform.position, FirePoint.transform.rotation);
     }
 
-    public override void Fire2(bool value)
+    public override void P1Fire2(bool value)
     {
         GameObject LightningBolt = Instantiate(Lightning, LightningPoint.transform.position, LightningPoint.transform.rotation);
     }
-    public override void Fire3(bool value)
+    public override void P1Fire3(bool value)
     {
         ArcaneShieldPoint.SetActive(true);
     }
-    public override void Fire4(bool value)
+    public override void P1Fire4(bool value)
     {
         rb.AddForce(jump * jumpForce, ForceMode.Impulse);
         isGrounded = false;
@@ -108,6 +108,80 @@ public class MageClass : PlayerPawn
         ArcaneShieldPoint.SetActive(true);
     }
     public override void P2Fire4(bool value)
+    {
+        rb.AddForce(jump * jumpForce, ForceMode.Impulse);
+        isGrounded = false;
+    }
+
+    public override void P3Horizontal(float value)
+    {
+        if (Mathf.Abs(value) < .05)
+        {
+            return;
+        }
+        gameObject.transform.Rotate(0, (value * RotationSpeed * Time.deltaTime), 0);
+    }
+
+    public override void P3Vertical(float value)
+    {
+        if (Mathf.Abs(value) < .05)
+        {
+            rb.velocity = Vector3.zero;
+            return;
+        }
+        rb.velocity = gameObject.transform.forward * value * MovementSpeed;
+    }
+    public override void P3Fire1(bool value)
+    {
+        GameObject FireBolt = Instantiate(Fire, FirePoint.transform.position, FirePoint.transform.rotation);
+    }
+
+    public override void P3Fire2(bool value)
+    {
+        GameObject LightningBolt = Instantiate(Lightning, LightningPoint.transform.position, LightningPoint.transform.rotation);
+    }
+    public override void P3Fire3(bool value)
+    {
+        ArcaneShieldPoint.SetActive(true);
+    }
+    public override void P3Fire4(bool value)
+    {
+        rb.AddForce(jump * jumpForce, ForceMode.Impulse);
+        isGrounded = false;
+    }
+
+    public override void P4Horizontal(float value)
+    {
+        if (Mathf.Abs(value) < .05)
+        {
+            return;
+        }
+        gameObject.transform.Rotate(0, (value * RotationSpeed * Time.deltaTime), 0);
+    }
+
+    public override void P4Vertical(float value)
+    {
+        if (Mathf.Abs(value) < .05)
+        {
+            rb.velocity = Vector3.zero;
+            return;
+        }
+        rb.velocity = gameObject.transform.forward * value * MovementSpeed;
+    }
+    public override void P4Fire1(bool value)
+    {
+        GameObject FireBolt = Instantiate(Fire, FirePoint.transform.position, FirePoint.transform.rotation);
+    }
+
+    public override void P4Fire2(bool value)
+    {
+        GameObject LightningBolt = Instantiate(Lightning, LightningPoint.transform.position, LightningPoint.transform.rotation);
+    }
+    public override void P4Fire3(bool value)
+    {
+        ArcaneShieldPoint.SetActive(true);
+    }
+    public override void P4Fire4(bool value)
     {
         rb.AddForce(jump * jumpForce, ForceMode.Impulse);
         isGrounded = false;
