@@ -46,7 +46,7 @@ public class SceneTransition : MonoBehaviour
 
     public static void PlayerHasConfirmed(int PlayerNumber)
     {
-        PlayersConfirmed[PlayerNumber] = true; 
+        PlayersConfirmed[PlayerNumber-1] = true; 
     }
 
     public void Update()

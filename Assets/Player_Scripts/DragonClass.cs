@@ -30,7 +30,7 @@ public class DragonClass : PlayerPawn
     {
 
     }
-    public override void P4Horizontal(float value)
+    public override void Horizontal(float value)
     {
         if (Mathf.Abs(value) < .05)
         {
@@ -39,7 +39,7 @@ public class DragonClass : PlayerPawn
         gameObject.transform.Rotate(0, (value * RotationSpeed * Time.deltaTime), 0);
     }
 
-    public override void P4Vertical(float value)
+    public override void Vertical(float value)
     {
         if (Mathf.Abs(value) < .05)
         {
@@ -48,20 +48,20 @@ public class DragonClass : PlayerPawn
         }
         rb.velocity = gameObject.transform.forward * value * MovementSpeed;
     }
-    public override void P4Fire1(bool value)
+    public override void Fire1(bool value)
     {
         GameObject spam = Instantiate(Slash, attackpoint.transform.position, attackpoint.transform.rotation);
     }
 
-    public override void P4Fire2(bool value)
+    public override void Fire2(bool value)
     {
 
     }
-    public override void P4Fire3(bool value)
+    public override void Fire3(bool value)
     {
 
     }
-    public override void P4Fire4(bool value)
+    public override void Fire4(bool value)
     {
 
     }
