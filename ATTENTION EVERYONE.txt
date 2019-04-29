@@ -1,0 +1,8 @@
+Since this comment was too long. Here, it is.
+
+Hi this is joe, nick forgot to push this, so i am here to push it for him, if this breaks blame Nick. 
+You can revert this by opening the history tab and right clicking this, and press revert commint. 
+Now let me tell you a story, there once was a child. A weird child, named Tyler. 
+Tyler was loved by many, and by many I mean none. And his parents said "git gud hub." 
+As he was ravaged by the wolves and was never seen again. Git gud people, git gud.
+
