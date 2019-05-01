@@ -1,0 +1,311 @@
+fileFormatVersion: 2
+guid: a01e908435f4a1345b11cb270940f315
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: group2
+    100002: pasted__polySurface20
+    100004: pasted__polySurface20 1
+    100006: polySurface131
+    100008: polySurface132
+    100010: polySurface132 1
+    100012: polySurface133
+    100014: polySurface134
+    100016: polySurface135
+    100018: polySurface136
+    100020: polySurface137
+    100022: polySurface138
+    100024: polySurface139
+    100026: polySurface140
+    100028: polySurface141
+    100030: polySurface143
+    100032: polySurface144
+    100034: polySurface145
+    100036: polySurface146
+    100038: polySurface147
+    100040: polySurface148
+    100042: polySurface149
+    100044: polySurface150
+    100046: polySurface151
+    100048: polySurface151 1
+    100050: polySurface152
+    100052: polySurface29
+    100054: polySurface69
+    100056: polySurface70
+    100058: polySurface71
+    100060: polySurface72
+    100062: polySurface73
+    100064: polySurface74
+    100066: polySurface75
+    100068: polySurface76
+    100070: polySurface77
+    100072: polySurface78
+    100074: //RootNode
+    100076: Priest_Models:polySurface10
+    100078: Priest_Models:polySurface11
+    100080: Priest_Models:polySurface12
+    100082: Priest_Models:polySurface13
+    100084: Priest_Models:polySurface14
+    100086: Priest_Models:polySurface15
+    100088: Priest_Models:polySurface16
+    100090: Priest_Models:polySurface17
+    100092: Priest_Models:polySurface17 1
+    100094: Priest_Models:polySurface18
+    100096: Priest_Models:polySurface19
+    100098: Priest_Models:polySurface20
+    100100: Priest_Models:polySurface21
+    100102: Priest_Models:polySurface8
+    100104: Priest_Models:polySurface9
+    100106: Priest_Models:polySurface9 1
+    100108: Priest_Models:transform1
+    100110: Priest_Models:transform10
+    100112: Priest_Models:transform11
+    100114: Priest_Models:transform12
+    100116: Priest_Models:transform13
+    100118: Priest_Models:transform14
+    100120: Priest_Models:transform15
+    100122: Priest_Models:transform16
+    100124: Priest_Models:transform2
+    100126: Priest_Models:transform3
+    100128: Priest_Models:transform4
+    100130: Priest_Models:transform5
+    100132: Priest_Models:transform6
+    100134: Priest_Models:transform7
+    100136: Priest_Models:transform8
+    100138: Priest_Models:transform9
+    100140: ranger_Model:polySurface46
+    100142: transform101
+    100144: transform103
+    100146: transform104
+    100148: transform105
+    100150: transform106
+    100152: transform107
+    100154: transform108
+    100156: transform109
+    100158: transform110
+    100160: transform111
+    100162: transform112
+    100164: transform113
+    100166: transform114
+    100168: transform115
+    100170: transform116
+    100172: transform117
+    100174: transform118
+    100176: transform119
+    100178: transform120
+    100180: transform121
+    100182: transform122
+    100184: transform123
+    100186: transform73
+    100188: transform74
+    100190: transform75
+    100192: transform76
+    100194: transform77
+    100196: transform78
+    100198: transform79
+    100200: transform80
+    100202: transform81
+    100204: transform82
+    100206: transform83
+    100208: transform84
+    400000: group2
+    400002: pasted__polySurface20
+    400004: pasted__polySurface20 1
+    400006: polySurface131
+    400008: polySurface132
+    400010: polySurface132 1
+    400012: polySurface133
+    400014: polySurface134
+    400016: polySurface135
+    400018: polySurface136
+    400020: polySurface137
+    400022: polySurface138
+    400024: polySurface139
+    400026: polySurface140
+    400028: polySurface141
+    400030: polySurface143
+    400032: polySurface144
+    400034: polySurface145
+    400036: polySurface146
+    400038: polySurface147
+    400040: polySurface148
+    400042: polySurface149
+    400044: polySurface150
+    400046: polySurface151
+    400048: polySurface151 1
+    400050: polySurface152
+    400052: polySurface29
+    400054: polySurface69
+    400056: polySurface70
+    400058: polySurface71
+    400060: polySurface72
+    400062: polySurface73
+    400064: polySurface74
+    400066: polySurface75
+    400068: polySurface76
+    400070: polySurface77
+    400072: polySurface78
+    400074: //RootNode
+    400076: Priest_Models:polySurface10
+    400078: Priest_Models:polySurface11
+    400080: Priest_Models:polySurface12
+    400082: Priest_Models:polySurface13
+    400084: Priest_Models:polySurface14
+    400086: Priest_Models:polySurface15
+    400088: Priest_Models:polySurface16
+    400090: Priest_Models:polySurface17
+    400092: Priest_Models:polySurface17 1
+    400094: Priest_Models:polySurface18
+    400096: Priest_Models:polySurface19
+    400098: Priest_Models:polySurface20
+    400100: Priest_Models:polySurface21
+    400102: Priest_Models:polySurface8
+    400104: Priest_Models:polySurface9
+    400106: Priest_Models:polySurface9 1
+    400108: Priest_Models:transform1
+    400110: Priest_Models:transform10
+    400112: Priest_Models:transform11
+    400114: Priest_Models:transform12
+    400116: Priest_Models:transform13
+    400118: Priest_Models:transform14
+    400120: Priest_Models:transform15
+    400122: Priest_Models:transform16
+    400124: Priest_Models:transform2
+    400126: Priest_Models:transform3
+    400128: Priest_Models:transform4
+    400130: Priest_Models:transform5
+    400132: Priest_Models:transform6
+    400134: Priest_Models:transform7
+    400136: Priest_Models:transform8
+    400138: Priest_Models:transform9
+    400140: ranger_Model:polySurface46
+    400142: transform101
+    400144: transform103
+    400146: transform104
+    400148: transform105
+    400150: transform106
+    400152: transform107
+    400154: transform108
+    400156: transform109
+    400158: transform110
+    400160: transform111
+    400162: transform112
+    400164: transform113
+    400166: transform114
+    400168: transform115
+    400170: transform116
+    400172: transform117
+    400174: transform118
+    400176: transform119
+    400178: transform120
+    400180: transform121
+    400182: transform122
+    400184: transform123
+    400186: transform73
+    400188: transform74
+    400190: transform75
+    400192: transform76
+    400194: transform77
+    400196: transform78
+    400198: transform79
+    400200: transform80
+    400202: transform81
+    400204: transform82
+    400206: transform83
+    400208: transform84
+    2100000: pasted__staff
+    2100002: Priest_Models_surfaceShader1
+    2100004: lambert1
+    2100006: Priest_Models_lambert2
+    2300000: polySurface143
+    2300002: polySurface151
+    3300000: polySurface143
+    3300002: polySurface151
+    4300000: polySurface143
+    4300002: polySurface151
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

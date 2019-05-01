@@ -94,6 +94,17 @@ public class PlayerPawn : Pawn
     {
 
     }
+
+    public virtual void Fire5(bool value)
+    {
+
+    }
+
+    public virtual void Fire6(bool value)
+    {
+
+    }
+
     //public virtual void P1Horizontal(float value)
     //{
 
@@ -214,13 +225,5 @@ public class PlayerPawn : Pawn
 
     //}
 
-    public virtual void Fire5(bool value)
-    {
 
-    }
-
-    public virtual void Fire6(bool value)
-    {
-
-    }
 }

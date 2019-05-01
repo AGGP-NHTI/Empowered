@@ -10,6 +10,9 @@ TagManager:
   - PlayerWinArenaTwo(Pit)
   - BossWinArenaTwo(Pit)
   - CharacterSelection
+  - MainMenu
+  - OptionsMenu
+  - CreditsMenu
   layers:
   - Default
   - TransparentFX

@@ -9,8 +9,8 @@ public class EmpoweredInput : InputPlayer
     public override InputCollection GetPlayer0Input()
     {
         InputCollection IC = InputCollection.GetBlankState();
-        //IC.AddAxis("Horizontal", Input.GetAxis("Horizontal"));
-        //IC.AddAxis("Vertical", Input.GetAxis("Vertical"));
+        IC.AddAxis("Horizontal", Input.GetAxis("Horizontal"));
+        IC.AddAxis("Vertical", Input.GetAxis("Vertical"));
         IC.AddButton("Fire1", Input.GetButtonDown("Fire1"));
         IC.AddButton("Fire2", Input.GetButtonDown("Fire2"));
         IC.AddButton("Fire3", Input.GetButtonDown("Fire3"));
@@ -30,8 +30,8 @@ public class EmpoweredInput : InputPlayer
         IC.AddButton("Fire2", Input.GetButtonDown("P1Fire2"));
         IC.AddButton("Fire3", Input.GetButtonDown("P1Fire3"));
         IC.AddButton("Fire4", Input.GetButtonDown("P1Fire4"));
-        IC.AddButton("Fire5", Input.GetButtonDown("Fire5"));
-        IC.AddButton("Fire6", Input.GetButtonDown("Fire4"));
+        IC.AddButton("Fire5", Input.GetButtonDown("P1Fire5"));
+        IC.AddButton("Fire6", Input.GetButtonDown("P1Fire6"));
         return IC;
     }
 
@@ -44,8 +44,8 @@ public class EmpoweredInput : InputPlayer
         IC.AddButton("Fire2", Input.GetButtonDown("P2Fire2"));
         IC.AddButton("Fire3", Input.GetButtonDown("P2Fire3"));
         IC.AddButton("Fire4", Input.GetButtonDown("P2Fire4"));
-        IC.AddButton("Fire5", Input.GetButtonDown("Fire5"));
-        IC.AddButton("Fire6", Input.GetButtonDown("Fire4"));
+        IC.AddButton("Fire5", Input.GetButtonDown("P2Fire5"));
+        IC.AddButton("Fire6", Input.GetButtonDown("P2Fire6"));
         return IC;
     }
 
@@ -58,8 +58,8 @@ public class EmpoweredInput : InputPlayer
         IC.AddButton("Fire2", Input.GetButtonDown("P3Fire2"));
         IC.AddButton("Fire3", Input.GetButtonDown("P3Fire3"));
         IC.AddButton("Fire4", Input.GetButtonDown("P3Fire4"));
-        IC.AddButton("Fire5", Input.GetButtonDown("Fire5"));
-        IC.AddButton("Fire6", Input.GetButtonDown("Fire4"));
+        IC.AddButton("Fire5", Input.GetButtonDown("P3Fire5"));
+        IC.AddButton("Fire6", Input.GetButtonDown("P3Fire6"));
         return IC;
     }
 
@@ -72,8 +72,8 @@ public class EmpoweredInput : InputPlayer
         IC.AddButton("Fire2", Input.GetButtonDown("P4Fire2"));
         IC.AddButton("Fire3", Input.GetButtonDown("P4Fire3"));
         IC.AddButton("Fire4", Input.GetButtonDown("P4Fire4"));
-        IC.AddButton("Fire5", Input.GetButtonDown("Fire5"));
-        IC.AddButton("Fire6", Input.GetButtonDown("Fire4"));
+        IC.AddButton("Fire5", Input.GetButtonDown("P4Fire5"));
+        IC.AddButton("Fire6", Input.GetButtonDown("P4Fire6"));
         return IC;
        
     }

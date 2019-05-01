@@ -839,6 +839,158 @@ PrefabInstance:
       propertyPath: m_Name
       value: CharacterSelectionObject (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: backgroundColor
+      value: 
+      objectReference: {fileID: 2060377595}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterName
+      value: 
+      objectReference: {fileID: 923105133}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterSplash
+      value: 
+      objectReference: {fileID: 781320003}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: playerNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 1587160235779003215}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[2].splash
+      value: 
+      objectReference: {fileID: 21300000, guid: b3a8979537cba1847804fe7f70684b89,
+        type: 3}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[2].characterName
+      value: Knight
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[2].characterColor.r
+      value: 0.7372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[2].characterColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[2].selectedchar
+      value: 
+      objectReference: {fileID: 5844792606358493310, guid: 99702a4808cf5eb4cafba823f3649548,
+        type: 3}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[3].splash
+      value: 
+      objectReference: {fileID: 21300000, guid: cef001f066ff1024d81ea55e65ab3ae2,
+        type: 3}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[3].characterName
+      value: Priest
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[3].characterColor.r
+      value: 0.85882354
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[3].characterColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[3].selectedchar
+      value: 
+      objectReference: {fileID: 2606430158392128269, guid: 1967d29662e2812429f4c065d0f40e10,
+        type: 3}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[1].characterColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[1].characterColor.g
+      value: 0.5882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[1].characterColor.b
+      value: 0.023529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[0].characterColor.r
+      value: 0.21176471
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[0].characterColor.g
+      value: 0.25882354
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[0].characterColor.b
+      value: 0.7176471
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[2].characterColor.g
+      value: 0.19215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[2].characterColor.b
+      value: 0.19215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[3].characterColor.g
+      value: 0.85490197
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[3].characterColor.b
+      value: 0.41568628
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[1].splash
+      value: 
+      objectReference: {fileID: 21300000, guid: 8393411e38dba544394809c312dde77b,
+        type: 3}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[0].splash
+      value: 
+      objectReference: {fileID: 21300000, guid: ef54474fd001e9f4595b2b44d4cf6b81,
+        type: 3}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[0].selectedchar
+      value: 
+      objectReference: {fileID: 2858224034132626027, guid: 39cff8d8851c2e146a751694e94cc133,
+        type: 3}
     - target: {fileID: 138200208960107467, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -894,31 +1046,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
-        type: 3}
-      propertyPath: backgroundColor
-      value: 
-      objectReference: {fileID: 2060377595}
-    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
-        type: 3}
-      propertyPath: characterName
-      value: 
-      objectReference: {fileID: 923105133}
-    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
-        type: 3}
-      propertyPath: characterSplash
-      value: 
-      objectReference: {fileID: 781320003}
-    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
-        type: 3}
-      propertyPath: playerNumber
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
-        type: 3}
-      propertyPath: controller
-      value: 
-      objectReference: {fileID: 1587160235779003215}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0b6d82cc482b1c449dbb21df5df66c2, type: 3}
 --- !u!1 &460954502
@@ -971,15 +1098,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9433962, g: 0.564175, b: 0.19134924, a: 1}
+  m_Color: {r: 1, g: 0.9858491, b: 0.9858491, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 6b61086ab44814a47b5a81cc58c05f29, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3563,6 +3690,68 @@ PrefabInstance:
       propertyPath: m_Name
       value: CharacterSelectionObject (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: backgroundColor
+      value: 
+      objectReference: {fileID: 712353912}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterSplash
+      value: 
+      objectReference: {fileID: 1383643045}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterName
+      value: 
+      objectReference: {fileID: 1598436494}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: playerNumber
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 7193528971802559773}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[0].selectedchar
+      value: 
+      objectReference: {fileID: 6406812819889058325, guid: 03c665c778135f6499ce1c7472450da8,
+        type: 3}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[0].characterName
+      value: Dragon
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[0].characterColor.r
+      value: 0.5377358
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[0].characterColor.g
+      value: 0.04819329
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[0].characterColor.b
+      value: 0.46478456
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[0].splash
+      value: 
+      objectReference: {fileID: 21300000, guid: 8d07b3b223bb35c4aa8572041d89dd67,
+        type: 3}
     - target: {fileID: 138200208960107467, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3618,31 +3807,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
-        type: 3}
-      propertyPath: backgroundColor
-      value: 
-      objectReference: {fileID: 712353912}
-    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
-        type: 3}
-      propertyPath: characterSplash
-      value: 
-      objectReference: {fileID: 1383643045}
-    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
-        type: 3}
-      propertyPath: characterName
-      value: 
-      objectReference: {fileID: 1598436494}
-    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
-        type: 3}
-      propertyPath: playerNumber
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
-        type: 3}
-      propertyPath: controller
-      value: 
-      objectReference: {fileID: 7193528971802559773}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0b6d82cc482b1c449dbb21df5df66c2, type: 3}
 --- !u!1 &1703200194
@@ -4166,6 +4330,158 @@ PrefabInstance:
       propertyPath: m_Name
       value: CharacterSelectionObject (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: backgroundColor
+      value: 
+      objectReference: {fileID: 975262608}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterName
+      value: 
+      objectReference: {fileID: 99970150}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterSplash
+      value: 
+      objectReference: {fileID: 1385095180}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: playerNumber
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 6642497378878034683}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[2].splash
+      value: 
+      objectReference: {fileID: 21300000, guid: b3a8979537cba1847804fe7f70684b89,
+        type: 3}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[2].characterName
+      value: Knight
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[2].characterColor.r
+      value: 0.7372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[2].characterColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[2].selectedchar
+      value: 
+      objectReference: {fileID: 5844792606358493310, guid: 99702a4808cf5eb4cafba823f3649548,
+        type: 3}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[3].splash
+      value: 
+      objectReference: {fileID: 21300000, guid: cef001f066ff1024d81ea55e65ab3ae2,
+        type: 3}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[3].characterName
+      value: Priest
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[3].characterColor.r
+      value: 0.85882354
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[3].characterColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[3].selectedchar
+      value: 
+      objectReference: {fileID: 2606430158392128269, guid: 1967d29662e2812429f4c065d0f40e10,
+        type: 3}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[1].splash
+      value: 
+      objectReference: {fileID: 21300000, guid: 8393411e38dba544394809c312dde77b,
+        type: 3}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[0].splash
+      value: 
+      objectReference: {fileID: 21300000, guid: ef54474fd001e9f4595b2b44d4cf6b81,
+        type: 3}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[0].characterColor.r
+      value: 0.21176471
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[0].characterColor.g
+      value: 0.25882354
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[0].characterColor.b
+      value: 0.7176471
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[1].characterColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[1].characterColor.g
+      value: 0.5882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[1].characterColor.b
+      value: 0.023529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[2].characterColor.g
+      value: 0.19215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[2].characterColor.b
+      value: 0.19215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[3].characterColor.g
+      value: 0.85490197
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[3].characterColor.b
+      value: 0.41568628
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[0].selectedchar
+      value: 
+      objectReference: {fileID: 2858224034132626027, guid: 39cff8d8851c2e146a751694e94cc133,
+        type: 3}
     - target: {fileID: 138200208960107467, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4221,31 +4537,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
-        type: 3}
-      propertyPath: backgroundColor
-      value: 
-      objectReference: {fileID: 975262608}
-    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
-        type: 3}
-      propertyPath: characterName
-      value: 
-      objectReference: {fileID: 99970150}
-    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
-        type: 3}
-      propertyPath: characterSplash
-      value: 
-      objectReference: {fileID: 1385095180}
-    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
-        type: 3}
-      propertyPath: playerNumber
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
-        type: 3}
-      propertyPath: controller
-      value: 
-      objectReference: {fileID: 6642497378878034683}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0b6d82cc482b1c449dbb21df5df66c2, type: 3}
 --- !u!114 &1951799268 stripped
@@ -4760,6 +5051,158 @@ PrefabInstance:
       propertyPath: m_Name
       value: CharacterSelectionObject
       objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterName
+      value: 
+      objectReference: {fileID: 1471919707}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterSplash
+      value: 
+      objectReference: {fileID: 1703200196}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: backgroundColor
+      value: 
+      objectReference: {fileID: 1475397345}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: playerNumber
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 7282186678289864203}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[2].splash
+      value: 
+      objectReference: {fileID: 21300000, guid: b3a8979537cba1847804fe7f70684b89,
+        type: 3}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[2].characterName
+      value: Knight
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[2].characterColor.r
+      value: 0.735849
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[2].characterColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[2].selectedchar
+      value: 
+      objectReference: {fileID: 5844792606358493310, guid: 99702a4808cf5eb4cafba823f3649548,
+        type: 3}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[3].splash
+      value: 
+      objectReference: {fileID: 21300000, guid: cef001f066ff1024d81ea55e65ab3ae2,
+        type: 3}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[3].characterName
+      value: Priest
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[3].characterColor.r
+      value: 0.8584906
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[3].characterColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[3].selectedchar
+      value: 
+      objectReference: {fileID: 2606430158392128269, guid: 1967d29662e2812429f4c065d0f40e10,
+        type: 3}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[1].characterColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[1].characterColor.g
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[1].characterColor.b
+      value: 0.020309284
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[3].characterColor.g
+      value: 0.85398656
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[3].characterColor.b
+      value: 0.41709685
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[1].splash
+      value: 
+      objectReference: {fileID: 21300000, guid: 8393411e38dba544394809c312dde77b,
+        type: 3}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[0].splash
+      value: 
+      objectReference: {fileID: 21300000, guid: ef54474fd001e9f4595b2b44d4cf6b81,
+        type: 3}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[0].characterColor.r
+      value: 0.21306516
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[0].characterColor.g
+      value: 0.26049253
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[0].characterColor.b
+      value: 0.7169812
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[2].characterColor.g
+      value: 0.19090424
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[2].characterColor.b
+      value: 0.19090424
+      objectReference: {fileID: 0}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[0].selectedchar
+      value: 
+      objectReference: {fileID: 2858224034132626027, guid: 39cff8d8851c2e146a751694e94cc133,
+        type: 3}
     - target: {fileID: 138200208960107467, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4815,31 +5258,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
-        type: 3}
-      propertyPath: characterName
-      value: 
-      objectReference: {fileID: 1471919707}
-    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
-        type: 3}
-      propertyPath: characterSplash
-      value: 
-      objectReference: {fileID: 1703200196}
-    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
-        type: 3}
-      propertyPath: backgroundColor
-      value: 
-      objectReference: {fileID: 1475397345}
-    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
-        type: 3}
-      propertyPath: playerNumber
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
-        type: 3}
-      propertyPath: controller
-      value: 
-      objectReference: {fileID: 7282186678289864203}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0b6d82cc482b1c449dbb21df5df66c2, type: 3}
 --- !u!114 &1587160235779003215 stripped
@@ -4902,6 +5320,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 1587160235779003215, guid: fdb460cf9218e624e89dc0db10cddd44,
+        type: 3}
+      propertyPath: SpectatorPreFab
+      value: 
+      objectReference: {fileID: 607958620616154931, guid: e29aa850e0d2bd4429f2dd6ab138515e,
+        type: 3}
+    - target: {fileID: 6642497378878034683, guid: fdb460cf9218e624e89dc0db10cddd44,
+        type: 3}
+      propertyPath: SpectatorPreFab
+      value: 
+      objectReference: {fileID: 607958620616154931, guid: e29aa850e0d2bd4429f2dd6ab138515e,
+        type: 3}
+    - target: {fileID: 7193528971802559773, guid: fdb460cf9218e624e89dc0db10cddd44,
+        type: 3}
+      propertyPath: SpectatorPreFab
+      value: 
+      objectReference: {fileID: 607958620616154931, guid: e29aa850e0d2bd4429f2dd6ab138515e,
+        type: 3}
     - target: {fileID: 9101610615547925415, guid: fdb460cf9218e624e89dc0db10cddd44,
         type: 3}
       propertyPath: m_LocalPosition.x

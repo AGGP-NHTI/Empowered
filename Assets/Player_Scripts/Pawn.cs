@@ -13,7 +13,7 @@ public class Pawn : Class
     public bool IsSpectator = true;
 
     /// <summary>
-    /// Controler who is in charge of this object. 
+    /// Controller who is in charge of this object. 
     /// </summary>
     protected Controller _controller;
  

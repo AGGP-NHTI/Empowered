@@ -11,7 +11,7 @@ public class EmpController : PlayerController
     {
         base.Start();
         IsHuman = true;
-        LogInputStateInfo = false;
+        //LogInputStateInfo = false;
 
 
     }
@@ -78,10 +78,4 @@ public class EmpController : PlayerController
             ((PlayerPawn)PossesedPawn).Fire6(value);
         }
     }
-
-
-
-
-
-
 }
