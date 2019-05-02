@@ -75,7 +75,7 @@ public class PlayerController : Controller
         IC = InputPlayer.Self.GetPlayerInput(InputPlayerNumber);
         if (LogInputStateInfo)
         {
-            LOG(IC.ToString());
+            LOG("P"+ InputPlayerNumber + ": " +IC.ToString());
         }
         ProcessInputState();
         ICprevious = IC;

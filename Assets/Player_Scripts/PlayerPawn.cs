@@ -60,7 +60,7 @@ public class PlayerPawn : Pawn
         }
         return true;
     }
-    public void Start()
+    public virtual void Start()
     {
         IgnoresDamage = false;  
     }

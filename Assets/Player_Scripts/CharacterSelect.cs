@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class CharacterSelect : MonoBehaviour
+public class CharacterSelect : PlayerPawn
 {
     protected int selectedCharacterIndex;
     private Color desiredColor;
@@ -13,7 +13,7 @@ public class CharacterSelect : MonoBehaviour
 
     [Header("Player Info")]
     public int playerNumber = 0;
-    public EmpController controller;
+    public EmpController EMPController;
     private bool HasSelectedCharacter = false; 
 
     [Header("List of Characters")]
@@ -34,11 +34,16 @@ public class CharacterSelect : MonoBehaviour
 
 
 
-    private void Start()
+    public override void Start()
     {
+        //Debug.Log("Character Select Start"); 
+        EMPController.PossesPawn(gameObject); 
         UpdateCharacterSelectionUI();
        
     }
+
+
+
 
     public void Update()
     {
@@ -46,15 +51,118 @@ public class CharacterSelect : MonoBehaviour
         {
             backgroundColor.color = Color.Lerp(backgroundColor.color, desiredColor, Time.deltaTime * backgroundColorTransitionSpeed);
         }
+        /*
+        if (controller.PlayerNumber == 1)
+        {
+            if (controller.InputPlayerNumber == 1)
+            {
+                if (Input.GetButtonDown("P1Fire4"))
+                {
+                    Debug.Log("player 1 input");
+                    ConfirmSelection();
+                }
+
+                if (Input.GetButtonDown("P1Fire5"))
+                {
+                    Debug.Log("player 1 input");
+                    LeftArrow();
+                }
+                if (Input.GetButtonDown("P1Fire6"))
+                {
+                    Debug.Log("player 1 input");
+                    RightArrow();
+                }
+            }
+        }
+
+        if (controller.PlayerNumber == 2)
+        {
+            if (controller.InputPlayerNumber == 2)
+            {
+                if (Input.GetButtonDown("P2Fire4"))
+                {
+                    Debug.Log("player 2 input");
+                    ConfirmSelection();
+                }
+
+                if (Input.GetButtonDown("P2Fire5"))
+                {
+                    Debug.Log("player 2 input");
+                    LeftArrow();
+                }
+                if (Input.GetButtonDown("P2Fire6"))
+                {
+                    Debug.Log("player 2 input");
+                    RightArrow();
+                }
+            }
+        }
+
+        if (controller.PlayerNumber == 3)
+        {
+            if (Input.GetButtonDown("P3Fire4"))
+            {
+                ConfirmSelection();
+            }
+
+            if (Input.GetButtonDown("P3Fire5"))
+            {
+                LeftArrow();
+            }
+            if (Input.GetButtonDown("P3Fire6"))
+            {
+                RightArrow();
+            }
+        }
+
+        if (controller.PlayerNumber == 4)
+        {
+            if (Input.GetButtonDown("Fire4"))
+            {
+                ConfirmSelection();
+            }
+
+            if (Input.GetButtonDown("Fire5"))
+            {
+                LeftArrow();
+            }
+            if (Input.GetButtonDown("Fire6"))
+            {
+                RightArrow();
+            }
+        }
+        */
     }
+
+    public override void Fire4(bool value)
+    {
+        ConfirmSelection();
+    }
+
+    public override void Fire5(bool value)
+    {
+        LeftArrow();
+    }
+
+    public override void Fire6(bool value)
+    {
+        RightArrow(); 
+    }
+
 
     public void ConfirmSelection()
     {
-        Debug.Log(string.Format("Character {0}:{1} has been chosen", selectedCharacterIndex, characterList[selectedCharacterIndex].characterName));
+
+        string output = "Player " + EMPController.InputPlayerNumber + " - "
+                +"Character "+selectedCharacterIndex+":"
+                + characterList[selectedCharacterIndex].characterName + "has been chosen";
+
+        Debug.Log(output);
+
 
         if (!HasSelectedCharacter)
         {
-            controller.SpawnPreFab = characterList[selectedCharacterIndex].selectedchar;
+            EMPController.SpawnPreFab = characterList[selectedCharacterIndex].selectedchar;
             SceneTransition.PlayerHasConfirmed(playerNumber); 
             HasSelectedCharacter = true; 
             
@@ -92,6 +200,7 @@ public class CharacterSelect : MonoBehaviour
 
         UpdateCharacterSelectionUI();
     }
+
 
 
     private void UpdateCharacterSelectionUI()

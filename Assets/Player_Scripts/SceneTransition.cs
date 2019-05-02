@@ -19,6 +19,7 @@ public class SceneTransition : MonoBehaviour
     string ArenaThreeScenePlayer2 = "PlayerWinArenaTwo(Pit)";
     string ArenaThreeSceneBoss2 = "BossWinArenaTwo(Pit)";
 
+    public List<EmpController> ControlerList; 
     public static void ResetConfirmedArray()
     {
         int index = 0; 
@@ -43,6 +44,14 @@ public class SceneTransition : MonoBehaviour
         return result; 
     }
 
+    public void AllControllersSpectate()
+    {
+        foreach (EmpController c in ControlerList)
+        {
+            c.RequestSpectate(); 
+        }
+    }
+
 
     public static void PlayerHasConfirmed(int PlayerNumber)
     {
@@ -55,6 +64,7 @@ public class SceneTransition : MonoBehaviour
         {
             if(GetConfirmedPlayers() == 4)
             {
+                AllControllersSpectate(); 
                 this.gameObject.tag = "StartingArena";
                 SceneManager.LoadScene(ArenaStarting);
             }

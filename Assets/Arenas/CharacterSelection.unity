@@ -991,6 +991,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2858224034132626027, guid: 39cff8d8851c2e146a751694e94cc133,
         type: 3}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: EMPController
+      value: 
+      objectReference: {fileID: 1587160235779003215}
     - target: {fileID: 138200208960107467, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3752,6 +3757,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 8d07b3b223bb35c4aa8572041d89dd67,
         type: 3}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: EMPController
+      value: 
+      objectReference: {fileID: 7193528971802559773}
     - target: {fileID: 138200208960107467, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4482,6 +4492,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2858224034132626027, guid: 39cff8d8851c2e146a751694e94cc133,
         type: 3}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: EMPController
+      value: 
+      objectReference: {fileID: 6642497378878034683}
     - target: {fileID: 138200208960107467, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5203,10 +5218,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2858224034132626027, guid: 39cff8d8851c2e146a751694e94cc133,
         type: 3}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: EMPController
+      value: 
+      objectReference: {fileID: 7282186678289864203}
     - target: {fileID: 138200208960107467, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 440.8168
+      value: 421
       objectReference: {fileID: 0}
     - target: {fileID: 138200208960107467, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}
@@ -5393,5 +5413,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9101610615547925416, guid: fdb460cf9218e624e89dc0db10cddd44,
+        type: 3}
+      propertyPath: ControlerList.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9101610615547925416, guid: fdb460cf9218e624e89dc0db10cddd44,
+        type: 3}
+      propertyPath: ControlerList.Array.data[0]
+      value: 
+      objectReference: {fileID: 7282186678289864203}
+    - target: {fileID: 9101610615547925416, guid: fdb460cf9218e624e89dc0db10cddd44,
+        type: 3}
+      propertyPath: ControlerList.Array.data[1]
+      value: 
+      objectReference: {fileID: 1587160235779003215}
+    - target: {fileID: 9101610615547925416, guid: fdb460cf9218e624e89dc0db10cddd44,
+        type: 3}
+      propertyPath: ControlerList.Array.data[2]
+      value: 
+      objectReference: {fileID: 6642497378878034683}
+    - target: {fileID: 9101610615547925416, guid: fdb460cf9218e624e89dc0db10cddd44,
+        type: 3}
+      propertyPath: ControlerList.Array.data[3]
+      value: 
+      objectReference: {fileID: 7193528971802559773}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb460cf9218e624e89dc0db10cddd44, type: 3}
