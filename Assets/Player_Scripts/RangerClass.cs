@@ -10,6 +10,7 @@ public class RangerClass : PlayerPawn
 
     public GameObject Stab;
     public GameObject StabPoint;
+    public GameObject StabPoint2;
     public GameObject Arrow;
     public GameObject BowPoint;
 
@@ -64,6 +65,8 @@ public class RangerClass : PlayerPawn
     {
         rb.AddForce(transform.forward * ChargeStab);
         GameObject Eviscerate = Instantiate(Stab, StabPoint.transform.position, StabPoint.transform.rotation);
+
+        GameObject Eviscerater = Instantiate(Stab, StabPoint2.transform.position, StabPoint2.transform.rotation);
     }
 
     public override void Fire2(bool value)
