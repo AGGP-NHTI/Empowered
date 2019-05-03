@@ -8,9 +8,21 @@ public class DragonClass : PlayerPawn
     public float MovementSpeed = 45;
     public float RotationSpeed = 450;
 
-    public GameObject Slash;
-    public GameObject attackpoint;
 
+    public GameObject Slash;
+    public GameObject SlashPoint1;
+    public GameObject SlashPoint2;
+    public GameObject SlashPoint3;
+    public GameObject SlashPoint4;
+    public GameObject SlashPoint5;
+
+    public GameObject Flame;
+    public GameObject FlamePoint;
+
+    public GameObject Mouth;
+    public GameObject MouthPoint;
+
+    
 
     Rigidbody rb;
     new void Start()
@@ -50,7 +62,11 @@ public class DragonClass : PlayerPawn
     }
     public override void Fire1(bool value)
     {
-        GameObject spam = Instantiate(Slash, attackpoint.transform.position, attackpoint.transform.rotation);
+        GameObject Claw1 = Instantiate(Slash, SlashPoint1.transform.position, SlashPoint1.transform.rotation);
+        GameObject Claw2 = Instantiate(Slash, SlashPoint2.transform.position, SlashPoint2.transform.rotation);
+        GameObject Claw3 = Instantiate(Slash, SlashPoint3.transform.position, SlashPoint3.transform.rotation);
+        GameObject Claw4 = Instantiate(Slash, SlashPoint4.transform.position, SlashPoint4.transform.rotation);
+        GameObject Claw5 = Instantiate(Slash, SlashPoint5.transform.position, SlashPoint5.transform.rotation);
     }
 
     public override void Fire2(bool value)
@@ -71,6 +87,6 @@ public class DragonClass : PlayerPawn
     }
     public override void Fire6(bool value)
     {
-
+        GameObject Claw = Instantiate(Flame, FlamePoint.transform.position, FlamePoint.transform.rotation);
     }
 }
