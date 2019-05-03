@@ -13,6 +13,7 @@ TagManager:
   - MainMenu
   - OptionsMenu
   - CreditsMenu
+  - Boss
   layers:
   - Default
   - TransparentFX

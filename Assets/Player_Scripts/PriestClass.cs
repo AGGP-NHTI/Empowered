@@ -12,7 +12,11 @@ public class PriestClass : PlayerPawn
     public GameObject SacredGroundPoint;
     public GameObject Holy;
     public GameObject HolyPoint;
-  
+
+    private float CooldownTime1;
+    private float CooldownTime2;
+    public float cooldownPeriod1 = 15.0f;
+    public float cooldownPeriod2 = 45.0f;
 
     public Vector3 jump;
     public float jumpForce = 2.0f;
@@ -38,6 +42,9 @@ public class PriestClass : PlayerPawn
         {
             Destroy(gameObject);
         }
+
+        CooldownTime1 = Time.time + cooldownPeriod1;
+        CooldownTime2 = Time.time + cooldownPeriod2;
     }
 
     public override void Horizontal(float value)
@@ -65,46 +72,52 @@ public class PriestClass : PlayerPawn
 
     public override void Fire2(bool value)
     {
+        if(CooldownTime1 <= Time.time)
+        {
+            if (KnightHealth >= 420.0f || KnightHealth >= 350.0f)
+            {
+                KnightHealth = 420.0f;
+            }
+            else if (KnightHealth <= 350.0f)
+            {
+                KnightHealth += 70.0f;
+            }
 
-        if (KnightHealth >= 420.0f || KnightHealth >= 350.0f)
-        {
-            KnightHealth = 420.0f;
-        }
-        else if (KnightHealth <= 350.0f)
-        {
-            KnightHealth += 70.0f;
-        }
+            if (RangerHealth >= 385.0f || KnightHealth >= 315.0f)
+            {
+                RangerHealth = 385.0f;
+            }
+            else if (RangerHealth <= 315.0f)
+            {
+                RangerHealth += 70.0f;
+            }
 
-        if (RangerHealth >= 385.0f || KnightHealth >= 315.0f)
-        {
-            RangerHealth = 385.0f;
-        }
-        else if (RangerHealth <= 315.0f)
-        {
-            RangerHealth += 70.0f;
-        }
+            if (MageHealth >= 365.0f || MageHealth >= 295.0f)
+            {
+                MageHealth = 365.0f;
+            }
+            else if (MageHealth <= 295.0f)
+            {
+                MageHealth += 70.0f;
+            }
 
-        if (MageHealth >= 365.0f || MageHealth >= 295.0f)
-        {
-            MageHealth = 365.0f;
+            if (PriestHealth >= 365.0f || PriestHealth >= 295.0f)
+            {
+                PriestHealth = 365.0f;
+            }
+            else if (PriestHealth <= 295.0f)
+            {
+                PriestHealth += 70.0f;
+            }
         }
-        else if (MageHealth <= 295.0f)
-        {
-            MageHealth += 70.0f;
-        }
-
-        if (PriestHealth >= 365.0f || PriestHealth >= 295.0f)
-        {
-            PriestHealth = 365.0f;
-        }
-        else if (PriestHealth <= 295.0f)
-        {
-            PriestHealth += 70.0f;
-        }
+        
     }
     public override void Fire3(bool value)
     {
-        GameObject Consecration = Instantiate(SacredGround, SacredGroundPoint.transform.position, SacredGroundPoint.transform.rotation);
+        if(CooldownTime2 <= Time.time)
+        {
+            GameObject Consecration = Instantiate(SacredGround, SacredGroundPoint.transform.position, SacredGroundPoint.transform.rotation);
+        }
     }
     public override void Fire4(bool value)
     {

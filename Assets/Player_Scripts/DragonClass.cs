@@ -22,13 +22,23 @@ public class DragonClass : PlayerPawn
     public GameObject Mouth;
     public GameObject MouthPoint;
 
-    
+    public float ForwardBite = 5;
+
+    public Vector3 Fly;
+    public float jumpForce = 2.0f;
+    public bool isGrounded;
 
     Rigidbody rb;
+
     new void Start()
     {
         rb = GetComponent<Rigidbody>();
-
+        IgnoresDamage = false;
+        Fly = new Vector3(0.0f, 2.0f, 0.0f);
+    }
+    void OnCollisionStay()
+    {
+        isGrounded = true;
     }
     private void Update()
     {
@@ -71,15 +81,26 @@ public class DragonClass : PlayerPawn
 
     public override void Fire2(bool value)
     {
-
+        rb.AddForce(transform.forward * ForwardBite);
+        GameObject Bite = Instantiate(Mouth, MouthPoint.transform.position, MouthPoint.transform.rotation);
     }
     public override void Fire3(bool value)
     {
-
+        float Scalestimer = 10.0f;
+        if (IgnoresDamage == false && Scalestimer == 10.0f)
+        {
+            IgnoresDamage = true;
+            Scalestimer -= Time.deltaTime;
+            if (IgnoresDamage = true && Scalestimer == 0.0f)
+            {
+                IgnoresDamage = false;
+            }
+        }
     }
     public override void Fire4(bool value)
     {
-
+        rb.AddForce(Fly * jumpForce, ForceMode.Impulse);
+        isGrounded = false;
     }
     public override void Fire5(bool value)
     {

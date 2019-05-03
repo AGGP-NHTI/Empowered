@@ -14,6 +14,11 @@ public class MageClass : PlayerPawn
     public GameObject LightningPoint;
     public GameObject ArcaneShieldPoint;
 
+    private float CooldownTime1;
+    private float CooldownTime2;
+    public float cooldownPeriod1 = 19.0f;
+    public float cooldownPeriod2 = 33.0f;
+
     public Vector3 jump;
     public float jumpForce = 2.0f;
     public bool isGrounded;
@@ -38,6 +43,9 @@ public class MageClass : PlayerPawn
         {
             Destroy(gameObject);
         }
+
+        CooldownTime1 = Time.time + cooldownPeriod1;
+        CooldownTime2 = Time.time + cooldownPeriod2;
     }
 
     public override void Horizontal(float value)
@@ -65,11 +73,17 @@ public class MageClass : PlayerPawn
 
     public override void Fire2(bool value)
     {
-        GameObject LightningBolt = Instantiate(Lightning, LightningPoint.transform.position, LightningPoint.transform.rotation);
+        if(CooldownTime1 <= Time.time)
+        {
+            GameObject LightningBolt = Instantiate(Lightning, LightningPoint.transform.position, LightningPoint.transform.rotation);
+        }
     }
     public override void Fire3(bool value)
     {
-        ArcaneShieldPoint.SetActive(true);
+        if(CooldownTime2 <= Time.time)
+        {
+            ArcaneShieldPoint.SetActive(true);
+        }
     }
     public override void Fire4(bool value)
     {

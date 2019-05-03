@@ -13,9 +13,13 @@ public class RangerClass : PlayerPawn
     public GameObject StabPoint2;
     public GameObject Arrow;
     public GameObject BowPoint;
-
-   
     public float ChargeStab = 5;
+
+
+    private float CooldownTime1;
+    private float CooldownTime2;
+    public float cooldownPeriod1 = 17.0f;
+    public float cooldownPeriod2 = 37.0f;
 
     public Vector3 jump;
     public float jumpForce = 2.0f;
@@ -37,10 +41,13 @@ public class RangerClass : PlayerPawn
 
     private void Update()
     {
-        if (MageHealth <= 0)
+        if (RangerHealth <= 0)
         {
             Destroy(gameObject);
         }
+        
+        CooldownTime1 = Time.time + cooldownPeriod1;
+        CooldownTime2 = Time.time + cooldownPeriod2;
     }
 
     public override void Horizontal(float value)
@@ -64,25 +71,31 @@ public class RangerClass : PlayerPawn
     public override void Fire1(bool value)
     {
         rb.AddForce(transform.forward * ChargeStab);
-        GameObject Eviscerate = Instantiate(Stab, StabPoint.transform.position, StabPoint.transform.rotation);
-
-        GameObject Eviscerater = Instantiate(Stab, StabPoint2.transform.position, StabPoint2.transform.rotation);
+        GameObject Eviscerate1 = Instantiate(Stab, StabPoint.transform.position, StabPoint.transform.rotation);
+        GameObject Eviscerate2 = Instantiate(Stab, StabPoint2.transform.position, StabPoint2.transform.rotation);
     }
 
     public override void Fire2(bool value)
     {
-        GameObject PiercingBolt = Instantiate(Arrow, BowPoint.transform.position, BowPoint.transform.rotation);
+        
+        if(CooldownTime1 <= Time.time)
+        {
+            GameObject PiercingBolt = Instantiate(Arrow, BowPoint.transform.position, BowPoint.transform.rotation);
+        }
     }
     public override void Fire3(bool value)
     {
-        float Cloaktimer = 11.0f;
-        if (IgnoresDamage == false && Cloaktimer == 11.0f)
+        if(CooldownTime2 <= Time.time)
         {
-            IgnoresDamage = true;
-            Cloaktimer -= Time.deltaTime;
-            if (IgnoresDamage = true && Cloaktimer == 0.0f)
+            float Cloaktimer = 14.0f;
+            if (IgnoresDamage == false && Cloaktimer == 14.0f)
             {
-                IgnoresDamage = false;
+                IgnoresDamage = true;
+                Cloaktimer -= Time.deltaTime;
+                if (IgnoresDamage = true && Cloaktimer == 0.0f)
+                {
+                    IgnoresDamage = false;
+                }
             }
         }
     }

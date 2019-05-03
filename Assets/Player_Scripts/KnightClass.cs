@@ -12,7 +12,13 @@ public class KnightClass : PlayerPawn
     public GameObject SlashPoint;
     public GameObject AirShield;
     public GameObject AirShieldPoint;
+    public GameObject BashRushPoint;
     public float ChargeAttack = 40;
+
+    private float CooldownTime1;
+    private float CooldownTime2;
+    public float cooldownPeriod1 = 13.0f;
+    public float cooldownPeriod2 = 40.0f;
 
     public Vector3 jump;
     public float jumpForce = 2.0f;
@@ -22,6 +28,7 @@ public class KnightClass : PlayerPawn
     new void Start()
     {
         rb = GetComponent<Rigidbody>();
+        BashRushPoint.SetActive(false);
         jump = new Vector3(0.0f, 2.0f, 0.0f);
     }
     private void Update()
@@ -30,6 +37,9 @@ public class KnightClass : PlayerPawn
         {
             Destroy(gameObject);
         }
+
+        CooldownTime1 = Time.time + cooldownPeriod1;
+        CooldownTime2 = Time.time + cooldownPeriod2;
     }
     void OnCollisionStay()
     {
@@ -61,11 +71,19 @@ public class KnightClass : PlayerPawn
 
     public override void Fire2(bool value)
     {
-        rb.AddForce(transform.forward * ChargeAttack);
+        if (CooldownTime1 <= Time.time)
+        {
+            BashRushPoint.SetActive(true);
+            rb.AddForce(transform.forward * ChargeAttack);
+        }
+        
     }
     public override void Fire3(bool value)
     {
-        GameObject AirShieldWall = Instantiate(AirShield, AirShieldPoint.transform.position, AirShieldPoint.transform.rotation);
+        if(CooldownTime2 <= Time.time)
+        {
+            GameObject AirShieldWall = Instantiate(AirShield, AirShieldPoint.transform.position, AirShieldPoint.transform.rotation);
+        }
     }
     public override void Fire4(bool value)
     {
