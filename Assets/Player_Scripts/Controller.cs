@@ -10,7 +10,7 @@ public class Controller : PlayInfo
    
     public bool IsHuman = false;
     public bool UseSpawnSystem = true;
-
+    public bool isAlive = true;
     public static bool LogPossessionFailures = true;
     public bool StartWithSpectator = true;
     public GameObject SpawnPreFab;
@@ -139,7 +139,7 @@ public class Controller : PlayInfo
     }
     public virtual void OnDeath()
     {
-        
+        isAlive = false;
     }
    
 }

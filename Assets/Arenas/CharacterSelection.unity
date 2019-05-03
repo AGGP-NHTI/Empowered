@@ -894,7 +894,7 @@ PrefabInstance:
         type: 3}
       propertyPath: characterList.Array.data[2].selectedchar
       value: 
-      objectReference: {fileID: 5844792606358493310, guid: 99702a4808cf5eb4cafba823f3649548,
+      objectReference: {fileID: 3216135571468615547, guid: 99702a4808cf5eb4cafba823f3649548,
         type: 3}
     - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}
@@ -921,7 +921,7 @@ PrefabInstance:
         type: 3}
       propertyPath: characterList.Array.data[3].selectedchar
       value: 
-      objectReference: {fileID: 2606430158392128269, guid: 1967d29662e2812429f4c065d0f40e10,
+      objectReference: {fileID: 8878262481906618381, guid: dc4d34b4ce78a7d4a9d294b7faf29af1,
         type: 3}
     - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}
@@ -996,6 +996,12 @@ PrefabInstance:
       propertyPath: EMPController
       value: 
       objectReference: {fileID: 1587160235779003215}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[1].selectedchar
+      value: 
+      objectReference: {fileID: 4350065314147548796, guid: 72b326539288ce9429b3de0c018c2077,
+        type: 3}
     - target: {fileID: 138200208960107467, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3729,7 +3735,7 @@ PrefabInstance:
         type: 3}
       propertyPath: characterList.Array.data[0].selectedchar
       value: 
-      objectReference: {fileID: 6406812819889058325, guid: 03c665c778135f6499ce1c7472450da8,
+      objectReference: {fileID: 3635624963530810792, guid: 03c665c778135f6499ce1c7472450da8,
         type: 3}
     - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}
@@ -4395,7 +4401,7 @@ PrefabInstance:
         type: 3}
       propertyPath: characterList.Array.data[2].selectedchar
       value: 
-      objectReference: {fileID: 5844792606358493310, guid: 99702a4808cf5eb4cafba823f3649548,
+      objectReference: {fileID: 3216135571468615547, guid: 99702a4808cf5eb4cafba823f3649548,
         type: 3}
     - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}
@@ -4422,7 +4428,7 @@ PrefabInstance:
         type: 3}
       propertyPath: characterList.Array.data[3].selectedchar
       value: 
-      objectReference: {fileID: 2606430158392128269, guid: 1967d29662e2812429f4c065d0f40e10,
+      objectReference: {fileID: 8878262481906618381, guid: dc4d34b4ce78a7d4a9d294b7faf29af1,
         type: 3}
     - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}
@@ -4497,6 +4503,12 @@ PrefabInstance:
       propertyPath: EMPController
       value: 
       objectReference: {fileID: 6642497378878034683}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[1].selectedchar
+      value: 
+      objectReference: {fileID: 4350065314147548796, guid: 72b326539288ce9429b3de0c018c2077,
+        type: 3}
     - target: {fileID: 138200208960107467, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5121,7 +5133,7 @@ PrefabInstance:
         type: 3}
       propertyPath: characterList.Array.data[2].selectedchar
       value: 
-      objectReference: {fileID: 5844792606358493310, guid: 99702a4808cf5eb4cafba823f3649548,
+      objectReference: {fileID: 3216135571468615547, guid: 99702a4808cf5eb4cafba823f3649548,
         type: 3}
     - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}
@@ -5148,7 +5160,7 @@ PrefabInstance:
         type: 3}
       propertyPath: characterList.Array.data[3].selectedchar
       value: 
-      objectReference: {fileID: 2606430158392128269, guid: 1967d29662e2812429f4c065d0f40e10,
+      objectReference: {fileID: 8878262481906618381, guid: dc4d34b4ce78a7d4a9d294b7faf29af1,
         type: 3}
     - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}
@@ -5223,6 +5235,12 @@ PrefabInstance:
       propertyPath: EMPController
       value: 
       objectReference: {fileID: 7282186678289864203}
+    - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
+        type: 3}
+      propertyPath: characterList.Array.data[1].selectedchar
+      value: 
+      objectReference: {fileID: 4350065314147548796, guid: 72b326539288ce9429b3de0c018c2077,
+        type: 3}
     - target: {fileID: 138200208960107467, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}
       propertyPath: m_LocalPosition.x
