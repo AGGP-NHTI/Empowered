@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3896529323112583335}
   - component: {fileID: 8107244918964772296}
+  - component: {fileID: 7954506416322794074}
   - component: {fileID: 1280482178894091446}
   - component: {fileID: 222594912969543507}
   m_Layer: 0
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6633719849559603404}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.447917, y: 14.46, z: -14.83}
-  m_LocalScale: {x: 5, y: 4, z: 0.2}
+  m_LocalScale: {x: 8.252, y: 4.3004, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -41,6 +42,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6633719849559603404}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &7954506416322794074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6633719849559603404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4153307b749cfe468a179754d1e78be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 1
+  LogDamageEvents: 1
+  lifetime: 10
 --- !u!23 &1280482178894091446
 MeshRenderer:
   m_ObjectHideFlags: 0

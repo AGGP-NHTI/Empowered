@@ -21,7 +21,7 @@ public class PriestClass : PlayerPawn
     public Vector3 jump;
     public float jumpForce = 2.0f;
     public bool isGrounded;
-
+    
     Rigidbody rb;
 
     new void Start()

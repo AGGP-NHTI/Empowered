@@ -30,11 +30,12 @@ public class DragonClass : PlayerPawn
     public GameObject MouthPoint;
 
     public float ForwardBite = 5;
-
+    private float CooldownTime0;
     private float CooldownTime1;
     private float CooldownTime2;
     private float CooldownTime3;
     private float CooldownTime4;
+    public float cooldownPeriod0 = 1.0f;
     public float cooldownPeriod1 = 11.0f;
     public float cooldownPeriod2 = 50.0f;
     public float cooldownPeriod3 = 60.0f;
@@ -67,7 +68,7 @@ public class DragonClass : PlayerPawn
         {
             Destroy(gameObject);
         }
-
+        CooldownTime0 = Time.time + cooldownPeriod0;
         CooldownTime1 = Time.time + cooldownPeriod1;
         CooldownTime2 = Time.time + cooldownPeriod2;
         CooldownTime3 = Time.time + cooldownPeriod3;
@@ -127,11 +128,14 @@ public class DragonClass : PlayerPawn
     }
     public override void Fire1(bool value)
     {
-        GameObject Claw1 = Instantiate(Slash, SlashPoint1.transform.position, SlashPoint1.transform.rotation);
-        GameObject Claw2 = Instantiate(Slash, SlashPoint2.transform.position, SlashPoint2.transform.rotation);
-        GameObject Claw3 = Instantiate(Slash, SlashPoint3.transform.position, SlashPoint3.transform.rotation);
-        GameObject Claw4 = Instantiate(Slash, SlashPoint4.transform.position, SlashPoint4.transform.rotation);
-        GameObject Claw5 = Instantiate(Slash, SlashPoint5.transform.position, SlashPoint5.transform.rotation);
+        if(CooldownTime0 <= Time.time)
+        {
+            GameObject Claw1 = Instantiate(Slash, SlashPoint1.transform.position, SlashPoint1.transform.rotation);
+            GameObject Claw2 = Instantiate(Slash, SlashPoint2.transform.position, SlashPoint2.transform.rotation);
+            GameObject Claw3 = Instantiate(Slash, SlashPoint3.transform.position, SlashPoint3.transform.rotation);
+            GameObject Claw4 = Instantiate(Slash, SlashPoint4.transform.position, SlashPoint4.transform.rotation);
+            GameObject Claw5 = Instantiate(Slash, SlashPoint5.transform.position, SlashPoint5.transform.rotation);
+        }
     }
 
     public override void Fire2(bool value)

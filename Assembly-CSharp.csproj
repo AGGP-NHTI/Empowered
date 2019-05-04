@@ -62,6 +62,19 @@
   <ItemGroup>
     <Compile Include="Assets\Player_Scripts\Attack.cs" />
     <Compile Include="Assets\Player_Scripts\AttackDamageType.cs" />
+    <Compile Include="Assets\Player_Scripts\AttackScripts\DragonBite.cs" />
+    <Compile Include="Assets\Player_Scripts\AttackScripts\DragonClaw.cs" />
+    <Compile Include="Assets\Player_Scripts\AttackScripts\FlameBreath.cs" />
+    <Compile Include="Assets\Player_Scripts\AttackScripts\KnightShield.cs" />
+    <Compile Include="Assets\Player_Scripts\AttackScripts\KnightShieldWall.cs" />
+    <Compile Include="Assets\Player_Scripts\AttackScripts\KnightSlash.cs" />
+    <Compile Include="Assets\Player_Scripts\AttackScripts\MageFireBall.cs" />
+    <Compile Include="Assets\Player_Scripts\AttackScripts\MageLightning.cs" />
+    <Compile Include="Assets\Player_Scripts\AttackScripts\MageShell.cs" />
+    <Compile Include="Assets\Player_Scripts\AttackScripts\PriestConsecrate.cs" />
+    <Compile Include="Assets\Player_Scripts\AttackScripts\PriestSmite.cs" />
+    <Compile Include="Assets\Player_Scripts\AttackScripts\RangerArrow.cs" />
+    <Compile Include="Assets\Player_Scripts\AttackScripts\RangerEviscerate.cs" />
     <Compile Include="Assets\Player_Scripts\BaseDamageType.cs" />
     <Compile Include="Assets\Player_Scripts\CharacterSelect.cs" />
     <Compile Include="Assets\Player_Scripts\Class.cs" />
@@ -145,19 +158,19 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Paul/Documents/GitHub/Empowered/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/GitHub/Empowered/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Paul/Documents/GitHub/Empowered/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/GitHub/Empowered/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/Paul/Documents/GitHub/Empowered/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/GitHub/Empowered/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Paul/Documents/GitHub/Empowered/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/GitHub/Empowered/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/Paul/Documents/GitHub/Empowered/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/GitHub/Empowered/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -354,6 +367,9 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
     </Reference>
+    <Reference Include="Vuforia.UnityExtensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.GoogleAudioSpatializer">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
     </Reference>
@@ -361,13 +377,13 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/Paul/Documents/GitHub/Empowered/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/GitHub/Empowered/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/Paul/Documents/GitHub/Empowered/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/GitHub/Empowered/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/Paul/Documents/GitHub/Empowered/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/GitHub/Empowered/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

@@ -191,6 +191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3958718305191450761}
+  - component: {fileID: 1142808715297372961}
   - component: {fileID: 6785877221507881081}
   m_Layer: 0
   m_Name: ClawSlash 1
@@ -215,6 +216,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 89.952, y: 0, z: 11.027}
+--- !u!114 &1142808715297372961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9071721978847575922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 950570d33f20f204e985121d1bafee2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 25
+  movementSpeed: 14
+  lifetime: 3
 --- !u!65 &6785877221507881081
 BoxCollider:
   m_ObjectHideFlags: 0

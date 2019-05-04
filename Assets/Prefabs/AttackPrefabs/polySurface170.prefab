@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 544557212578760803}
   - component: {fileID: 4642933695165259925}
+  - component: {fileID: 9190991903750042048}
   - component: {fileID: 4811903669727132047}
   m_Layer: 0
   m_Name: polySurface170
@@ -40,6 +41,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4037187409368871152}
   m_Mesh: {fileID: 4300000, guid: 2e2dfc88c8a190041b9a51f80d924936, type: 3}
+--- !u!114 &9190991903750042048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4037187409368871152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8c00556d8a7eb74eb8354190f221fd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 45
 --- !u!23 &4811903669727132047
 MeshRenderer:
   m_ObjectHideFlags: 0
