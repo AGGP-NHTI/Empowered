@@ -8,7 +8,6 @@ public class PriestConsecrate : PlayerPawn
     public float lifetime = 10f;
     private void Update()
     {
-        
         Destroy(gameObject, lifetime);
     }
 

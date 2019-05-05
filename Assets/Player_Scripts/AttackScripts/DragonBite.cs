@@ -23,7 +23,7 @@ public class DragonBite : Class
     void OnTriggerEnter(Collider other)
     {
         Class OtherClass = other.gameObject.GetComponentInParent<Class>();
-        if (OtherClass)
+        if (OtherClass && other.gameObject.tag == "Player")
         {
             OtherClass.TakeDamage(this, damageAmount, new DamageEventInfo(typeof(AttackDamageType)), Owner);
         }

@@ -27,7 +27,7 @@ public class MageLightning : Class
     void OnTriggerEnter(Collider other)
     {
         Class OtherClass = other.gameObject.GetComponentInParent<Class>();
-        if (OtherClass)
+        if (OtherClass && other.gameObject.tag == "Boss")
         {
             OtherClass.TakeDamage(this, damageAmount, new DamageEventInfo(typeof(AttackDamageType)), Owner);
         }

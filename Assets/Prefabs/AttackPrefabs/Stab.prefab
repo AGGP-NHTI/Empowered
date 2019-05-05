@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2364250687291734595}
   - component: {fileID: 1307808784638133282}
   - component: {fileID: 5108571119782612448}
+  - component: {fileID: 7390368793800286595}
   - component: {fileID: 6402237176690627367}
   m_Layer: 0
   m_Name: Stab
@@ -78,6 +79,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &7390368793800286595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5571810281104029711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ad358bef95f7a74ba2ad435305a73ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 20
+  lifetime: 1
 --- !u!65 &6402237176690627367
 BoxCollider:
   m_ObjectHideFlags: 0

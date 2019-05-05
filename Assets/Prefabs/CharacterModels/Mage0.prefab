@@ -162,7 +162,7 @@ MonoBehaviour:
   RotationSpeed: 280
   Fire: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   FirePoint: {fileID: 3986582045690696491}
-  Lightning: {fileID: 1054012617287076508, guid: 20f28583ed43e8f4bbab99dcd391c460,
+  Lightning: {fileID: 3145881748060032320, guid: f74088bb37e7fdc47a92da92d4981121,
     type: 3}
   LightningPoint: {fileID: 6390256984479073538, guid: f5b10826875de71489fac24e5cb69037,
     type: 3}
@@ -238,6 +238,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6623684640104037932}
     m_Modifications:
+    - target: {fileID: 100002, guid: 2d453c8b405616d439abf3ccc21c9dde, type: 3}
+      propertyPath: m_Name
+      value: Mage
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 2d453c8b405616d439abf3ccc21c9dde, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.464
@@ -293,10 +297,6 @@ PrefabInstance:
     - target: {fileID: 400002, guid: 2d453c8b405616d439abf3ccc21c9dde, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: 2d453c8b405616d439abf3ccc21c9dde, type: 3}
-      propertyPath: m_Name
-      value: Mage
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 2d453c8b405616d439abf3ccc21c9dde, type: 3}
       propertyPath: m_Materials.Array.data[1]
