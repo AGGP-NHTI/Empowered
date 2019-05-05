@@ -100,6 +100,7 @@
     <Compile Include="Assets\Player_Scripts\SpawnPoint.cs" />
     <Compile Include="Assets\Player_Scripts\SpawnSystem.cs" />
     <Compile Include="Assets\Player_Scripts\SpectatorSpawn.cs" />
+    <Compile Include="Assets\Player_Scripts\Spikes.cs" />
     <Compile Include="Assets\Player_Scripts\SPin.cs" />
     <Compile Include="Assets\Player_Scripts\Testinput.cs" />
     <Compile Include="Assets\Starfield Skybox\Demo\Script\LookCamera.cs" />

@@ -68,6 +68,10 @@ public class MainMenu : MonoBehaviour {
     {
         SceneManager.LoadScene(CharacterSelectScene);
     }
+    public void PlayMain()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 
     public void PlayTutorial()
     {
