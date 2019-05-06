@@ -71,7 +71,7 @@ public class RangerClass : PlayerPawn
     }
     public override void Fire1(bool value)
     {
-        if(CooldownTime0 <= Time.time)
+        //if(CooldownTime0 <= Time.time)
         {
             rb.AddForce(transform.forward * ChargeStab);
             GameObject Eviscerate1 = Instantiate(Stab, StabPoint.transform.position, StabPoint.transform.rotation);
@@ -82,14 +82,14 @@ public class RangerClass : PlayerPawn
     public override void Fire2(bool value)
     {
         
-        if(CooldownTime1 <= Time.time)
+       // if(CooldownTime1 <= Time.time)
         {
             GameObject PiercingBolt = Instantiate(Arrow, BowPoint.transform.position, BowPoint.transform.rotation);
         }
     }
     public override void Fire3(bool value)
     {
-        if(CooldownTime2 <= Time.time)
+        //if(CooldownTime2 <= Time.time)
         {
             float Cloaktimer = 14.0f;
             if (IgnoresDamage == false && Cloaktimer == 14.0f)

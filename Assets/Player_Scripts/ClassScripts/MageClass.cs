@@ -14,12 +14,12 @@ public class MageClass : PlayerPawn
     public GameObject LightningPoint;
     public GameObject ArcaneShieldPoint;
 
-    private float CooldownTime0;
-    private float CooldownTime1;
-    private float CooldownTime2;
-    public float cooldownPeriod0 = 1.0f;
-    public float cooldownPeriod1 = 19.0f;
-    public float cooldownPeriod2 = 33.0f;
+    private static bool CooldownTime0 = false;
+    private bool CooldownTime1 = false;
+    private bool CooldownTime2 = false;
+    public static float cooldownPeriod0 = 1.0f;
+    public static float cooldownPeriod1 = 19.0f;
+    public static float cooldownPeriod2 = 33.0f;
 
     public Vector3 jump;
     public float jumpForce = 2.0f;
@@ -45,9 +45,6 @@ public class MageClass : PlayerPawn
         {
             Destroy(gameObject);
         }
-
-        CooldownTime1 = Time.time + cooldownPeriod1;
-        CooldownTime2 = Time.time + cooldownPeriod2;
     }
 
     public override void Horizontal(float value)
@@ -70,22 +67,31 @@ public class MageClass : PlayerPawn
     }
     public override void Fire1(bool value)
     {
-        if(CooldownTime0 <= Time.time)
+        if (!MageClass.CooldownTime0)
         {
             GameObject FireBolt = Instantiate(Fire, FirePoint.transform.position, FirePoint.transform.rotation);
+            MageClass.CooldownTime0 = true;
+        }
+        else
+        {
+            MageClass.cooldownPeriod0 -= Time.deltaTime;
+            if (MageClass.cooldownPeriod0 <= 0)
+            {
+                MageClass.CooldownTime0 = false;
+            }
         }
     }
 
     public override void Fire2(bool value)
     {
-        if(CooldownTime1 <= Time.time)
+      //  if(CooldownTime1 <= Time.time)
         {
             GameObject LightningBolt = Instantiate(Lightning, LightningPoint.transform.position, LightningPoint.transform.rotation);
         }
     }
     public override void Fire3(bool value)
     {
-        if(CooldownTime2 <= Time.time)
+       // if(CooldownTime2 <= Time.time)
         {
             ArcaneShieldPoint.SetActive(true);
         }

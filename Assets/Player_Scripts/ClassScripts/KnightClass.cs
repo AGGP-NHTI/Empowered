@@ -68,7 +68,7 @@ public class KnightClass : PlayerPawn
     }
     public override void Fire1(bool value)
     {
-        if(CooldownTime0 <= Time.time)
+       // if(CooldownTime0 <= cooldownPeriod0)
         {
             GameObject SwordSlash = Instantiate(Slash, SlashPoint.transform.position, SlashPoint.transform.rotation);
         }
@@ -76,7 +76,7 @@ public class KnightClass : PlayerPawn
 
     public override void Fire2(bool value)
     {
-        if (CooldownTime1 <= Time.time)
+       // if (CooldownTime1 <= cooldownPeriod1)
         {
             BashRushPoint.SetActive(true);
             rb.AddForce(transform.forward * ChargeAttack);
@@ -85,7 +85,7 @@ public class KnightClass : PlayerPawn
     }
     public override void Fire3(bool value)
     {
-        if(CooldownTime2 <= Time.time)
+       // if(CooldownTime2 <= cooldownPeriod2)
         {
             GameObject AirShieldWall = Instantiate(AirShield, AirShieldPoint.transform.position, AirShieldPoint.transform.rotation);
         }

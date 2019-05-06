@@ -190,8 +190,8 @@ public class DragonClass : PlayerPawn
             float Stop = 15.0f;
             while (Stop > 0.0f)
             {
-                mage.cooldownPeriod1 = 99.9f;
-                mage.cooldownPeriod2 = 99.9f;
+               // mage.cooldownPeriod1 = 99.9f;
+                //                           mage.cooldownPeriod2 = 99.9f;
 
                 knight.cooldownPeriod1 = 99.9f;
                 knight.cooldownPeriod2 = 99.9f;

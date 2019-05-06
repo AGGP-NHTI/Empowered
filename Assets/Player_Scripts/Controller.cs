@@ -43,18 +43,18 @@ public class Controller : PlayInfo
             SpectatorActor = Factory(SpectatorPreFab, Vector3.zero, new Quaternion(), this);
         }
 
-        /*
+       
         if (StartWithSpectator)
         {
-            // Grab the Spectator Prefab
+            //Grab the Spectator Prefab
             RequestSpectate();
         }
-        else
+      
         {
             //  Spawn and new Active Game Object and grab it. 
             RequestSpawn();
         }
-        */
+        
     }
 
     public Pawn GetPossesedPawn()
