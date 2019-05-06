@@ -47,7 +47,7 @@ public class PriestConsecrate : PlayerPawn
 
     void Heal2()
     {
-        if (MageHealth < 345.0f)
+        if (MageHealth < 360.0f)
         {
             MageHealth += 20;
         }
@@ -56,7 +56,7 @@ public class PriestConsecrate : PlayerPawn
 
     void Heal3()
     {
-        if (PriestHealth < 345.0f)
+        if (PriestHealth < 360.0f)
         {
             PriestHealth += 20;
         }
@@ -65,7 +65,7 @@ public class PriestConsecrate : PlayerPawn
 
     void Heal4()
     {
-        if (RangerHealth < 365.0f)
+        if (RangerHealth < 380.0f)
         {
             RangerHealth += 20;
         }

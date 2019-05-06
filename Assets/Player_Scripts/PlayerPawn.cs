@@ -6,18 +6,18 @@ using UnityEngine.SceneManagement;
 public class PlayerPawn : Pawn
 {
 
-    protected float DragonHealth = 2559.00f;
+    protected float DragonHealth = 2600.00f;
     protected float KnightHealth = 420.0f;
-    protected float MageHealth = 365.0f;
-    protected float PriestHealth = 365.0f;
-    protected float RangerHealth = 385.0f;
+    protected float MageHealth = 380.0f;
+    protected float PriestHealth = 380.0f;
+    protected float RangerHealth = 400.0f;
 
 
-    protected float DragonMAXHealth = 2559.00f;
+    protected float DragonMAXHealth = 2600.00f;
     protected float KnightMAXHealth = 420.0f;
-    protected float MageMAXHealth = 365.0f;
-    protected float PriestMAXHealth = 365.0f;
-    protected float RangerMAXHealth = 385.0f;
+    protected float MageMAXHealth = 380.0f;
+    protected float PriestMAXHealth = 380.0f;
+    protected float RangerMAXHealth = 400.0f;
 
     protected override bool ProcessDamage(Class Source, float Value, DamageEventInfo EventInfo, Controller Instigator)
     {

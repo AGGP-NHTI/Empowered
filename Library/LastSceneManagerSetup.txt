@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Arenas/BossWinArenaTwo(Pit).unity
+- path: Assets/Arenas/CharacterSelection.unity
   isLoaded: 1
   isActive: 1

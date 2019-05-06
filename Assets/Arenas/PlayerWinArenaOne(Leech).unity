@@ -179,8 +179,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3749324724050923679, guid: 9a3f39df2ac2b034998a5dd391248976, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9a3f39df2ac2b034998a5dd391248976, type: 3}
+--- !u!1 &89784462 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3749324724050924385, guid: 9a3f39df2ac2b034998a5dd391248976,
+    type: 3}
+  m_PrefabInstance: {fileID: 89784461}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &89784463
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89784462}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1067010294
 GameObject:
   m_ObjectHideFlags: 0

@@ -87,26 +87,42 @@ public class DragonClass : PlayerPawn
     }
     void Leech1()
     {
-        KnightHealth -= 5;
-        DragonHealth += 5;
+        if(DragonHealth < 2595.0f)
+        {
+            KnightHealth -= 5;
+            DragonHealth += 5;
+        }
+        
     }
 
     void Leech2()
     {
-        MageHealth -= 5;
-        DragonHealth += 5;
+        if (DragonHealth < 2595.0f)
+        {
+            MageHealth -= 5;
+            DragonHealth += 5;
+        }
+        
     }
 
     void Leech3()
     {
-        PriestHealth -= 5;
-        DragonHealth += 5;
+        if(DragonHealth < 2595.0f)
+        {
+            PriestHealth -= 5;
+            DragonHealth += 5;
+        }
+        
     }
 
     void Leech4()
     {
-        RangerHealth -= 5;
-        DragonHealth += 5;
+        if(DragonHealth < 2595.0f)
+        {
+            RangerHealth -= 5;
+            DragonHealth += 5;
+        }
+        
     }
     public override void Horizontal(float value)
     {

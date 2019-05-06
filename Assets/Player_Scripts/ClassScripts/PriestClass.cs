@@ -44,7 +44,7 @@ public class PriestClass : PlayerPawn
         {
             Destroy(gameObject);
         }
-
+        CooldownTime0 = Time.time + cooldownPeriod0;
         CooldownTime1 = Time.time + cooldownPeriod1;
         CooldownTime2 = Time.time + cooldownPeriod2;
     }
@@ -88,29 +88,29 @@ public class PriestClass : PlayerPawn
                 KnightHealth += 70.0f;
             }
 
-            if (RangerHealth >= 385.0f || KnightHealth >= 315.0f)
+            if (RangerHealth >= 400.0f || KnightHealth >= 330.0f)
             {
-                RangerHealth = 385.0f;
+                RangerHealth = 400.0f;
             }
-            else if (RangerHealth <= 315.0f)
+            else if (RangerHealth <= 330.0f)
             {
                 RangerHealth += 70.0f;
             }
 
-            if (MageHealth >= 365.0f || MageHealth >= 295.0f)
+            if (MageHealth >= 380.0f || MageHealth >= 310.0f)
             {
-                MageHealth = 365.0f;
+                MageHealth = 380.0f;
             }
-            else if (MageHealth <= 295.0f)
+            else if (MageHealth <= 310.0f)
             {
                 MageHealth += 70.0f;
             }
 
-            if (PriestHealth >= 365.0f || PriestHealth >= 295.0f)
+            if (PriestHealth >= 380.0f || PriestHealth >= 310.0f)
             {
                 PriestHealth = 365.0f;
             }
-            else if (PriestHealth <= 295.0f)
+            else if (PriestHealth <= 310.0f)
             {
                 PriestHealth += 70.0f;
             }
@@ -126,295 +126,13 @@ public class PriestClass : PlayerPawn
     }
     public override void Fire4(bool value)
     {
-        rb.AddForce(jump * jumpForce, ForceMode.Impulse);
-        isGrounded = false;
+        if (isGrounded)
+        {
+            rb.AddForce(jump * jumpForce, ForceMode.Impulse);
+            isGrounded = false;
+        }
+        
     }
 
-    //public override void P1Horizontal(float value)
-    //{
-    //    if (Mathf.Abs(value) < .05)
-    //    {
-    //        return;
-    //    }
-    //    gameObject.transform.Rotate(0, (value * RotationSpeed * Time.deltaTime), 0);
-    //}
-
-    //public override void P1Vertical(float value)
-    //{
-    //    if (Mathf.Abs(value) < .05)
-    //    {
-    //        rb.velocity = Vector3.zero;
-    //        return;
-    //    }
-    //    rb.velocity = gameObject.transform.forward * value * MovementSpeed;
-    //}
-    //public override void P1Fire1(bool value)
-    //{
-    //    GameObject Smite = Instantiate(Holy, HolyPoint.transform.position, HolyPoint.transform.rotation);
-    //}
-
-    //public override void P1Fire2(bool value)
-    //{
-
-    //    if (KnightHealth >= 420.0f || KnightHealth >= 350.0f)
-    //    {
-    //        KnightHealth = 420.0f;
-    //    }
-    //    else if (KnightHealth <= 350.0f)
-    //    {
-    //        KnightHealth += 70.0f;
-    //    }
-
-    //    if (RangerHealth >= 385.0f || KnightHealth >= 315.0f)
-    //    {
-    //        RangerHealth = 385.0f;
-    //    }
-    //    else if (RangerHealth <= 315.0f)
-    //    {
-    //        RangerHealth += 70.0f;
-    //    }
-
-    //    if (MageHealth >= 365.0f || MageHealth >= 295.0f)
-    //    {
-    //        MageHealth = 365.0f;
-    //    }
-    //    else if (MageHealth <= 295.0f)
-    //    {
-    //        MageHealth += 70.0f;
-    //    }
-
-    //    if (PriestHealth >= 365.0f || PriestHealth >= 295.0f)
-    //    {
-    //        PriestHealth = 365.0f;
-    //    }
-    //    else if (PriestHealth <= 295.0f)
-    //    {
-    //        PriestHealth += 70.0f;
-    //    }    
-    //}
-    //public override void P1Fire3(bool value)
-    //{
-    //    GameObject Consecration = Instantiate(SacredGround, SacredGroundPoint.transform.position, SacredGroundPoint.transform.rotation);
-    //}
-    //public override void P1Fire4(bool value)
-    //{
-    //    rb.AddForce(jump * jumpForce, ForceMode.Impulse);
-    //    isGrounded = false;
-    //}
-
-    //public override void P2Horizontal(float value)
-    //{
-    //    if (Mathf.Abs(value) < .05)
-    //    {
-    //        return;
-    //    }
-    //    gameObject.transform.Rotate(0, (value * RotationSpeed * Time.deltaTime), 0);
-    //}
-
-    //public override void P2Vertical(float value)
-    //{
-    //    if (Mathf.Abs(value) < .05)
-    //    {
-    //        rb.velocity = Vector3.zero;
-    //        return;
-    //    }
-    //    rb.velocity = gameObject.transform.forward * value * MovementSpeed;
-    //}
-    //public override void P2Fire1(bool value)
-    //{
-    //    GameObject Smite = Instantiate(Holy, HolyPoint.transform.position, HolyPoint.transform.rotation);
-    //}
-
-    //public override void P2Fire2(bool value)
-    //{
-
-    //    if (KnightHealth >= 420.0f || KnightHealth >= 350.0f)
-    //    {
-    //        KnightHealth = 420.0f;
-    //    }
-    //    else if (KnightHealth <= 350.0f)
-    //    {
-    //        KnightHealth += 70.0f;
-    //    }
-
-    //    if (RangerHealth >= 385.0f || KnightHealth >= 315.0f)
-    //    {
-    //        RangerHealth = 385.0f;
-    //    }
-    //    else if (RangerHealth <= 315.0f)
-    //    {
-    //        RangerHealth += 70.0f;
-    //    }
-
-    //    if (MageHealth >= 365.0f || MageHealth >= 295.0f)
-    //    {
-    //        MageHealth = 365.0f;
-    //    }
-    //    else if (MageHealth <= 295.0f)
-    //    {
-    //        MageHealth += 70.0f;
-    //    }
-
-    //    if (PriestHealth >= 365.0f || PriestHealth >= 295.0f)
-    //    {
-    //        PriestHealth = 365.0f;
-    //    }
-    //    else if (PriestHealth <= 295.0f)
-    //    {
-    //        PriestHealth += 70.0f;
-    //    }
-    //}
-    //public override void P2Fire3(bool value)
-    //{
-    //    GameObject Consecration = Instantiate(SacredGround, SacredGroundPoint.transform.position, SacredGroundPoint.transform.rotation);
-    //}
-    //public override void P2Fire4(bool value)
-    //{
-    //    rb.AddForce(jump * jumpForce, ForceMode.Impulse);
-    //    isGrounded = false;
-    //}
-
-    //public override void P3Horizontal(float value)
-    //{
-    //    if (Mathf.Abs(value) < .05)
-    //    {
-    //        return;
-    //    }
-    //    gameObject.transform.Rotate(0, (value * RotationSpeed * Time.deltaTime), 0);
-    //}
-
-    //public override void P3Vertical(float value)
-    //{
-    //    if (Mathf.Abs(value) < .05)
-    //    {
-    //        rb.velocity = Vector3.zero;
-    //        return;
-    //    }
-    //    rb.velocity = gameObject.transform.forward * value * MovementSpeed;
-    //}
-    //public override void P3Fire1(bool value)
-    //{
-    //    GameObject Smite = Instantiate(Holy, HolyPoint.transform.position, HolyPoint.transform.rotation);
-    //}
-
-    //public override void P3Fire2(bool value)
-    //{
-
-    //    if (KnightHealth >= 420.0f || KnightHealth >= 350.0f)
-    //    {
-    //        KnightHealth = 420.0f;
-    //    }
-    //    else if (KnightHealth <= 350.0f)
-    //    {
-    //        KnightHealth += 70.0f;
-    //    }
-
-    //    if (RangerHealth >= 385.0f || KnightHealth >= 315.0f)
-    //    {
-    //        RangerHealth = 385.0f;
-    //    }
-    //    else if (RangerHealth <= 315.0f)
-    //    {
-    //        RangerHealth += 70.0f;
-    //    }
-
-    //    if (MageHealth >= 365.0f || MageHealth >= 295.0f)
-    //    {
-    //        MageHealth = 365.0f;
-    //    }
-    //    else if (MageHealth <= 295.0f)
-    //    {
-    //        MageHealth += 70.0f;
-    //    }
-
-    //    if (PriestHealth >= 365.0f || PriestHealth >= 295.0f)
-    //    {
-    //        PriestHealth = 365.0f;
-    //    }
-    //    else if (PriestHealth <= 295.0f)
-    //    {
-    //        PriestHealth += 70.0f;
-    //    }
-    //}
-    //public override void P3Fire3(bool value)
-    //{
-    //    GameObject Consecration = Instantiate(SacredGround, SacredGroundPoint.transform.position, SacredGroundPoint.transform.rotation);
-    //}
-    //public override void P3Fire4(bool value)
-    //{
-    //    rb.AddForce(jump * jumpForce, ForceMode.Impulse);
-    //    isGrounded = false;
-    //}
-
-    //public override void P4Horizontal(float value)
-    //{
-    //    if (Mathf.Abs(value) < .05)
-    //    {
-    //        return;
-    //    }
-    //    gameObject.transform.Rotate(0, (value * RotationSpeed * Time.deltaTime), 0);
-    //}
-
-    //public override void P4Vertical(float value)
-    //{
-    //    if (Mathf.Abs(value) < .05)
-    //    {
-    //        rb.velocity = Vector3.zero;
-    //        return;
-    //    }
-    //    rb.velocity = gameObject.transform.forward * value * MovementSpeed;
-    //}
-    //public override void P4Fire1(bool value)
-    //{
-    //    GameObject Smite = Instantiate(Holy, HolyPoint.transform.position, HolyPoint.transform.rotation);
-    //}
-
-    //public override void P4Fire2(bool value)
-    //{
-
-    //    if (KnightHealth >= 420.0f || KnightHealth >= 350.0f)
-    //    {
-    //        KnightHealth = 420.0f;
-    //    }
-    //    else if (KnightHealth <= 350.0f)
-    //    {
-    //        KnightHealth += 70.0f;
-    //    }
-
-    //    if (RangerHealth >= 385.0f || KnightHealth >= 315.0f)
-    //    {
-    //        RangerHealth = 385.0f;
-    //    }
-    //    else if (RangerHealth <= 315.0f)
-    //    {
-    //        RangerHealth += 70.0f;
-    //    }
-
-    //    if (MageHealth >= 365.0f || MageHealth >= 295.0f)
-    //    {
-    //        MageHealth = 365.0f;
-    //    }
-    //    else if (MageHealth <= 295.0f)
-    //    {
-    //        MageHealth += 70.0f;
-    //    }
-
-    //    if (PriestHealth >= 365.0f || PriestHealth >= 295.0f)
-    //    {
-    //        PriestHealth = 365.0f;
-    //    }
-    //    else if (PriestHealth <= 295.0f)
-    //    {
-    //        PriestHealth += 70.0f;
-    //    }
-    //}
-    //public override void P4Fire3(bool value)
-    //{
-    //    GameObject Consecration = Instantiate(SacredGround, SacredGroundPoint.transform.position, SacredGroundPoint.transform.rotation);
-    //}
-    //public override void P4Fire4(bool value)
-    //{
-    //    rb.AddForce(jump * jumpForce, ForceMode.Impulse);
-    //    isGrounded = false;
-    //}
+    
 }
