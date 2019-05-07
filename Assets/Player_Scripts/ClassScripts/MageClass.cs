@@ -14,12 +14,14 @@ public class MageClass : PlayerPawn
     public GameObject LightningPoint;
     public GameObject ArcaneShieldPoint;
 
-    private static bool CooldownTime0 = false;
-    private bool CooldownTime1 = false;
-    private bool CooldownTime2 = false;
-    public static float cooldownPeriod0 = 1.0f;
-    public static float cooldownPeriod1 = 19.0f;
-    public static float cooldownPeriod2 = 33.0f;
+ 
+    public float cooldownPeriod0 = 1.0f;
+    public float cooldownPeriod1 = 19.0f;
+    public float cooldownPeriod2 = 33.0f;
+
+    private float Nextfire0;
+    private float Nextfire1;
+    private float Nextfire2;
 
     public Vector3 jump;
     public float jumpForce = 2.0f;
@@ -67,32 +69,33 @@ public class MageClass : PlayerPawn
     }
     public override void Fire1(bool value)
     {
-        if (!MageClass.CooldownTime0)
+        if (Time.time > Nextfire0)
         {
+
+            Nextfire0 = Time.time + cooldownPeriod0;
+
             GameObject FireBolt = Instantiate(Fire, FirePoint.transform.position, FirePoint.transform.rotation);
-            MageClass.CooldownTime0 = true;
-        }
-        else
-        {
-            MageClass.cooldownPeriod0 -= Time.deltaTime;
-            if (MageClass.cooldownPeriod0 <= 0)
-            {
-                MageClass.CooldownTime0 = false;
-            }
+
+
         }
     }
+        
 
     public override void Fire2(bool value)
     {
-      //  if(CooldownTime1 <= Time.time)
+        if (Time.time > Nextfire1)
         {
+            Nextfire1 = Time.time + cooldownPeriod1;
+
             GameObject LightningBolt = Instantiate(Lightning, LightningPoint.transform.position, LightningPoint.transform.rotation);
         }
     }
     public override void Fire3(bool value)
     {
-       // if(CooldownTime2 <= Time.time)
+        if (Time.time > Nextfire2)
         {
+            Nextfire2 = Time.time + cooldownPeriod2;
+
             ArcaneShieldPoint.SetActive(true);
         }
     }

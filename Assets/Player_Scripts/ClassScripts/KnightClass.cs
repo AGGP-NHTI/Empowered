@@ -15,9 +15,9 @@ public class KnightClass : PlayerPawn
     public GameObject BashRushPoint;
     public float ChargeAttack = 40;
 
-    private float CooldownTime0;
-    private float CooldownTime1;
-    private float CooldownTime2;
+    private float Nextfire0;
+    private float Nextfire1;
+    private float Nextfire2;
     public float cooldownPeriod0 = 1.0f;
     public float cooldownPeriod1 = 13.0f;
     public float cooldownPeriod2 = 40.0f;
@@ -39,9 +39,6 @@ public class KnightClass : PlayerPawn
         {
             Destroy(gameObject);
         }
-
-        CooldownTime1 = Time.time + cooldownPeriod1;
-        CooldownTime2 = Time.time + cooldownPeriod2;
     }
     void OnCollisionStay()
     {
@@ -68,25 +65,32 @@ public class KnightClass : PlayerPawn
     }
     public override void Fire1(bool value)
     {
-       // if(CooldownTime0 <= cooldownPeriod0)
+        if (Time.time > Nextfire0)
         {
+            Nextfire0 = Time.time + cooldownPeriod0;
+
             GameObject SwordSlash = Instantiate(Slash, SlashPoint.transform.position, SlashPoint.transform.rotation);
         }
     }
 
     public override void Fire2(bool value)
     {
-       // if (CooldownTime1 <= cooldownPeriod1)
+        if (Time.time > Nextfire1)
         {
+            Nextfire1 = Time.time + cooldownPeriod1;
+
             BashRushPoint.SetActive(true);
-            rb.AddForce(transform.forward * ChargeAttack);
+
+            this.rb.AddForce(transform.forward * ChargeAttack);
         }
         
     }
     public override void Fire3(bool value)
     {
-       // if(CooldownTime2 <= cooldownPeriod2)
+        if (Time.time > Nextfire2)
         {
+            Nextfire2 = Time.time + cooldownPeriod2;
+
             GameObject AirShieldWall = Instantiate(AirShield, AirShieldPoint.transform.position, AirShieldPoint.transform.rotation);
         }
     }

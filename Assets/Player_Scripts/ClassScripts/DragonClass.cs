@@ -30,11 +30,12 @@ public class DragonClass : PlayerPawn
     public GameObject MouthPoint;
 
     public float ForwardBite = 5;
-    private float CooldownTime0;
-    private float CooldownTime1;
-    private float CooldownTime2;
-    private float CooldownTime3;
-    private float CooldownTime4;
+
+    private float Nextfire0;
+    private float Nextfire1;
+    private float Nextfire2;
+    private float Nextfire3;
+    private float Nextfire4;
     public float cooldownPeriod0 = 1.0f;
     public float cooldownPeriod1 = 11.0f;
     public float cooldownPeriod2 = 50.0f;
@@ -68,11 +69,6 @@ public class DragonClass : PlayerPawn
         {
             Destroy(gameObject);
         }
-        CooldownTime0 = Time.time + cooldownPeriod0;
-        CooldownTime1 = Time.time + cooldownPeriod1;
-        CooldownTime2 = Time.time + cooldownPeriod2;
-        CooldownTime3 = Time.time + cooldownPeriod3;
-        CooldownTime4 = Time.time + cooldownPeriod4;
     }
 
     public void DragonPassive()
@@ -144,8 +140,10 @@ public class DragonClass : PlayerPawn
     }
     public override void Fire1(bool value)
     {
-        if(CooldownTime0 <= Time.time)
+        if (Time.time > Nextfire0)
         {
+            Nextfire0 = Time.time + cooldownPeriod0;
+
             GameObject Claw1 = Instantiate(Slash, SlashPoint1.transform.position, SlashPoint1.transform.rotation);
             GameObject Claw2 = Instantiate(Slash, SlashPoint2.transform.position, SlashPoint2.transform.rotation);
             GameObject Claw3 = Instantiate(Slash, SlashPoint3.transform.position, SlashPoint3.transform.rotation);
@@ -156,16 +154,20 @@ public class DragonClass : PlayerPawn
 
     public override void Fire2(bool value)
     {
-        if(CooldownTime1 <= Time.time)
+        if (Time.time > Nextfire1)
         {
+            Nextfire1 = Time.time + cooldownPeriod1;
+
             rb.AddForce(transform.forward * ForwardBite);
             GameObject Bite = Instantiate(Mouth, MouthPoint.transform.position, MouthPoint.transform.rotation);
         }
     }
     public override void Fire3(bool value)
     {
-        if(CooldownTime2 <= Time.time)
+        if (Time.time > Nextfire2)
         {
+            Nextfire2 = Time.time + cooldownPeriod2;
+
             float Scalestimer = 10.0f;
             if (IgnoresDamage = false && Scalestimer == 10.0f)
             {
@@ -185,13 +187,15 @@ public class DragonClass : PlayerPawn
     }
     public override void Fire5(bool value)
     {
-        if (CooldownTime3 <= Time.time)
+        if (Time.time > Nextfire3)
         {
+            Nextfire3 = Time.time + cooldownPeriod3;
+
             float Stop = 15.0f;
             while (Stop > 0.0f)
             {
-               // mage.cooldownPeriod1 = 99.9f;
-                //                           mage.cooldownPeriod2 = 99.9f;
+               mage.cooldownPeriod1 = 99.9f;
+                mage.cooldownPeriod2 = 99.9f;
 
                 knight.cooldownPeriod1 = 99.9f;
                 knight.cooldownPeriod2 = 99.9f;
@@ -210,8 +214,10 @@ public class DragonClass : PlayerPawn
     }
     public override void Fire6(bool value)
     {
-        if(CooldownTime4 <= Time.time)
+        if (Time.time > Nextfire4)
         {
+            Nextfire4 = Time.time + cooldownPeriod4;
+
             GameObject FlameBreath = Instantiate(Flame, FlamePoint.transform.position, FlamePoint.transform.rotation);
         }
     }

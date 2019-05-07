@@ -15,9 +15,9 @@ public class RangerClass : PlayerPawn
     public GameObject BowPoint;
     public float ChargeStab = 5;
 
-    private float CooldownTime0;
-    private float CooldownTime1;
-    private float CooldownTime2;
+    private float Nextfire0;
+    private float Nextfire1;
+    private float Nextfire2;
     public float cooldownPeriod0 = 1.0f;
     public float cooldownPeriod1 = 17.0f;
     public float cooldownPeriod2 = 37.0f;
@@ -25,6 +25,9 @@ public class RangerClass : PlayerPawn
     public Vector3 jump;
     public float jumpForce = 2.0f;
     public bool isGrounded;
+
+    private float Cloaktimer;
+    public float Cloaklasts = 3.0f;
 
     Rigidbody rb;
 
@@ -46,9 +49,15 @@ public class RangerClass : PlayerPawn
         {
             Destroy(gameObject);
         }
-        CooldownTime0 = Time.time + cooldownPeriod0;
-        CooldownTime1 = Time.time + cooldownPeriod1;
-        CooldownTime2 = Time.time + cooldownPeriod2;
+
+        //Count time
+        Cloaktimer += Time.deltaTime;
+        if (Cloaktimer > Cloaklasts)
+        {
+            //time to remove to powerup component
+            this.IgnoresDamage = false;
+        }
+
     }
 
     public override void Horizontal(float value)
@@ -71,8 +80,10 @@ public class RangerClass : PlayerPawn
     }
     public override void Fire1(bool value)
     {
-        //if(CooldownTime0 <= Time.time)
+        if (Time.time > Nextfire0)
         {
+            Nextfire0 = Time.time + cooldownPeriod0;
+
             rb.AddForce(transform.forward * ChargeStab);
             GameObject Eviscerate1 = Instantiate(Stab, StabPoint.transform.position, StabPoint.transform.rotation);
             GameObject Eviscerate2 = Instantiate(Stab, StabPoint2.transform.position, StabPoint2.transform.rotation);
@@ -81,26 +92,39 @@ public class RangerClass : PlayerPawn
 
     public override void Fire2(bool value)
     {
-        
-       // if(CooldownTime1 <= Time.time)
+
+        if (Time.time > Nextfire1)
         {
+            Nextfire1 = Time.time + cooldownPeriod1;
+
             GameObject PiercingBolt = Instantiate(Arrow, BowPoint.transform.position, BowPoint.transform.rotation);
         }
     }
     public override void Fire3(bool value)
     {
-        //if(CooldownTime2 <= Time.time)
+        if (Time.time > Nextfire2)
         {
+
+            Cloaktimer = 0;
+
+            Nextfire2 = Time.time + cooldownPeriod2;
+
+            this.IgnoresDamage = true;
+
+
+            /*
             float Cloaktimer = 14.0f;
-            if (IgnoresDamage == false && Cloaktimer == 14.0f)
+
+            if (this.IgnoresDamage == false && Cloaktimer == 14.0f)
             {
-                IgnoresDamage = true;
+                this.IgnoresDamage = true;
                 Cloaktimer -= Time.deltaTime;
-                if (IgnoresDamage = true && Cloaktimer == 0.0f)
+                if (this.IgnoresDamage = true && Cloaktimer == 0.0f)
                 {
-                    IgnoresDamage = false;
+                    this.IgnoresDamage = false;
                 }
             }
+            */
         }
     }
     public override void Fire4(bool value)

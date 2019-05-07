@@ -13,9 +13,9 @@ public class PriestClass : PlayerPawn
     public GameObject Holy;
     public GameObject HolyPoint;
 
-    private float CooldownTime0;
-    private float CooldownTime1;
-    private float CooldownTime2;
+    private float Nextfire0;
+    private float Nextfire1;
+    private float Nextfire2;
     public float cooldownPeriod0 = 1.0f;
     public float cooldownPeriod1 = 25.0f;
     public float cooldownPeriod2 = 45.0f;
@@ -44,9 +44,6 @@ public class PriestClass : PlayerPawn
         {
             Destroy(gameObject);
         }
-        CooldownTime0 = Time.time + cooldownPeriod0;
-        CooldownTime1 = Time.time + cooldownPeriod1;
-        CooldownTime2 = Time.time + cooldownPeriod2;
     }
 
     public override void Horizontal(float value)
@@ -69,16 +66,21 @@ public class PriestClass : PlayerPawn
     }
     public override void Fire1(bool value)
     {
-        if(CooldownTime0 <= cooldownPeriod0)
+        if (Time.time > Nextfire0)
         {
+            Nextfire0 = Time.time + cooldownPeriod0;
+
             GameObject Smite = Instantiate(Holy, HolyPoint.transform.position, HolyPoint.transform.rotation);
         }
     }
 
     public override void Fire2(bool value)
     {
-        if(CooldownTime1 <= cooldownPeriod1)
+        if (Time.time > Nextfire1)
         {
+
+            Nextfire1 = Time.time + cooldownPeriod1;
+
             if (KnightHealth >= 420.0f || KnightHealth >= 350.0f)
             {
                 KnightHealth = 420.0f;
@@ -119,8 +121,10 @@ public class PriestClass : PlayerPawn
     }
     public override void Fire3(bool value)
     {
-        if(CooldownTime2 <= cooldownPeriod2)
+        if (Time.time > Nextfire2)
         {
+            Nextfire2 = Time.time + cooldownPeriod2;
+
             GameObject Consecration = Instantiate(SacredGround, SacredGroundPoint.transform.position, SacredGroundPoint.transform.rotation);
         }
     }
