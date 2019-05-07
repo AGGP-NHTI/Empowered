@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Arenas/CharacterSelection.unity
+- path: Assets/Arenas/MainMenu.unity
   isLoaded: 1
   isActive: 1

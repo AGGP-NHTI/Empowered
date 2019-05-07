@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -816,7 +816,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -283, y: -209.9}
+  m_AnchoredPosition: {x: -176, y: -130}
   m_SizeDelta: {x: 304, y: 540.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &253041120
@@ -989,7 +989,7 @@ PrefabInstance:
         type: 3}
       propertyPath: characterList.Array.data[0].selectedchar
       value: 
-      objectReference: {fileID: 2858224034132626027, guid: 39cff8d8851c2e146a751694e94cc133,
+      objectReference: {fileID: 3046098093477313441, guid: 8d56a7a05f2066d43a428ac4b6613017,
         type: 3}
     - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}
@@ -1375,7 +1375,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -670, y: 253}
+  m_AnchoredPosition: {x: -588, y: 202}
   m_SizeDelta: {x: 304, y: 540.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &563146372
@@ -2288,7 +2288,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 673, y: -209.9}
+  m_AnchoredPosition: {x: 576, y: -123}
   m_SizeDelta: {x: 304, y: 540.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &784856242
@@ -2873,7 +2873,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 172, y: 136}
+  m_AnchoredPosition: {x: 228, y: 216}
   m_SizeDelta: {x: 304, y: 540.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1174619333
@@ -4496,7 +4496,7 @@ PrefabInstance:
         type: 3}
       propertyPath: characterList.Array.data[0].selectedchar
       value: 
-      objectReference: {fileID: 2858224034132626027, guid: 39cff8d8851c2e146a751694e94cc133,
+      objectReference: {fileID: 3046098093477313441, guid: 8d56a7a05f2066d43a428ac4b6613017,
         type: 3}
     - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}
@@ -5228,7 +5228,7 @@ PrefabInstance:
         type: 3}
       propertyPath: characterList.Array.data[0].selectedchar
       value: 
-      objectReference: {fileID: 2858224034132626027, guid: 39cff8d8851c2e146a751694e94cc133,
+      objectReference: {fileID: 3046098093477313441, guid: 8d56a7a05f2066d43a428ac4b6613017,
         type: 3}
     - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}
