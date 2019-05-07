@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Arenas/MainMenu.unity
+- path: Assets/Arenas/StartingArena.unity
   isLoaded: 1
   isActive: 1
