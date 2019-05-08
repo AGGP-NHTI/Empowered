@@ -23,6 +23,7 @@ public class CharacterSelect : PlayerPawn
     [SerializeField] protected TextMeshProUGUI characterName;
     [SerializeField] protected Image characterSplash;
     [SerializeField] protected Image backgroundColor;
+    [SerializeField] protected GameObject UIforplayer;
 
 
     [Header("Sounds")]
@@ -51,30 +52,30 @@ public class CharacterSelect : PlayerPawn
         {
             backgroundColor.color = Color.Lerp(backgroundColor.color, desiredColor, Time.deltaTime * backgroundColorTransitionSpeed);
         }
-        /*
-        if (controller.PlayerNumber == 1)
-        {
-            if (controller.InputPlayerNumber == 1)
-            {
-                if (Input.GetButtonDown("P1Fire4"))
-                {
-                    Debug.Log("player 1 input");
-                    ConfirmSelection();
-                }
 
-                if (Input.GetButtonDown("P1Fire5"))
-                {
-                    Debug.Log("player 1 input");
-                    LeftArrow();
-                }
-                if (Input.GetButtonDown("P1Fire6"))
-                {
-                    Debug.Log("player 1 input");
-                    RightArrow();
-                }
+        /*
+        if (controller.InputPlayerNumber == 1)
+        {
+            if (Input.GetButtonDown("P1Fire4"))
+            {
+                Debug.Log("player 1 input");
+                ConfirmSelection();
+            }
+
+            if (Input.GetButtonDown("P1Fire5"))
+            {
+                Debug.Log("player 1 input");
+                LeftArrow();
+            }
+            if (Input.GetButtonDown("P1Fire6"))
+            {
+                Debug.Log("player 1 input");
+                RightArrow();
             }
         }
-
+    
+        
+        
         if (controller.PlayerNumber == 2)
         {
             if (controller.InputPlayerNumber == 2)
@@ -97,6 +98,7 @@ public class CharacterSelect : PlayerPawn
                 }
             }
         }
+        
 
         if (controller.PlayerNumber == 3)
         {
@@ -131,9 +133,9 @@ public class CharacterSelect : PlayerPawn
                 RightArrow();
             }
         }
-        */
+       */ 
     }
-
+    
     public override void Fire4(bool value)
     {
         ConfirmSelection();
@@ -162,6 +164,7 @@ public class CharacterSelect : PlayerPawn
 
         if (!HasSelectedCharacter)
         {
+            EMPController.UIPreFab = characterList[selectedCharacterIndex].selectedcharUI;
             EMPController.SpawnPreFab = characterList[selectedCharacterIndex].selectedchar;
             SceneTransition.PlayerHasConfirmed(playerNumber); 
             HasSelectedCharacter = true; 
@@ -215,10 +218,10 @@ public class CharacterSelect : PlayerPawn
     [System.Serializable]
     public class CharacterSelectObject
     {
-
         public Sprite splash;
         public string characterName;
         public Color characterColor;
         public GameObject selectedchar;
+        public GameObject selectedcharUI;
     }
 }

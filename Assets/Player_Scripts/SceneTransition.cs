@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class SceneTransition : MonoBehaviour
 {
+    // Singleton Setup
+    public static SceneTransition instance; 
+    // Singlton Check and Assignment controlled by DontDestroy Script
+
     [SerializeField] public static int SelectedCharacterConfirm = 0;
 
     public static int NextPlayerArenaCount = 0;
@@ -19,6 +23,7 @@ public class SceneTransition : MonoBehaviour
     string ArenaThreeScenePlayer2 = "PlayerWinArenaTwo(Pit)";
     string ArenaThreeSceneBoss2 = "BossWinArenaTwo(Pit)";
 
+    
     public List<EmpController> ControlerList; 
     public static void ResetConfirmedArray()
     {

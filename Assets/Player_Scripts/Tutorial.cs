@@ -9,10 +9,6 @@ public class Tutorial : PlayerPawn
 {
     protected int selectedCharacterIndex;
 
-
-
-
-    private bool HasSelectedCharacter = false;
     [Header("List of Characters")]
     [SerializeField] protected List<CharacterSelectObject> characterList = new List<CharacterSelectObject>();
 
@@ -33,25 +29,24 @@ public class Tutorial : PlayerPawn
         UpdateCharacterSelectionUI();
 
     }
-   
 
-    public override void Fire5(bool value)
+    void Update()
     {
-        LeftArrow();
+        if (Input.GetButtonDown("Fire5"))
+        {
+            LeftArrow();
+        }
+        if (Input.GetButtonDown("Fire6"))
+        {
+            RightArrow();
+        }
     }
 
-    public override void Fire6(bool value)
-    {
-        RightArrow();
-    }
+
 
     public void LeftArrow()
     {
-        if (HasSelectedCharacter)
-        {
-            return;
-        }
-
+        
         selectedCharacterIndex--;
         if (selectedCharacterIndex < 0)
         {
@@ -62,11 +57,7 @@ public class Tutorial : PlayerPawn
     }
     public void RightArrow()
     {
-        if (HasSelectedCharacter)
-        {
-            return;
-        }
-
+      
         selectedCharacterIndex++;
         if (selectedCharacterIndex == characterList.Count)
         {

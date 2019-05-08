@@ -14,15 +14,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Arenas/CharacterSelection.unity
     guid: cb9ea12a8538f894ab0f724c7da0e864
-  - enabled: 1
-    path: Assets/Arenas/CharacterSelection2.unity
-    guid: 826968b99dda93e4e8e4e3bb161a610d
-  - enabled: 1
-    path: Assets/Arenas/CharacterSelection3.unity
-    guid: 07e68453bb34da04fbf77a53386066cd
-  - enabled: 1
-    path: Assets/Arenas/BossSelection.unity
-    guid: 64133475a99231f47bf37f72e11ec78a
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Arenas/StartingArena.unity
     guid: 1bb8f5ee1e5914245b87055d7c118f9d
@@ -38,6 +38,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Arenas/BossWinArenaTwo(Pit).unity
     guid: f0ee8bb8e82128b45a8a2df1dfe71738
+  - enabled: 1
+    path: Assets/Arenas/BossWinEndScreen.unity
+    guid: def46f2cf3f6def42849a778d3fc132c
+  - enabled: 1
+    path: Assets/Arenas/PlayerWinEndScreen.unity
+    guid: 8dd3f5c1159878747b4b1f3781106dd6
   - enabled: 1
     path: Assets/Arenas/TutorialScene.unity
     guid: 70e64b4e222e9fb4285f2274cf2a86e8

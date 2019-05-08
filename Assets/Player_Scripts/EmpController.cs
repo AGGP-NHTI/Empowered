@@ -15,6 +15,20 @@ public class EmpController : PlayerController
 
 
     }
+
+    public void SpawnUI(Vector3 UILocation, Canvas levelCanvas)
+    {
+        Instantiate(UIPreFab, UILocation, Quaternion.Euler(0, 0, 0), levelCanvas.transform);
+        // Spawn UI at location given as paramerter
+        // Spawn Prefab was assgined on select
+        // We don't need to rotate it. 
+
+
+        // After spawn Grab the UI Prefab script
+        // and store it locally 
+
+    }
+
     public override void Horizontal(float value)
     {
         if (value != 0)

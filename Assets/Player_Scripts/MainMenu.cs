@@ -16,7 +16,7 @@ public class MainMenu : MonoBehaviour {
     {
         if (MainMenuObject.activeSelf)
         {
-            if (Input.GetButtonDown("Fire1"))
+            if (Input.GetButtonDown("Fire4"))
             {
                 PlayGame();
             }
@@ -25,11 +25,11 @@ public class MainMenu : MonoBehaviour {
             {
                 PlayTutorial();
             }
-            if (Input.GetButtonDown("Fire3"))
+            if (Input.GetButtonDown("Fire1"))
             {
                 PlayOptions();
             }
-            if (Input.GetButtonDown("Fire4"))
+            if (Input.GetButtonDown("Fire3"))
             {
                 QuitGame();
             }
