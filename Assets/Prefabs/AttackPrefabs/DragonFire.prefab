@@ -197,6 +197,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magefireball (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &7205173617412279975 stripped
@@ -287,6 +292,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magefireball (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &7456300908676487898 stripped
@@ -377,6 +387,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magefireball (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &7454266229387050142 stripped
@@ -467,6 +482,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magefireball (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &9054102332307910349 stripped
@@ -557,6 +577,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magefireball (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &9155446280110446010 stripped
@@ -647,6 +672,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magefireball (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &5259202919699275215 stripped
@@ -737,6 +767,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magefireball
       objectReference: {fileID: 0}
+    - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &4828827751504261538 stripped
@@ -827,6 +862,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magefireball (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &6641160990280419181 stripped
@@ -917,6 +957,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magefireball (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &5906305305988877080 stripped
@@ -1007,6 +1052,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magefireball (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &6018968077593168436 stripped
@@ -1097,6 +1147,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magefireball (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &2959036962296588578 stripped
@@ -1187,6 +1242,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magefireball (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &3178765345849098437 stripped
@@ -1277,6 +1337,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magefireball (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &2589985071074696521 stripped
@@ -1367,6 +1432,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magefireball (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &2804034893721971245 stripped
@@ -1457,6 +1527,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magefireball (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &4137981160060695893 stripped
@@ -1547,6 +1622,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magefireball (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &4307126792864882368 stripped
@@ -1637,6 +1717,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magefireball (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &4396244994294171642 stripped
@@ -1727,6 +1812,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magefireball (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &656844449590750420 stripped
@@ -1817,6 +1907,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magefireball (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &1121854487512743827 stripped
@@ -1907,6 +2002,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magefireball (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &7259704777119227 stripped
@@ -1997,6 +2097,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magefireball (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &231034154975657930 stripped
@@ -2087,6 +2192,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magefireball (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &381687640525116118 stripped
@@ -2177,6 +2287,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magefireball (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &1397587263555280453 stripped
@@ -2267,6 +2382,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magefireball (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &1437096497126553301 stripped
@@ -2357,6 +2477,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magefireball (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &1713558391093623509 stripped

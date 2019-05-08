@@ -1,29 +1,40 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class Tutorial : Pawn
+public class Tutorial : PlayerPawn
 {
     protected int selectedCharacterIndex;
 
 
 
 
-  
-    public List<CharacterSelectObject> characterList = new List<CharacterSelectObject>();
-
-  
-     public TextMeshProUGUI characterName;
-     public Image characterSplash;
+    private bool HasSelectedCharacter = false;
+    [Header("List of Characters")]
+    [SerializeField] protected List<CharacterSelectObject> characterList = new List<CharacterSelectObject>();
 
 
+
+    [Header("UI References")]
+    
+    [SerializeField] protected Image characterSplash;
+ 
 
     [Header("Sounds")]
     [SerializeField] protected AudioClip arrowClickSfx;
     [SerializeField] protected AudioClip CharSelectMusic;
 
+    public override void Start()
+    {
+        
+        UpdateCharacterSelectionUI();
 
-  
+    }
+   
+
     public override void Fire5(bool value)
     {
         LeftArrow();
