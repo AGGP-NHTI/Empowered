@@ -122,6 +122,8 @@ public class DragonClass : PlayerPawn
     }
     public override void Horizontal(float value)
     {
+
+
         if (Mathf.Abs(value) < .05)
         {
             return;
@@ -131,6 +133,7 @@ public class DragonClass : PlayerPawn
 
     public override void Vertical(float value)
     {
+
         if (Mathf.Abs(value) < .05)
         {
             rb.velocity = Vector3.zero;

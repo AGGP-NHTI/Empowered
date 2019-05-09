@@ -16,5 +16,6 @@ public class LevelSpawnUI : MonoBehaviour
         {
             SceneTransition.instance.ControlerList[i].SpawnUI(UIspawnLocations[i], levelCanvas);
         }
+        
     }
 }

@@ -16,7 +16,7 @@ public class Controller : PlayInfo
     public GameObject UIPreFab;
     public GameObject SpawnPreFab;
     public GameObject SpectatorPreFab;
-    protected GameObject SpectatorActor;
+    public GameObject SpectatorActor;
     //protected Pawn SpeactatorPawn; 
 
     /// <summary>
@@ -29,12 +29,13 @@ public class Controller : PlayInfo
     /// </summary>
     public int PlayerNumber = 0;
 
-    protected Pawn PossesedPawn;
+    public Pawn PossesedPawn;
  
     protected virtual void Start()
     {
-       
+       /*
         {
+            
             if (!UseSpawnSystem)
             {
                 return;
@@ -58,7 +59,7 @@ public class Controller : PlayInfo
                 RequestSpawn();
             }
         }
-        
+        */
     }
 
     public Pawn GetPossesedPawn()

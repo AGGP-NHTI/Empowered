@@ -15,7 +15,10 @@ public class SceneTransition : MonoBehaviour
     public static int NextPlayerArenaCount = 0;
     public static int NextBossArenaCount = 0;
     static bool[] PlayersConfirmed = new bool[4];
-  
+    public GameObject spectator;
+    public EmpController Player;
+    
+
     string CharacterSelect = "CharacterSelection";
     string ArenaStarting = "StartingArena";
     string ArenaTwoScenePlayer1 = "PlayerWinArenaOne(Leech)";
@@ -69,9 +72,19 @@ public class SceneTransition : MonoBehaviour
         {
             if(GetConfirmedPlayers() == 4)
             {
-                AllControllersSpectate(); 
-                this.gameObject.tag = "StartingArena";
+
                 SceneManager.LoadScene(ArenaStarting);
+
+                Player.SpectatorActor = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player);
+                //Player2.SpectatorPreFab = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player2);
+                //Player3.SpectatorPreFab = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player3);
+                //Player4.SpectatorPreFab = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player4);
+
+                Player.PossesPawn(Player.SpectatorActor);
+
+               // AllControllersSpectate(); 
+                this.gameObject.tag = "StartingArena";
+
             }
         }
         if (this.gameObject.tag == "StartingArena")

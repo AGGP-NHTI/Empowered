@@ -11,14 +11,19 @@ public class SpectatorSpawn : PlayerPawn
     {
         DontDestroyOnLoad(gameObject);
     }
+    new private void Start()
+    {
+        //controller.RequestSpawn();
+
+    }
+
     public override void Fire1(bool value)
     {
         if (value)
         {
             controller.RequestSpawn();
-
         }
     }
-    
+
 }
 
