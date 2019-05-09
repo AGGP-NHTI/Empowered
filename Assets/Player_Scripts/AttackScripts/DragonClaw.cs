@@ -6,7 +6,7 @@ public class DragonClaw : Class
 {
     public float damageAmount = 25.0f;
     public float movementSpeed = 14f;
-    public float lifetime = 3f;
+    public float lifetime = 1f;
     Rigidbody rb;
 
     void Start()
@@ -26,12 +26,12 @@ public class DragonClaw : Class
 
     void OnTriggerEnter(Collider other)
     {
-        Class OtherClass = other.gameObject.GetComponentInParent<Class>();
-        if (OtherClass && other.gameObject.tag == "Player")
-        {
-            OtherClass.TakeDamage(this, damageAmount, new DamageEventInfo(typeof(AttackDamageType)), Owner);
-        }
-        OnDeath();
+            Class OtherClass = other.gameObject.GetComponentInParent<Class>();
+            if (OtherClass) //&& other.gameObject.tag == "Player")
+            {
+                OtherClass.TakeDamage(this, damageAmount, new DamageEventInfo(typeof(AttackDamageType)), Owner);
+            }
+            OnDeath();
     }
 
     public virtual void OnDeath()

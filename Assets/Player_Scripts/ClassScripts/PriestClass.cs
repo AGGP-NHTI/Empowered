@@ -5,6 +5,13 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PriestClass : PlayerPawn
 {
+    KnightClass Knight;
+    MageClass Mage;
+    RangerClass Ranger;
+
+    public float PriestHealth = 380.0f;
+    public float PriestMAXHealth = 380.0f;
+
     public float MovementSpeed = 14;
     public float RotationSpeed = 280;
 
@@ -32,6 +39,12 @@ public class PriestClass : PlayerPawn
        
         jump = new Vector3(0.0f, 2.0f, 0.0f);
     }
+    protected override bool ProcessDamage(Class Source, float Value, DamageEventInfo EventInfo, Controller Instigator)
+    {
+        PriestHealth -= Value;
+       
+        return true;
+    }
 
     void OnCollisionStay()
     {
@@ -42,7 +55,9 @@ public class PriestClass : PlayerPawn
     {
         if (PriestHealth <= 0)
         {
+            controller.OnDeath();
             Destroy(gameObject);
+            SceneTransition.NextBossArenaCount += 1;
         }
     }
 
@@ -81,31 +96,31 @@ public class PriestClass : PlayerPawn
 
             Nextfire1 = Time.time + cooldownPeriod1;
 
-            if (KnightHealth >= 420.0f || KnightHealth >= 350.0f)
+            if (Knight.KnightHealth >= 420.0f || Knight.KnightHealth >= 350.0f)
             {
-                KnightHealth = 420.0f;
+                Knight.KnightHealth = 420.0f;
             }
-            else if (KnightHealth <= 350.0f)
+            else if (Knight.KnightHealth <= 350.0f)
             {
-                KnightHealth += 70.0f;
-            }
-
-            if (RangerHealth >= 400.0f || KnightHealth >= 330.0f)
-            {
-                RangerHealth = 400.0f;
-            }
-            else if (RangerHealth <= 330.0f)
-            {
-                RangerHealth += 70.0f;
+                Knight.KnightHealth += 70.0f;
             }
 
-            if (MageHealth >= 380.0f || MageHealth >= 310.0f)
+            if (Ranger.RangerHealth >= 400.0f || Ranger.RangerHealth >= 330.0f)
             {
-                MageHealth = 380.0f;
+                Ranger.RangerHealth = 400.0f;
             }
-            else if (MageHealth <= 310.0f)
+            else if (Ranger.RangerHealth <= 330.0f)
             {
-                MageHealth += 70.0f;
+                Ranger.RangerHealth += 70.0f;
+            }
+
+            if (Mage.MageHealth >= 380.0f || Mage.MageHealth >= 310.0f)
+            {
+                Mage.MageHealth = 380.0f;
+            }
+            else if (Mage.MageHealth <= 310.0f)
+            {
+                Mage.MageHealth += 70.0f;
             }
 
             if (PriestHealth >= 380.0f || PriestHealth >= 310.0f)

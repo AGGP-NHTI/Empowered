@@ -11,7 +11,7 @@ public class EmpController : PlayerController
     {
         base.Start();
         IsHuman = true;
-        //LogInputStateInfo = false;
+        LogInputStateInfo = false;
 
 
     }

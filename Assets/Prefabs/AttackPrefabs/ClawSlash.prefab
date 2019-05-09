@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 4929531432010434094}
   - component: {fileID: 7986864008511952991}
   - component: {fileID: 3483372310190142020}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ClawSlash
-  m_TagString: Untagged
+  m_TagString: DragonSlash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59,7 +59,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773979378597755583}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.59485775, y: 0.1413374, z: 1.4872761}
@@ -75,8 +75,7 @@ GameObject:
   - component: {fileID: 2131638200915428632}
   - component: {fileID: 2784361277886959668}
   - component: {fileID: 3034700259107996810}
-  - component: {fileID: 8699073931416863087}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ClawRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,19 +141,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &8699073931416863087
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9001600222416546605}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 9.547945, y: 5.9118853, z: 1.1033878}
-  m_Center: {x: 2.061085, y: 0.17856847, z: 0.0023422241}
 --- !u!1 &9061136400068783609
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,8 +152,7 @@ GameObject:
   - component: {fileID: 3022256984275112708}
   - component: {fileID: 1105061061329955458}
   - component: {fileID: 7992456572279228184}
-  - component: {fileID: 6341888732811366353}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ClawLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,16 +218,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &6341888732811366353
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9061136400068783609}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 9.547945, y: 5.9118853, z: 1.1033878}
-  m_Center: {x: 2.061085, y: 0.17856847, z: 0.0023422241}

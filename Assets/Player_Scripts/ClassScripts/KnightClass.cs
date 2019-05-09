@@ -5,6 +5,9 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class KnightClass : PlayerPawn
 {
+    public float KnightHealth = 420.0f;
+    public float KnightMAXHealth = 420.0f;
+
     public float MovementSpeed = 14;
     public float RotationSpeed = 280;
 
@@ -37,10 +40,17 @@ public class KnightClass : PlayerPawn
     {
         if (KnightHealth <= 0)
         {
+            SceneTransition.NextBossArenaCount += 1;
             Destroy(gameObject);
+            controller.OnDeath();
         }
     }
-    void OnCollisionStay()
+    protected override bool ProcessDamage(Class Source, float Value, DamageEventInfo EventInfo, Controller Instigator)
+    {
+        KnightHealth -= Value;
+        return true;
+    }
+void OnCollisionStay()
     {
         isGrounded = true;
     }

@@ -5,9 +5,14 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class MageClass : PlayerPawn
 {
+    DragonClass Dragon;
+    public float MageHealth = 380.0f;
+    public float MageMAXHealth = 380.0f;
+
     public float MovementSpeed = 14;
     public float RotationSpeed = 280;
 
+   // public GameObject lightiningLocal;
     public GameObject Fire;
     public GameObject FirePoint;
     public GameObject Lightning;
@@ -40,12 +45,19 @@ public class MageClass : PlayerPawn
     {
         isGrounded = true;
     }
+    protected override bool ProcessDamage(Class Source, float Value, DamageEventInfo EventInfo, Controller Instigator)
+    {
+        MageHealth -= Value;
+              return true;
+    }
 
     private void Update()
     {
         if (MageHealth <= 0)
         {
+           SceneTransition.NextBossArenaCount += 1; 
             Destroy(gameObject);
+            controller.OnDeath();
         }
     }
 
@@ -74,6 +86,7 @@ public class MageClass : PlayerPawn
 
             Nextfire0 = Time.time + cooldownPeriod0;
 
+
             GameObject FireBolt = Instantiate(Fire, FirePoint.transform.position, FirePoint.transform.rotation);
 
 
@@ -85,9 +98,11 @@ public class MageClass : PlayerPawn
     {
         if (Time.time > Nextfire1)
         {
+            
             Nextfire1 = Time.time + cooldownPeriod1;
-            DragonHealth -= 80.0f;
-            GameObject LightningBolt = Instantiate(Lightning, LightningPoint.transform.position, LightningPoint.transform.rotation);
+            //Dragon.DragonHealth -= 80.0f;
+            GameObject LightningBolt = Instantiate(Lightning, GameObject.FindGameObjectWithTag("lightning").transform.position,
+                                                    GameObject.FindGameObjectWithTag("lightning").transform.rotation);
         }
     }
     public override void Fire3(bool value)

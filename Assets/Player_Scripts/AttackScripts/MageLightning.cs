@@ -8,7 +8,7 @@ public class MageLightning : Class
     public float movementSpeed = 30f;
     public float lifetime = 1f;
     Rigidbody rb;
-
+    //DragonClass dragondmg;
     void Start()
     {
         rb = gameObject.AddComponent<Rigidbody>();
@@ -20,7 +20,7 @@ public class MageLightning : Class
 
     private void Update()
     {
-        rb.velocity = transform.forward * movementSpeed;
+        rb.velocity = -transform.up * movementSpeed;
         Destroy(gameObject, lifetime);
     }
 

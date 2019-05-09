@@ -29,6 +29,7 @@ public class MageFireBall : Class
         Class OtherClass = other.gameObject.GetComponentInParent<Class>();
         if (OtherClass && other.gameObject.tag == "Boss")
         {
+            Debug.Log("ouch that hurt dude");
             OtherClass.TakeDamage(this, damageAmount, new DamageEventInfo(typeof(AttackDamageType)), Owner);
         }
         OnDeath();

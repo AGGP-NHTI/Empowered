@@ -4,38 +4,14 @@ using UnityEngine;
 
 public class KillPlayers : PlayerPawn
 {
-    //this detects if player has fallen out of map and will kill player
-    private void Update()// need this to detect health and update!
-    {    
-        if (KnightHealth <= 0)
-        {
-            SceneTransition.NextBossArenaCount += 1;
-            Destroy(gameObject);
-        }
-        if (MageHealth <= 0)
-        {
-            SceneTransition.NextBossArenaCount += 1;
-            Destroy(gameObject);
-        }
-      
-        if (PriestHealth <= 0)
-        {
-            SceneTransition.NextBossArenaCount += 1;
-            Destroy(gameObject);          
-        }
+    KnightClass Knight;
+    MageClass Mage;
+    RangerClass Ranger;
+    PriestClass Priest;
+    DragonClass Dragon;
 
-        if (RangerHealth <= 0)
-        {
-            SceneTransition.NextBossArenaCount += 1;
-            Destroy(gameObject);           
-        }
-        if (DragonHealth <= 0)
-        {
-            Debug.Log("Hi");
-            SceneTransition.NextPlayerArenaCount += 1;
-            Destroy(gameObject);
-        }
-    }
+    //this detects if player has fallen out of map and will kill player
+    
    
     void OnTriggerEnter(Collider other)
     {
@@ -43,27 +19,33 @@ public class KillPlayers : PlayerPawn
         if (Dragon)
         {
             Debug.Log("Health is 0");
-            DragonHealth = 0f;
+            Dragon.DragonHealth = 0f;
+            SceneTransition.NextPlayerArenaCount += 1;
+
         }
         KnightClass Knight = other.gameObject.GetComponentInParent<KnightClass>();
         if (Knight)
         {
-            KnightHealth = 0f;
+            Knight.KnightHealth = 0f;
+            SceneTransition.NextBossArenaCount += 1;
         }
         RangerClass ranger = other.gameObject.GetComponentInParent<RangerClass>();
         if (ranger)
         {
-            RangerHealth = 0f;
+            Ranger.RangerHealth = 0f;
+            SceneTransition.NextBossArenaCount += 1;
         }
         PriestClass Priest = other.gameObject.GetComponentInParent<PriestClass>();
         if (Priest)
         {
-            PriestHealth = 0f;
+            Priest.PriestHealth = 0f;
+            SceneTransition.NextBossArenaCount += 1;
         }
         MageClass Mage = other.gameObject.GetComponentInParent<MageClass>();
         if (Mage)
         {
-            MageHealth = 0f;
+            Mage.MageHealth = 0f;
+            SceneTransition.NextBossArenaCount += 1;
         }
     }
 }

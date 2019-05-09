@@ -5,61 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class PlayerPawn : Pawn
 {
-
-    protected float DragonHealth = 2600.00f;
-    protected float KnightHealth = 420.0f;
-    protected float MageHealth = 380.0f;
-    protected float PriestHealth = 380.0f;
-    protected float RangerHealth = 400.0f;
-
-
-    protected float DragonMAXHealth = 2600.00f;
-    protected float KnightMAXHealth = 420.0f;
-    protected float MageMAXHealth = 380.0f;
-    protected float PriestMAXHealth = 380.0f;
-    protected float RangerMAXHealth = 400.0f;
-
-    protected override bool ProcessDamage(Class Source, float Value, DamageEventInfo EventInfo, Controller Instigator)
-    {
-        KnightHealth -= Value;
-        if (KnightHealth <= 0)
-        {
-            SceneTransition.NextBossArenaCount += 1;
-            Destroy(gameObject);
-            controller.OnDeath();
-        }
-        MageHealth -= Value;
-        if (MageHealth <= 0)
-        {
-            SceneTransition.NextBossArenaCount += 1;
-            Destroy(gameObject);
-            controller.OnDeath();
-            
-        }
-        PriestHealth -= Value;
-        if (PriestHealth <= 0)
-        {
-            SceneTransition.NextBossArenaCount += 1;
-            Destroy(gameObject);
-            controller.OnDeath();
-        }
-        RangerHealth -= Value;
-        if (RangerHealth <= 0)
-        {
-            SceneTransition.NextBossArenaCount += 1;
-            Destroy(gameObject);
-            controller.OnDeath();
-        }
-        DragonHealth -= Value;
-        if (DragonHealth <= 0)
-        {
-            SceneTransition.NextPlayerArenaCount += 1;
-            Destroy(gameObject);
-            controller.OnDeath();
-            
-        }
-        return true;
-    }
+    
     public virtual void Start()
     {
         IgnoresDamage = false;  

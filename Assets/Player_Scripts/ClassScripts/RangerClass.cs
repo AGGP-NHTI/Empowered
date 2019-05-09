@@ -5,6 +5,9 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class RangerClass : PlayerPawn
 {
+    public float RangerHealth = 400.0f;
+    public float RangerMAXHealth = 400.0f;
+
     public float MovementSpeed = 14;
     public float RotationSpeed = 280;
 
@@ -42,12 +45,19 @@ public class RangerClass : PlayerPawn
     {
         isGrounded = true;
     }
+    protected override bool ProcessDamage(Class Source, float Value, DamageEventInfo EventInfo, Controller Instigator)
+    {
+        RangerHealth -= Value;
+        return true;
+    }
 
     private void Update()
     {
         if (RangerHealth <= 0)
         {
+            SceneTransition.NextBossArenaCount += 1;
             Destroy(gameObject);
+            controller.OnDeath();
         }
 
         //Count time

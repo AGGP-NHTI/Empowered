@@ -5,12 +5,15 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class DragonClass : PlayerPawn
 {
+    public float DragonHealth = 2600.00f;
+    public float DragonMAXHealth = 2600.00f;
+
 
     KnightClass knight;
     MageClass mage;
     PriestClass priest;
     RangerClass ranger;
-
+    public GameObject DamageSpawn;
 
 
     public float MovementSpeed = 45;
@@ -25,6 +28,8 @@ public class DragonClass : PlayerPawn
 
     public GameObject Flame;
     public GameObject FlamePoint;
+
+    float mouthlifetime = 1;
 
     public GameObject Mouth;
     public GameObject MouthPoint;
@@ -47,7 +52,7 @@ public class DragonClass : PlayerPawn
     public int LeechRanger;
     public int LeechPriest;
 
-    public Vector3 Fly;
+    public Vector3 jump;
     public float jumpForce = 2.0f;
     public bool isGrounded;
 
@@ -57,7 +62,20 @@ public class DragonClass : PlayerPawn
     {
         rb = GetComponent<Rigidbody>();
         IgnoresDamage = false;
-        Fly = new Vector3(0.0f, 5.0f, 0.0f);
+        jump = new Vector3(0.0f, 5.0f, 0.0f);
+    }
+
+    protected override bool ProcessDamage(Class Source, float Value, DamageEventInfo EventInfo, Controller Instigator)
+    {
+        DragonHealth -= Value;
+        if (DragonHealth <= 0)
+        {
+            SceneTransition.NextPlayerArenaCount += 1;
+            controller.OnDeath();
+
+            Destroy(gameObject);
+        }
+        return true;
     }
     void OnCollisionStay()
     {
@@ -68,7 +86,10 @@ public class DragonClass : PlayerPawn
         if (DragonHealth <= 0)
         {
             Destroy(gameObject);
+
         }
+
+       
     }
 
     public void DragonPassive()
@@ -85,7 +106,7 @@ public class DragonClass : PlayerPawn
     {
         if(DragonHealth < 2595.0f)
         {
-            KnightHealth -= 5;
+            knight.KnightHealth -= 5;
             DragonHealth += 5;
         }
         
@@ -95,7 +116,7 @@ public class DragonClass : PlayerPawn
     {
         if (DragonHealth < 2595.0f)
         {
-            MageHealth -= 5;
+            mage.MageHealth -= 5;
             DragonHealth += 5;
         }
         
@@ -105,7 +126,7 @@ public class DragonClass : PlayerPawn
     {
         if(DragonHealth < 2595.0f)
         {
-            PriestHealth -= 5;
+            priest.PriestHealth -= 5;
             DragonHealth += 5;
         }
         
@@ -115,7 +136,7 @@ public class DragonClass : PlayerPawn
     {
         if(DragonHealth < 2595.0f)
         {
-            RangerHealth -= 5;
+            ranger.RangerHealth -= 5;
             DragonHealth += 5;
         }
         
@@ -145,6 +166,7 @@ public class DragonClass : PlayerPawn
     {
         if (Time.time > Nextfire0)
         {
+            Debug.Log("Fire1 DRAGO");
             Nextfire0 = Time.time + cooldownPeriod0;
 
             GameObject Claw1 = Instantiate(Slash, SlashPoint1.transform.position, SlashPoint1.transform.rotation);
@@ -159,10 +181,13 @@ public class DragonClass : PlayerPawn
     {
         if (Time.time > Nextfire1)
         {
+            Debug.Log("Fire2 DRAGO");
+
             Nextfire1 = Time.time + cooldownPeriod1;
 
             rb.AddForce(transform.forward * ForwardBite);
-            GameObject Bite = Instantiate(Mouth, MouthPoint.transform.position, MouthPoint.transform.rotation);
+            GameObject Bite = Instantiate(MouthPoint, Mouth.transform.position, Mouth.transform.rotation);
+           
         }
     }
     public override void Fire3(bool value)
@@ -185,8 +210,11 @@ public class DragonClass : PlayerPawn
     }
     public override void Fire4(bool value)
     {
-        rb.AddForce(Fly * jumpForce, ForceMode.Impulse);
-        isGrounded = false;
+        if (isGrounded)
+        {
+            rb.AddForce(jump * jumpForce, ForceMode.Impulse);
+            isGrounded = false;
+        }
     }
     public override void Fire5(bool value)
     {

@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class PriestConsecrate : PlayerPawn
 {
-    
+    KnightClass Knight;
+    MageClass Mage;
+    RangerClass Ranger;
+    PriestClass Priest;
+    DragonClass Dragon;
+
     public float lifetime = 10f;
     private void Update()
     {
@@ -37,9 +42,9 @@ public class PriestConsecrate : PlayerPawn
     }
     void Heal1()
     {
-        if (KnightHealth < 400.0f)
+        if (Knight.KnightHealth < 400.0f)
         {
-            KnightHealth += 20;
+            Knight.KnightHealth += 20;
         }
         
         
@@ -47,27 +52,27 @@ public class PriestConsecrate : PlayerPawn
 
     void Heal2()
     {
-        if (MageHealth < 360.0f)
+        if (Mage.MageHealth < 360.0f)
         {
-            MageHealth += 20;
+            Mage.MageHealth += 20;
         }
 
     }
 
     void Heal3()
     {
-        if (PriestHealth < 360.0f)
+        if (Priest.PriestHealth < 360.0f)
         {
-            PriestHealth += 20;
+            Priest.PriestHealth += 20;
         }
 
     }
 
     void Heal4()
     {
-        if (RangerHealth < 380.0f)
+        if (Ranger.RangerHealth < 380.0f)
         {
-            RangerHealth += 20;
+            Ranger.RangerHealth += 20;
         }
     }
 }

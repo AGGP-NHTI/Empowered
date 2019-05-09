@@ -145,6 +145,7 @@ public class Controller : PlayInfo
     }
     public virtual void OnDeath()
     {
+        RequestSpectate();
         isAlive = false;
     }
    
