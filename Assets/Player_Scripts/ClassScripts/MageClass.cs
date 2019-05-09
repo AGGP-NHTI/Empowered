@@ -115,17 +115,19 @@ public class MageClass : PlayerPawn
         {
             Nextfire2 = Time.time + cooldownPeriod2;
 
+            ArcaneShieldPoint.GetComponent<MageShell>().ShieldHealth = 80;
+
             ArcaneShieldPoint.SetActive(true);
         }
     }
-    public override void Fire4(bool value)
-    {
-        if (isGrounded)
-        {
-                rb.AddForce(jump * jumpForce, ForceMode.Impulse);
-        }
+    //public override void Fire4(bool value)
+    //{
+    //    if (isGrounded)
+    //    {
+    //            rb.AddForce(jump * jumpForce, ForceMode.Impulse);
+    //    }
         
-    }
+    //}
     void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.name == "GroundOne")

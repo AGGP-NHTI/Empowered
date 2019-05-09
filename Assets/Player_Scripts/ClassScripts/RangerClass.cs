@@ -140,14 +140,14 @@ public class RangerClass : PlayerPawn
             */
         }
     }
-    public override void Fire4(bool value)
-    {
-        if (isGrounded)
-        {
-            rb.AddForce(jump * jumpForce, ForceMode.Impulse);
-            isGrounded = false;
-        }
+    //public override void Fire4(bool value)
+    //{
+    //    if (isGrounded)
+    //    {
+    //        rb.AddForce(jump * jumpForce, ForceMode.Impulse);
+    //        isGrounded = false;
+    //    }
         
-    }
+    //}
     
 }

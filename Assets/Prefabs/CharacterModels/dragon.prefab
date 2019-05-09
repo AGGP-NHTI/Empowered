@@ -677,8 +677,8 @@ MonoBehaviour:
   IgnoresDamage: 0
   LogDamageEvents: 1
   IsSpectator: 1
-  DragonHealth: 2600
-  DragonMAXHealth: 2600
+  DragonHealth: 2000
+  DragonMAXHealth: 2000
   DragonhealthUI: {fileID: 2956448784777502195, guid: 25c367c9326ffaf4e9b3a0710cd44c27,
     type: 3}
   DamageSpawn: {fileID: 3496484149368169566}

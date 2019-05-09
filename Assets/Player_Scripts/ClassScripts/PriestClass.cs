@@ -13,6 +13,8 @@ public class PriestClass : PlayerPawn
     public float PriestHealth = 380.0f;
     public float PriestMAXHealth = 380.0f;
 
+    public GameObject heal;
+
     public float MovementSpeed = 14;
     public float RotationSpeed = 280;
 
@@ -97,44 +99,40 @@ public class PriestClass : PlayerPawn
     {
         if (Time.time > Nextfire1)
         {
-
+            
+            Debug.Log("has shot");
             Nextfire1 = Time.time + cooldownPeriod1;
+            foreach (GameObject spawn in GameObject.FindGameObjectsWithTag("Heal"))
+            {
+                GameObject healball = Instantiate(heal, spawn.transform.position,spawn.transform.rotation);
+            }
+           
+            //    if (Ranger.RangerHealth >= 400.0f || Ranger.RangerHealth >= 330.0f)
+            //    {
+            //        Ranger.RangerHealth = 400.0f;
+            //    }
+            //    else if (Ranger.RangerHealth <= 330.0f)
+            //    {
+            //        Ranger.RangerHealth += 70.0f;
+            //    }
 
-            if (Knight.KnightHealth >= 420.0f || Knight.KnightHealth >= 350.0f)
-            {
-                Knight.KnightHealth = 420.0f;
-            }
-            else if (Knight.KnightHealth <= 350.0f)
-            {
-                Knight.KnightHealth += 70.0f;
-            }
+            //    if (Mage.MageHealth >= 380.0f || Mage.MageHealth >= 310.0f)
+            //    {
+            //        Mage.MageHealth = 380.0f;
+            //    }
+            //    else if (Mage.MageHealth <= 310.0f)
+            //    {
+            //        Mage.MageHealth += 70.0f;
+            //    }
 
-            if (Ranger.RangerHealth >= 400.0f || Ranger.RangerHealth >= 330.0f)
-            {
-                Ranger.RangerHealth = 400.0f;
-            }
-            else if (Ranger.RangerHealth <= 330.0f)
-            {
-                Ranger.RangerHealth += 70.0f;
-            }
-
-            if (Mage.MageHealth >= 380.0f || Mage.MageHealth >= 310.0f)
-            {
-                Mage.MageHealth = 380.0f;
-            }
-            else if (Mage.MageHealth <= 310.0f)
-            {
-                Mage.MageHealth += 70.0f;
-            }
-
-            if (PriestHealth >= 380.0f || PriestHealth >= 310.0f)
-            {
-                PriestHealth = 365.0f;
-            }
-            else if (PriestHealth <= 310.0f)
-            {
-                PriestHealth += 70.0f;
-            }
+            //    if (PriestHealth >= 380.0f || PriestHealth >= 310.0f)
+            //    {
+            //        PriestHealth = 365.0f;
+            //    }
+            //    else if (PriestHealth <= 310.0f)
+            //    {
+            //        PriestHealth += 70.0f;
+            //    }
         }
         
     }
@@ -147,15 +145,15 @@ public class PriestClass : PlayerPawn
             GameObject Consecration = Instantiate(SacredGround, SacredGroundPoint.transform.position, SacredGroundPoint.transform.rotation);
         }
     }
-    public override void Fire4(bool value)
-    {
-        if (isGrounded)
-        {
-            rb.AddForce(jump * jumpForce, ForceMode.Impulse);
-            isGrounded = false;
-        }
+    //public override void Fire4(bool value)
+    //{
+    //    if (isGrounded)
+    //    {
+    //        rb.AddForce(jump * jumpForce, ForceMode.Impulse);
+    //        isGrounded = false;
+    //    }
         
-    }
+    //}
 
     
 }

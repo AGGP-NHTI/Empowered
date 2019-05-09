@@ -6,6 +6,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Rigidbody))]
 public class KnightClass : PlayerPawn
 {
+    PriestClass priest;
     public float KnightHealth = 420.0f;
     public float KnightMAXHealth = 420.0f;
 
@@ -39,6 +40,8 @@ public class KnightClass : PlayerPawn
     }
     private void Update()
     {
+       
+
         if (KnightHealth <= 0)
         {
             SceneTransition.NextBossArenaCount += 1;
@@ -108,14 +111,12 @@ void OnCollisionStay()
             GameObject AirShieldWall = Instantiate(AirShield, AirShieldPoint.transform.position, AirShieldPoint.transform.rotation);
         }
     }
-    public override void Fire4(bool value)
-    {
-        if (isGrounded)
-        {
-            rb.AddForce(jump * jumpForce, ForceMode.Impulse);
-            isGrounded = false;
-        }
-        
-    }
-   
+    //public override void Fire4(bool value)
+    //{
+    //    if (isGrounded)
+    //    {
+    //        rb.AddForce(jump * jumpForce, ForceMode.Impulse);
+    //        isGrounded = false;
+    //    }      
+    //}
 }

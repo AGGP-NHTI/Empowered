@@ -17,7 +17,7 @@ public class RangerArrow : Class
 
         rb.velocity = transform.forward * movementSpeed;
 
-        drag.IgnoresDamage = false;
+     //   drag.IgnoresDamage = false;
     }
 
     private void Update()

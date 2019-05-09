@@ -11,7 +11,7 @@ public class MageShell : Class
         ShieldHealth -= Value;
         if (ShieldHealth <= 0)
         {
-            mage.ArcaneShieldPoint.SetActive(false);
+            gameObject.SetActive(false);
         }
         return true;
     }

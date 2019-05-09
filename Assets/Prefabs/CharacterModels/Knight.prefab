@@ -1780,7 +1780,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4291153517676726472}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.26421, y: 4.547426, z: 2.8176334}
@@ -2046,6 +2046,7 @@ Transform:
   - {fileID: 5692423932662414009}
   - {fileID: 3530772594814754677}
   - {fileID: 289745549705621595}
+  - {fileID: 4521513579859165926}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -2064,6 +2065,8 @@ MonoBehaviour:
   IgnoresDamage: 0
   LogDamageEvents: 1
   IsSpectator: 1
+  KnightHealth: 420
+  KnightMAXHealth: 420
   MovementSpeed: 14
   RotationSpeed: 280
   Slash: {fileID: 3274148647171858485, guid: 404756de3eef71140b4d87ef0b2a3e8a, type: 3}
@@ -2746,6 +2749,36 @@ Transform:
   - {fileID: 4310612328027011576}
   m_Father: {fileID: 8247483404422703154}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6898891153608479438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4521513579859165926}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Heal
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4521513579859165926
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6898891153608479438}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.02, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 402387399719240849}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6956912639739883564
 GameObject:

@@ -6,8 +6,8 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Rigidbody))]
 public class DragonClass : PlayerPawn
 {
-    public float DragonHealth = 2600.00f;
-    public float DragonMAXHealth = 2600.00f;
+    public float DragonHealth = 2000.00f;
+    public float DragonMAXHealth = 2000.00f;
 
     public GameObject DragonhealthUI;
 
@@ -215,14 +215,14 @@ public class DragonClass : PlayerPawn
 
         }
     }
-    public override void Fire4(bool value)
-    {
-        if (isGrounded)
-        {
-            rb.AddForce(jump * jumpForce, ForceMode.Impulse);
-            isGrounded = false;
-        }
-    }
+    //public override void Fire4(bool value)
+    //{
+    //    if (isGrounded)
+    //    {
+    //        rb.AddForce(jump * jumpForce, ForceMode.Impulse);
+    //        isGrounded = false;
+    //    }
+    //}
     public override void Fire5(bool value)
     {
         if (Time.time > Nextfire3)

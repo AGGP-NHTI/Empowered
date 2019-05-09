@@ -102,6 +102,7 @@
     <Compile Include="Assets\Player_Scripts\PlayerController.cs" />
     <Compile Include="Assets\Player_Scripts\PlayerPawn.cs" />
     <Compile Include="Assets\Player_Scripts\PlayInfo.cs" />
+    <Compile Include="Assets\Player_Scripts\PriestHeal.cs" />
     <Compile Include="Assets\Player_Scripts\SceneTransition.cs" />
     <Compile Include="Assets\Player_Scripts\SpawnPoint.cs" />
     <Compile Include="Assets\Player_Scripts\SpawnSystem.cs" />

@@ -24,6 +24,7 @@ TagManager:
   - PriestDeathCircle
   - RangerDeathCircle
   - Controllers
+  - Heal
   layers:
   - Default
   - TransparentFX
