@@ -5,24 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Arenas/MainMenu.unity
     guid: 7947a259fb97f2848bca57c9c7ba88a5
   - enabled: 1
     path: Assets/Arenas/CharacterSelection.unity
     guid: cb9ea12a8538f894ab0f724c7da0e864
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Arenas/StartingArena.unity
     guid: 1bb8f5ee1e5914245b87055d7c118f9d

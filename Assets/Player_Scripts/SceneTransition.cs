@@ -76,7 +76,7 @@ public class SceneTransition : MonoBehaviour
         {
             if (GetConfirmedPlayers() == 4)
             {
-
+                Destroy(GameObject.Find("MainMenuAudio"));
                 SceneManager.LoadScene(ArenaStarting);
 
                 Player.SpectatorActor = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player);
