@@ -76,10 +76,6 @@ public class SceneTransition : MonoBehaviour
                 SceneManager.LoadScene(ArenaStarting);
 
                 Player.SpectatorActor = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player);
-                //Player2.SpectatorPreFab = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player2);
-                //Player3.SpectatorPreFab = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player3);
-                //Player4.SpectatorPreFab = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player4);
-
                 Player.PossesPawn(Player.SpectatorActor);
 
                // AllControllersSpectate(); 
@@ -91,20 +87,50 @@ public class SceneTransition : MonoBehaviour
         {
             if (NextPlayerArenaCount == 1)
             {
+                NextPlayerArenaCount = 0;
+                NextBossArenaCount = 0;
+
                 SceneManager.LoadScene(ArenaTwoScenePlayer1);
+                if (this.gameObject.tag == "StartingArena")
+                {
+                    //Player.SpectatorActor = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player);
+                    //Player.PossesPawn(Player.SpectatorActor);
+                }
+                this.gameObject.tag = "PlayerWinArenaOne(Leech)";
+
             }
         }
         if (this.gameObject.tag == "StartingArena")
         {
             if (NextBossArenaCount == 3)
             {
+                NextPlayerArenaCount = 0;
+                NextBossArenaCount = 0;
+
                 SceneManager.LoadScene(ArenaTwoSceneBoss1);
+                Player.SpectatorActor = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player);
+               
+
+                Player.PossesPawn(Player.SpectatorActor);
+
+                this.gameObject.tag = "PlayerWinArenaOne(Leech)";
+
+                
+
             }
         }
         if (this.gameObject.tag == "PlayerWinArenaOne(Leech)")
         {
             if (NextPlayerArenaCount == 1)
             {
+                NextPlayerArenaCount = 0;
+                NextBossArenaCount = 0;
+
+                Player.SpectatorActor = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player);
+
+                Player.PossesPawn(Player.SpectatorActor);
+
+                // AllControllersSpectate(); 
                 SceneManager.LoadScene(ArenaThreeScenePlayer2);
             }
         }
@@ -112,6 +138,14 @@ public class SceneTransition : MonoBehaviour
         {
             if (NextBossArenaCount == 3)
             {
+                NextPlayerArenaCount = 0;
+                NextBossArenaCount = 0;
+
+                Player.SpectatorActor = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player);
+
+                Player.PossesPawn(Player.SpectatorActor);
+
+                // AllControllersSpectate(); 
                 SceneManager.LoadScene(ArenaStarting);
             }
         }
@@ -119,6 +153,17 @@ public class SceneTransition : MonoBehaviour
         {
             if (NextPlayerArenaCount == 1)
             {
+                NextPlayerArenaCount = 0;
+                NextBossArenaCount = 0;
+
+                Player.SpectatorActor = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player);
+                //Player2.SpectatorPreFab = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player2);
+                //Player3.SpectatorPreFab = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player3);
+                //Player4.SpectatorPreFab = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player4);
+
+                Player.PossesPawn(Player.SpectatorActor);
+
+                // AllControllersSpectate(); 
                 SceneManager.LoadScene(CharacterSelect);
             }
         }
@@ -126,6 +171,17 @@ public class SceneTransition : MonoBehaviour
         {
             if (NextBossArenaCount == 3)
             {
+                NextPlayerArenaCount = 0;
+                NextBossArenaCount = 0;
+
+                Player.SpectatorActor = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player);
+                //Player2.SpectatorPreFab = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player2);
+                //Player3.SpectatorPreFab = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player3);
+                //Player4.SpectatorPreFab = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player4);
+
+                Player.PossesPawn(Player.SpectatorActor);
+
+                // AllControllersSpectate(); 
                 SceneManager.LoadScene(ArenaTwoScenePlayer1);
             }
         }
@@ -133,6 +189,17 @@ public class SceneTransition : MonoBehaviour
         {
             if (NextBossArenaCount == 3)
             {
+                NextPlayerArenaCount = 0;
+                NextBossArenaCount = 0;
+
+                Player.SpectatorActor = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player);
+                //Player2.SpectatorPreFab = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player2);
+                //Player3.SpectatorPreFab = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player3);
+                //Player4.SpectatorPreFab = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player4);
+
+                Player.PossesPawn(Player.SpectatorActor);
+
+                // AllControllersSpectate(); 
                 SceneManager.LoadScene(ArenaThreeSceneBoss2);
             }
         }
@@ -140,6 +207,17 @@ public class SceneTransition : MonoBehaviour
         {
             if (NextPlayerArenaCount == 1)
             {
+                NextPlayerArenaCount = 0;
+                NextBossArenaCount = 0;
+
+                Player.SpectatorActor = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player);
+                //Player2.SpectatorPreFab = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player2);
+                //Player3.SpectatorPreFab = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player3);
+                //Player4.SpectatorPreFab = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player4);
+
+                Player.PossesPawn(Player.SpectatorActor);
+
+                // AllControllersSpectate(); 
                 SceneManager.LoadScene(ArenaTwoSceneBoss1);
             }
         }
@@ -147,6 +225,17 @@ public class SceneTransition : MonoBehaviour
         {
             if (NextBossArenaCount == 3)
             {
+                NextPlayerArenaCount = 0;
+                NextBossArenaCount = 0;
+
+                Player.SpectatorActor = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player);
+                //Player2.SpectatorPreFab = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player2);
+                //Player3.SpectatorPreFab = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player3);
+                //Player4.SpectatorPreFab = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player4);
+
+                Player.PossesPawn(Player.SpectatorActor);
+
+                // AllControllersSpectate(); 
                 SceneManager.LoadScene(CharacterSelect);
             }
         }
@@ -154,6 +243,17 @@ public class SceneTransition : MonoBehaviour
         {
             if (NextPlayerArenaCount == 1)
             {
+                NextPlayerArenaCount = 0;
+                NextBossArenaCount = 0;
+
+                Player.SpectatorActor = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player);
+                //Player2.SpectatorPreFab = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player2);
+                //Player3.SpectatorPreFab = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player3);
+                //Player4.SpectatorPreFab = Controller.Factory(spectator, Vector3.zero, Quaternion.identity, Player4);
+
+                Player.PossesPawn(Player.SpectatorActor);
+
+                // AllControllersSpectate(); 
                 SceneManager.LoadScene(ArenaStarting);
             }
         }

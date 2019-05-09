@@ -989,7 +989,7 @@ PrefabInstance:
         type: 3}
       propertyPath: characterList.Array.data[0].selectedchar
       value: 
-      objectReference: {fileID: 3046098093477313441, guid: 8d56a7a05f2066d43a428ac4b6613017,
+      objectReference: {fileID: 3356199633027552741, guid: 8d56a7a05f2066d43a428ac4b6613017,
         type: 3}
     - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}
@@ -3854,7 +3854,7 @@ PrefabInstance:
         type: 3}
       propertyPath: characterList.Array.data[0].selectedchar
       value: 
-      objectReference: {fileID: 6510706685026718364, guid: 03c665c778135f6499ce1c7472450da8,
+      objectReference: {fileID: 1872588439996836920, guid: 03c665c778135f6499ce1c7472450da8,
         type: 3}
     - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}
@@ -4680,7 +4680,7 @@ PrefabInstance:
         type: 3}
       propertyPath: characterList.Array.data[0].selectedchar
       value: 
-      objectReference: {fileID: 3046098093477313441, guid: 8d56a7a05f2066d43a428ac4b6613017,
+      objectReference: {fileID: 3356199633027552741, guid: 8d56a7a05f2066d43a428ac4b6613017,
         type: 3}
     - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}
@@ -5531,7 +5531,7 @@ PrefabInstance:
         type: 3}
       propertyPath: characterList.Array.data[0].selectedchar
       value: 
-      objectReference: {fileID: 3046098093477313441, guid: 8d56a7a05f2066d43a428ac4b6613017,
+      objectReference: {fileID: 3356199633027552741, guid: 8d56a7a05f2066d43a428ac4b6613017,
         type: 3}
     - target: {fileID: 138200209585402254, guid: c0b6d82cc482b1c449dbb21df5df66c2,
         type: 3}

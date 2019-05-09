@@ -30,6 +30,7 @@ public class Controller : PlayInfo
     public int PlayerNumber = 0;
 
     public Pawn PossesedPawn;
+    public Pawn IAmMeMeAmI;
  
     protected virtual void Start()
     {

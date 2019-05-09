@@ -86,7 +86,7 @@ public class MageClass : PlayerPawn
         if (Time.time > Nextfire1)
         {
             Nextfire1 = Time.time + cooldownPeriod1;
-
+            DragonHealth -= 80.0f;
             GameObject LightningBolt = Instantiate(Lightning, LightningPoint.transform.position, LightningPoint.transform.rotation);
         }
     }

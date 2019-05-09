@@ -51,7 +51,7 @@ public class PlayerPawn : Pawn
             controller.OnDeath();
         }
         DragonHealth -= Value;
-        if (RangerHealth <= 0)
+        if (DragonHealth <= 0)
         {
             SceneTransition.NextPlayerArenaCount += 1;
             Destroy(gameObject);

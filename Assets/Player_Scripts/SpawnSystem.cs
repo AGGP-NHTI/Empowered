@@ -38,7 +38,7 @@ public class SpawnSystem : PlayInfo
         if (UseRandomSpawnPoint) { SpawnLocation = GetRandomSpawnPoint(); }
         else { SpawnLocation = GetNextSpawnPoint(); }
 
-        GameObject NewPawn = Factory(SpawnPreFab, SpawnLocation.position, SpawnLocation.rotation, c);
+        GameObject NewPawn = Factory(SpawnPreFab, SpawnLocation.position, SpawnLocation.rotation, c) as GameObject; // joe add "as GameObject"
         if (!NewPawn)
         {
             LOG_ERROR("SPAWN SYSTEM: Request Spawn: Could not Spawn New Pawn");

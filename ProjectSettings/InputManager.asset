@@ -3267,7 +3267,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 0
+    axis: 3
     joyNum: 1
   - serializedVersion: 3
     m_Name: P1Vertical
@@ -3281,7 +3281,7 @@ InputManager:
     dead: 0.19
     sensitivity: 0.5
     snap: 0
-    invert: 0
+    invert: 1
     type: 2
     axis: 1
     joyNum: 1
@@ -3362,7 +3362,7 @@ InputManager:
     sensitivity: 1
     snap: 0
     invert: 0
-    type: 0
+    type: 2
     axis: 0
     joyNum: 2
   - serializedVersion: 3
@@ -3377,8 +3377,8 @@ InputManager:
     dead: 0.19
     sensitivity: 1
     snap: 0
-    invert: 0
-    type: 0
+    invert: 1
+    type: 2
     axis: 1
     joyNum: 2
   - serializedVersion: 3
@@ -3458,7 +3458,7 @@ InputManager:
     sensitivity: 1
     snap: 0
     invert: 0
-    type: 0
+    type: 2
     axis: 0
     joyNum: 3
   - serializedVersion: 3
@@ -3473,8 +3473,8 @@ InputManager:
     dead: 0.19
     sensitivity: 1
     snap: 0
-    invert: 0
-    type: 0
+    invert: 1
+    type: 2
     axis: 1
     joyNum: 3
   - serializedVersion: 3
@@ -3554,7 +3554,7 @@ InputManager:
     sensitivity: 0.5
     snap: 0
     invert: 0
-    type: 0
+    type: 2
     axis: 0
     joyNum: 4
   - serializedVersion: 3
@@ -3569,8 +3569,8 @@ InputManager:
     dead: 0.19
     sensitivity: 0.5
     snap: 0
-    invert: 0
-    type: 0
+    invert: 1
+    type: 2
     axis: 1
     joyNum: 4
   - serializedVersion: 3

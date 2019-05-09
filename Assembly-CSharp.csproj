@@ -92,6 +92,7 @@
     <Compile Include="Assets\Player_Scripts\FrameworkHUD.cs" />
     <Compile Include="Assets\Player_Scripts\InputCollection.cs" />
     <Compile Include="Assets\Player_Scripts\InputPlayer.cs" />
+    <Compile Include="Assets\Player_Scripts\KillPlayers.cs" />
     <Compile Include="Assets\Player_Scripts\LevelSpawnUI.cs" />
     <Compile Include="Assets\Player_Scripts\MainMenu.cs" />
     <Compile Include="Assets\Player_Scripts\NoDestroy.cs" />
