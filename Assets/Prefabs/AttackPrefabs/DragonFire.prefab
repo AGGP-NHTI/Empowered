@@ -1,5 +1,362 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &6666952830100137485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16357507470805509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7679d92f143d1249a1e8f31618433dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 4
+  movementSpeed: 10
+  lifetime: 2
+--- !u!114 &8008605585450241502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185231335557525874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7679d92f143d1249a1e8f31618433dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 4
+  movementSpeed: 10
+  lifetime: 2
+--- !u!114 &4884839504413984231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749207922851504929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7679d92f143d1249a1e8f31618433dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 4
+  movementSpeed: 10
+  lifetime: 2
+--- !u!114 &6449322873121526898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751525155957851493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7679d92f143d1249a1e8f31618433dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 4
+  movementSpeed: 10
+  lifetime: 2
+--- !u!114 &4828041934329869612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074290019324055832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7679d92f143d1249a1e8f31618433dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 4
+  movementSpeed: 10
+  lifetime: 2
+--- !u!114 &2883394446644094926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2530623083254536402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7679d92f143d1249a1e8f31618433dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 4
+  movementSpeed: 10
+  lifetime: 2
+--- !u!114 &3653508435526677038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3220948262115186059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7679d92f143d1249a1e8f31618433dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 4
+  movementSpeed: 10
+  lifetime: 2
+--- !u!114 &1968892410230701251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3369776161560859815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7679d92f143d1249a1e8f31618433dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 4
+  movementSpeed: 10
+  lifetime: 2
+--- !u!114 &4198141235850204933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4019675707709686384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7679d92f143d1249a1e8f31618433dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 4
+  movementSpeed: 10
+  lifetime: 2
+--- !u!114 &907196996238473469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4339149744059674141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7679d92f143d1249a1e8f31618433dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 4
+  movementSpeed: 10
+  lifetime: 2
+--- !u!114 &6504013744914078616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4771046437841311813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7679d92f143d1249a1e8f31618433dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 4
+  movementSpeed: 10
+  lifetime: 2
+--- !u!114 &4082708348010017921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4967835486230249855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7679d92f143d1249a1e8f31618433dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 4
+  movementSpeed: 10
+  lifetime: 2
+--- !u!114 &8664125397321453238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5069292872046471914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7679d92f143d1249a1e8f31618433dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 4
+  movementSpeed: 10
+  lifetime: 2
+--- !u!114 &1362941812540839914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5992477802521862010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7679d92f143d1249a1e8f31618433dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 4
+  movementSpeed: 10
+  lifetime: 2
+--- !u!114 &8809643450309440065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6207135124067366557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7679d92f143d1249a1e8f31618433dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 4
+  movementSpeed: 10
+  lifetime: 2
+--- !u!114 &5722324749219295706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6475435277242070418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7679d92f143d1249a1e8f31618433dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 4
+  movementSpeed: 10
+  lifetime: 2
+--- !u!114 &8639334607228148613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6684970505309127414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7679d92f143d1249a1e8f31618433dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 4
+  movementSpeed: 10
+  lifetime: 2
+--- !u!114 &7649239892462035284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7562520920402994538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7679d92f143d1249a1e8f31618433dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 4
+  movementSpeed: 10
+  lifetime: 2
+--- !u!114 &2977749703745454216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7805172205955858938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7679d92f143d1249a1e8f31618433dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 4
+  movementSpeed: 10
+  lifetime: 2
+--- !u!114 &1345891731069428906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7837713971514534250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7679d92f143d1249a1e8f31618433dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 4
+  movementSpeed: 10
+  lifetime: 2
+--- !u!114 &878540017422200265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8116911790900453420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7679d92f143d1249a1e8f31618433dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 4
+  movementSpeed: 10
+  lifetime: 2
 --- !u!1 &8412458539199113914
 GameObject:
   m_ObjectHideFlags: 0
@@ -13,7 +370,7 @@ GameObject:
   - component: {fileID: 2126829172424574253}
   - component: {fileID: 8286635304877511135}
   - component: {fileID: 9207671718002765085}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DragonFire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IgnoresDamage: 0
   LogDamageEvents: 1
-  damageAmount: 65
+  damageAmount: 4
   movementSpeed: 10
   lifetime: 2
 --- !u!135 &2126829172424574253
@@ -115,6 +472,74 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.085989
   m_Center: {x: -1.1576152, y: 0.12544823, z: -0.0000000020406414}
+--- !u!114 &3888572642276457345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8514376674016097131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7679d92f143d1249a1e8f31618433dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 4
+  movementSpeed: 10
+  lifetime: 2
+--- !u!114 &8787456552901877684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8825003656861109609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7679d92f143d1249a1e8f31618433dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 4
+  movementSpeed: 10
+  lifetime: 2
+--- !u!114 &7801863442666578932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8935278711672709237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7679d92f143d1249a1e8f31618433dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 4
+  movementSpeed: 10
+  lifetime: 2
+--- !u!114 &8933321666014077290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9164115348372900420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7679d92f143d1249a1e8f31618433dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoresDamage: 0
+  LogDamageEvents: 1
+  damageAmount: 4
+  movementSpeed: 10
+  lifetime: 2
 --- !u!1001 &855918315686968450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -122,6 +547,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2337226765031965507}
     m_Modifications:
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Name
+      value: Magefireball (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -192,21 +627,23 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5188078
       objectReference: {fileID: 0}
-    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
-        type: 3}
-      propertyPath: m_Name
-      value: Magefireball (15)
-      objectReference: {fileID: 0}
     - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479851756621827336, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &7205173617412279975 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
+    type: 3}
+  m_PrefabInstance: {fileID: 855918315686968450}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2074290019324055832 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
     type: 3}
   m_PrefabInstance: {fileID: 855918315686968450}
   m_PrefabAsset: {fileID: 0}
@@ -217,6 +654,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2337226765031965507}
     m_Modifications:
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Name
+      value: Magefireball (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -287,18 +734,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.51880753
       objectReference: {fileID: 0}
-    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
-        type: 3}
-      propertyPath: m_Name
-      value: Magefireball (17)
-      objectReference: {fileID: 0}
     - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479851756621827336, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
+--- !u!1 &1751525155957851493 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1109895679623309567}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7456300908676487898 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
@@ -312,6 +761,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2337226765031965507}
     m_Modifications:
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Name
+      value: Magefireball (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -382,21 +841,23 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.51880795
       objectReference: {fileID: 0}
-    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
-        type: 3}
-      propertyPath: m_Name
-      value: Magefireball (10)
-      objectReference: {fileID: 0}
     - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479851756621827336, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &7454266229387050142 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1112355789859425979}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1749207922851504929 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
     type: 3}
   m_PrefabInstance: {fileID: 1112355789859425979}
   m_PrefabAsset: {fileID: 0}
@@ -407,6 +868,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2337226765031965507}
     m_Modifications:
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Name
+      value: Magefireball (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -477,21 +948,23 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5188074
       objectReference: {fileID: 0}
-    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
-        type: 3}
-      propertyPath: m_Name
-      value: Magefireball (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479851756621827336, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &9054102332307910349 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1566016884159683816}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &185231335557525874 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
     type: 3}
   m_PrefabInstance: {fileID: 1566016884159683816}
   m_PrefabAsset: {fileID: 0}
@@ -502,6 +975,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2337226765031965507}
     m_Modifications:
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Name
+      value: Magefireball (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -572,18 +1055,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5188077
       objectReference: {fileID: 0}
-    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
-        type: 3}
-      propertyPath: m_Name
-      value: Magefireball (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479851756621827336, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
+--- !u!1 &16357507470805509 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1662835367763650463}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9155446280110446010 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
@@ -597,6 +1082,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2337226765031965507}
     m_Modifications:
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Name
+      value: Magefireball (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -667,18 +1162,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.51880735
       objectReference: {fileID: 0}
-    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
-        type: 3}
-      propertyPath: m_Name
-      value: Magefireball (29)
-      objectReference: {fileID: 0}
     - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479851756621827336, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
+--- !u!1 &4019675707709686384 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2369261904808570858}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5259202919699275215 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
@@ -692,6 +1189,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2337226765031965507}
     m_Modifications:
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Name
+      value: Magefireball
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -762,18 +1269,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5188078
       objectReference: {fileID: 0}
-    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
-        type: 3}
-      propertyPath: m_Name
-      value: Magefireball
-      objectReference: {fileID: 0}
     - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479851756621827336, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
+--- !u!1 &4339149744059674141 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+    type: 3}
+  m_PrefabInstance: {fileID: 3107008031642092423}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4828827751504261538 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
@@ -787,6 +1296,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2337226765031965507}
     m_Modifications:
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Name
+      value: Magefireball (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -857,21 +1376,23 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.51880753
       objectReference: {fileID: 0}
-    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
-        type: 3}
-      propertyPath: m_Name
-      value: Magefireball (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479851756621827336, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &6641160990280419181 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
+    type: 3}
+  m_PrefabInstance: {fileID: 3762505345507603784}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2530623083254536402 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
     type: 3}
   m_PrefabInstance: {fileID: 3762505345507603784}
   m_PrefabAsset: {fileID: 0}
@@ -882,6 +1403,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2337226765031965507}
     m_Modifications:
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Name
+      value: Magefireball (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -952,21 +1483,23 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5188078
       objectReference: {fileID: 0}
-    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
-        type: 3}
-      propertyPath: m_Name
-      value: Magefireball (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479851756621827336, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &5906305305988877080 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
+    type: 3}
+  m_PrefabInstance: {fileID: 4173244163189209405}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3369776161560859815 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
     type: 3}
   m_PrefabInstance: {fileID: 4173244163189209405}
   m_PrefabAsset: {fileID: 0}
@@ -977,6 +1510,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2337226765031965507}
     m_Modifications:
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Name
+      value: Magefireball (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1047,21 +1590,23 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.51880765
       objectReference: {fileID: 0}
-    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
-        type: 3}
-      propertyPath: m_Name
-      value: Magefireball (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479851756621827336, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &6018968077593168436 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
+    type: 3}
+  m_PrefabInstance: {fileID: 4294909593164642321}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3220948262115186059 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
     type: 3}
   m_PrefabInstance: {fileID: 4294909593164642321}
   m_PrefabAsset: {fileID: 0}
@@ -1072,6 +1617,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2337226765031965507}
     m_Modifications:
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Name
+      value: Magefireball (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1142,18 +1697,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5188076
       objectReference: {fileID: 0}
-    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
-        type: 3}
-      propertyPath: m_Name
-      value: Magefireball (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479851756621827336, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
+--- !u!1 &6207135124067366557 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+    type: 3}
+  m_PrefabInstance: {fileID: 4687581346792856327}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2959036962296588578 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
@@ -1167,6 +1724,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2337226765031965507}
     m_Modifications:
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Name
+      value: Magefireball (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1237,21 +1804,23 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.51880765
       objectReference: {fileID: 0}
-    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
-        type: 3}
-      propertyPath: m_Name
-      value: Magefireball (30)
-      objectReference: {fileID: 0}
     - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479851756621827336, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &3178765345849098437 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
+    type: 3}
+  m_PrefabInstance: {fileID: 4899916582988149472}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5992477802521862010 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
     type: 3}
   m_PrefabInstance: {fileID: 4899916582988149472}
   m_PrefabAsset: {fileID: 0}
@@ -1262,6 +1831,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2337226765031965507}
     m_Modifications:
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Name
+      value: Magefireball (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1332,21 +1911,23 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5188078
       objectReference: {fileID: 0}
-    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
-        type: 3}
-      propertyPath: m_Name
-      value: Magefireball (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479851756621827336, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &2589985071074696521 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
+    type: 3}
+  m_PrefabInstance: {fileID: 5470826423614533484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6684970505309127414 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
     type: 3}
   m_PrefabInstance: {fileID: 5470826423614533484}
   m_PrefabAsset: {fileID: 0}
@@ -1357,6 +1938,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2337226765031965507}
     m_Modifications:
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Name
+      value: Magefireball (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1427,18 +2018,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.51880765
       objectReference: {fileID: 0}
-    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
-        type: 3}
-      propertyPath: m_Name
-      value: Magefireball (27)
-      objectReference: {fileID: 0}
     - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479851756621827336, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
+--- !u!1 &6475435277242070418 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+    type: 3}
+  m_PrefabInstance: {fileID: 5689401990761453576}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2804034893721971245 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
@@ -1452,6 +2045,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2337226765031965507}
     m_Modifications:
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Name
+      value: Magefireball (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1522,18 +2125,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5188078
       objectReference: {fileID: 0}
-    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
-        type: 3}
-      propertyPath: m_Name
-      value: Magefireball (19)
-      objectReference: {fileID: 0}
     - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479851756621827336, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
+--- !u!1 &5069292872046471914 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+    type: 3}
+  m_PrefabInstance: {fileID: 5868245179668399984}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4137981160060695893 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
@@ -1547,6 +2152,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2337226765031965507}
     m_Modifications:
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Name
+      value: Magefireball (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1617,18 +2232,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.51880753
       objectReference: {fileID: 0}
-    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
-        type: 3}
-      propertyPath: m_Name
-      value: Magefireball (21)
-      objectReference: {fileID: 0}
     - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479851756621827336, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
+--- !u!1 &4967835486230249855 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+    type: 3}
+  m_PrefabInstance: {fileID: 6041793209772993765}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4307126792864882368 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
@@ -1642,6 +2259,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2337226765031965507}
     m_Modifications:
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Name
+      value: Magefireball (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1712,21 +2339,23 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5188079
       objectReference: {fileID: 0}
-    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
-        type: 3}
-      propertyPath: m_Name
-      value: Magefireball (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479851756621827336, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &4396244994294171642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
+    type: 3}
+  m_PrefabInstance: {fileID: 6133805458980074975}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4771046437841311813 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
     type: 3}
   m_PrefabInstance: {fileID: 6133805458980074975}
   m_PrefabAsset: {fileID: 0}
@@ -1737,6 +2366,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2337226765031965507}
     m_Modifications:
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Name
+      value: Magefireball (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1807,21 +2446,23 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.51880777
       objectReference: {fileID: 0}
-    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
-        type: 3}
-      propertyPath: m_Name
-      value: Magefireball (26)
-      objectReference: {fileID: 0}
     - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479851756621827336, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &656844449590750420 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
+    type: 3}
+  m_PrefabInstance: {fileID: 6989774214495379185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8514376674016097131 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
     type: 3}
   m_PrefabInstance: {fileID: 6989774214495379185}
   m_PrefabAsset: {fileID: 0}
@@ -1832,6 +2473,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2337226765031965507}
     m_Modifications:
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Name
+      value: Magefireball (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1902,18 +2553,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5188077
       objectReference: {fileID: 0}
-    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
-        type: 3}
-      propertyPath: m_Name
-      value: Magefireball (28)
-      objectReference: {fileID: 0}
     - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479851756621827336, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
+--- !u!1 &8116911790900453420 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+    type: 3}
+  m_PrefabInstance: {fileID: 7461513096041483702}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1121854487512743827 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
@@ -1927,6 +2580,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2337226765031965507}
     m_Modifications:
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Name
+      value: Magefireball (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1997,21 +2660,23 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.51880795
       objectReference: {fileID: 0}
-    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
-        type: 3}
-      propertyPath: m_Name
-      value: Magefireball (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479851756621827336, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
 --- !u!4 &7259704777119227 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
+    type: 3}
+  m_PrefabInstance: {fileID: 7495384781527427038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9164115348372900420 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
     type: 3}
   m_PrefabInstance: {fileID: 7495384781527427038}
   m_PrefabAsset: {fileID: 0}
@@ -2022,6 +2687,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2337226765031965507}
     m_Modifications:
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Name
+      value: Magefireball (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2092,18 +2767,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5188078
       objectReference: {fileID: 0}
-    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
-        type: 3}
-      propertyPath: m_Name
-      value: Magefireball (14)
-      objectReference: {fileID: 0}
     - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479851756621827336, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
+--- !u!1 &8935278711672709237 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+    type: 3}
+  m_PrefabInstance: {fileID: 7721969399840361967}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &231034154975657930 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
@@ -2117,6 +2794,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2337226765031965507}
     m_Modifications:
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Name
+      value: Magefireball (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2187,18 +2874,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5188076
       objectReference: {fileID: 0}
-    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
-        type: 3}
-      propertyPath: m_Name
-      value: Magefireball (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479851756621827336, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
+--- !u!1 &8825003656861109609 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+    type: 3}
+  m_PrefabInstance: {fileID: 7877139850934984947}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &381687640525116118 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
@@ -2212,6 +2901,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2337226765031965507}
     m_Modifications:
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Name
+      value: Magefireball (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2282,18 +2981,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5188076
       objectReference: {fileID: 0}
-    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
-        type: 3}
-      propertyPath: m_Name
-      value: Magefireball (20)
-      objectReference: {fileID: 0}
     - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479851756621827336, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
+--- !u!1 &7805172205955858938 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8896865601561504864}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1397587263555280453 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
@@ -2307,6 +3008,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2337226765031965507}
     m_Modifications:
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Name
+      value: Magefireball (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2377,18 +3088,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5188077
       objectReference: {fileID: 0}
-    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
-        type: 3}
-      propertyPath: m_Name
-      value: Magefireball (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479851756621827336, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
+--- !u!1 &7837713971514534250 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8929698737946232048}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1437096497126553301 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
@@ -2402,6 +3115,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2337226765031965507}
     m_Modifications:
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Name
+      value: Magefireball (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2472,18 +3195,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.51880795
       objectReference: {fileID: 0}
-    - target: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
-        type: 3}
-      propertyPath: m_Name
-      value: Magefireball (16)
-      objectReference: {fileID: 0}
     - target: {fileID: 5270695534374281778, guid: 0e8fee2296f906d48bb177020a0a471c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebc5f1fc29c43ce429930b29d4cd1b73, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479851756621827336, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e8fee2296f906d48bb177020a0a471c, type: 3}
+--- !u!1 &7562520920402994538 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1669022246984183194, guid: 0e8fee2296f906d48bb177020a0a471c,
+    type: 3}
+  m_PrefabInstance: {fileID: 9212946817684326640}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1713558391093623509 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7502220821191307813, guid: 0e8fee2296f906d48bb177020a0a471c,

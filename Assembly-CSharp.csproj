@@ -89,12 +89,14 @@
     <Compile Include="Assets\Player_Scripts\DontDestroy.cs" />
     <Compile Include="Assets\Player_Scripts\EmpController.cs" />
     <Compile Include="Assets\Player_Scripts\EmpoweredInput.cs" />
+    <Compile Include="Assets\Player_Scripts\EndScreenMenu.cs" />
     <Compile Include="Assets\Player_Scripts\FrameworkHUD.cs" />
     <Compile Include="Assets\Player_Scripts\InputCollection.cs" />
     <Compile Include="Assets\Player_Scripts\InputPlayer.cs" />
     <Compile Include="Assets\Player_Scripts\KillPlayers.cs" />
     <Compile Include="Assets\Player_Scripts\LevelSpawnUI.cs" />
     <Compile Include="Assets\Player_Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Player_Scripts\MainMenuScript.cs" />
     <Compile Include="Assets\Player_Scripts\NoDestroy.cs" />
     <Compile Include="Assets\Player_Scripts\Pawn.cs" />
     <Compile Include="Assets\Player_Scripts\PlayerController.cs" />

@@ -19,7 +19,7 @@ public class SpectatorSpawn : PlayerPawn
 
     public override void Fire1(bool value)
     {
-        if (value)
+        if (value && controller.isAlive)
         {
             controller.RequestSpawn();
         }

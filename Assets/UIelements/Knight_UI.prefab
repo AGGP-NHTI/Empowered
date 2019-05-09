@@ -123,6 +123,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Death_Circle
       objectReference: {fileID: 0}
+    - target: {fileID: 5857023258494067318, guid: e381910afb0474041a254ad8118eaa43,
+        type: 3}
+      propertyPath: m_TagString
+      value: KnightDeathCircle
+      objectReference: {fileID: 0}
     - target: {fileID: 6010553747178922141, guid: e381910afb0474041a254ad8118eaa43,
         type: 3}
       propertyPath: m_LocalPosition.x

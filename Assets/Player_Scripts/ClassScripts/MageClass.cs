@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody))]
 public class MageClass : PlayerPawn
@@ -59,6 +60,9 @@ public class MageClass : PlayerPawn
             Destroy(gameObject);
             controller.OnDeath();
         }
+
+        GameObject.FindGameObjectWithTag("MageDeathCircle").GetComponent<Image>().fillAmount = 1 - (MageHealth / MageMAXHealth);
+
     }
 
     public override void Horizontal(float value)

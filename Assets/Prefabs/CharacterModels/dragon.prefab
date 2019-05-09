@@ -679,6 +679,8 @@ MonoBehaviour:
   IsSpectator: 1
   DragonHealth: 2600
   DragonMAXHealth: 2600
+  DragonhealthUI: {fileID: 2956448784777502195, guid: 25c367c9326ffaf4e9b3a0710cd44c27,
+    type: 3}
   DamageSpawn: {fileID: 3496484149368169566}
   MovementSpeed: 10
   RotationSpeed: 180
@@ -688,9 +690,8 @@ MonoBehaviour:
   SlashPoint3: {fileID: 3823044202407047937}
   SlashPoint4: {fileID: 6098522578274771671}
   SlashPoint5: {fileID: 6988746208234706871}
-  Flame: {fileID: 3816543902371181872}
-  FlamePoint: {fileID: 8412458539199113914, guid: 1da52eae274410447bce7a8503ee5a48,
-    type: 3}
+  Flame: {fileID: 8412458539199113914, guid: 1da52eae274410447bce7a8503ee5a48, type: 3}
+  FlamePoint: {fileID: 3816543902371181872}
   Mouth: {fileID: 993732860139032932}
   MouthPoint: {fileID: 7540828121252354426, guid: f0956cc5af96c874baa87207d3a6880f,
     type: 3}
@@ -704,6 +705,7 @@ MonoBehaviour:
   LeechMage: 0
   LeechRanger: 0
   LeechPriest: 0
+  Scaleslasts: 10
   jump: {x: 0, y: 0, z: 0}
   jumpForce: 2
   isGrounded: 0
@@ -1333,13 +1335,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3816543902371181872}
-  m_LocalRotation: {x: 0.0861746, y: 0.70183617, z: -0.0861746, w: 0.70183617}
-  m_LocalPosition: {x: 0.1013, y: 0.062, z: 0.0244}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.1573, y: 0.062, z: 0.0244}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3956459310567099631}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 14, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3823044202407047937
 GameObject:
   m_ObjectHideFlags: 0

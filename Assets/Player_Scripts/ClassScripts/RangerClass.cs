@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody))]
 public class RangerClass : PlayerPawn
@@ -67,6 +68,8 @@ public class RangerClass : PlayerPawn
             //time to remove to powerup component
             this.IgnoresDamage = false;
         }
+
+        GameObject.FindGameObjectWithTag("RangerDeathCircle").GetComponent<Image>().fillAmount = 1 - (RangerHealth / RangerMAXHealth);
 
     }
 

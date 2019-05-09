@@ -14,8 +14,6 @@ public class FlameBreath : Class
         rb = gameObject.AddComponent<Rigidbody>();
 
         rb.velocity = transform.forward * movementSpeed;
-
-
     }
 
     private void Update()
@@ -27,7 +25,7 @@ public class FlameBreath : Class
     void OnTriggerEnter(Collider other)
     {
         Class OtherClass = other.gameObject.GetComponentInParent<Class>();
-        if (OtherClass && other.gameObject.tag == "Player")
+        if (OtherClass) //&& other.gameObject.tag == "Player")
         {
             OtherClass.TakeDamage(this, damageAmount, new DamageEventInfo(typeof(AttackDamageType)), Owner);
         }

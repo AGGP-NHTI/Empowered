@@ -20,32 +20,32 @@ public class KillPlayers : PlayerPawn
         {
             Debug.Log("Health is 0");
             Dragon.DragonHealth = 0f;
-            SceneTransition.NextPlayerArenaCount += 1;
+            //SceneTransition.NextPlayerArenaCount += 1;
 
         }
         KnightClass Knight = other.gameObject.GetComponentInParent<KnightClass>();
         if (Knight)
         {
             Knight.KnightHealth = 0f;
-            SceneTransition.NextBossArenaCount += 1;
+           // SceneTransition.NextBossArenaCount += 1;
         }
-        RangerClass ranger = other.gameObject.GetComponentInParent<RangerClass>();
-        if (ranger)
+        RangerClass Ranger = other.gameObject.GetComponentInParent<RangerClass>();
+        if (Ranger)
         {
             Ranger.RangerHealth = 0f;
-            SceneTransition.NextBossArenaCount += 1;
+           // SceneTransition.NextBossArenaCount += 1;
         }
         PriestClass Priest = other.gameObject.GetComponentInParent<PriestClass>();
         if (Priest)
         {
             Priest.PriestHealth = 0f;
-            SceneTransition.NextBossArenaCount += 1;
+           // SceneTransition.NextBossArenaCount += 1;
         }
         MageClass Mage = other.gameObject.GetComponentInParent<MageClass>();
         if (Mage)
         {
             Mage.MageHealth = 0f;
-            SceneTransition.NextBossArenaCount += 1;
+           // SceneTransition.NextBossArenaCount += 1;
         }
     }
 }

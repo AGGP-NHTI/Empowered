@@ -19,4 +19,12 @@ public class DontDestroy : MonoBehaviour
         SceneTransition.instance = gameObject.GetComponent<SceneTransition>();
         DontDestroyOnLoad(gameObject);
     }
+
+    //private void Update()
+    //{
+    //    if (GameObject.FindGameObjectWithTag("CharacterSelection"))
+    //    {
+    //        Destroy(this);
+    //    }
+    //}
 }

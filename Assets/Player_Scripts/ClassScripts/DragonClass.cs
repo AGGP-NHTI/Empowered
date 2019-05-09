@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody))]
 public class DragonClass : PlayerPawn
@@ -8,6 +9,7 @@ public class DragonClass : PlayerPawn
     public float DragonHealth = 2600.00f;
     public float DragonMAXHealth = 2600.00f;
 
+    public GameObject DragonhealthUI;
 
     KnightClass knight;
     MageClass mage;
@@ -52,6 +54,9 @@ public class DragonClass : PlayerPawn
     public int LeechRanger;
     public int LeechPriest;
 
+    private float Scalestimer;
+    public float Scaleslasts = 10.0f;
+
     public Vector3 jump;
     public float jumpForce = 2.0f;
     public bool isGrounded;
@@ -88,8 +93,16 @@ public class DragonClass : PlayerPawn
             Destroy(gameObject);
 
         }
+        //Count time
+        Scalestimer += Time.deltaTime;
+        if (Scalestimer > Scaleslasts)
+        {
+            //time to remove to powerup component
+            this.IgnoresDamage = false;
+        }
 
-       
+        GameObject.FindGameObjectWithTag("DragonDeathCircle").GetComponent<Image>().fillAmount = 1 - (DragonHealth / DragonMAXHealth);
+
     }
 
     public void DragonPassive()
@@ -196,16 +209,10 @@ public class DragonClass : PlayerPawn
         {
             Nextfire2 = Time.time + cooldownPeriod2;
 
-            float Scalestimer = 10.0f;
-            if (IgnoresDamage = false && Scalestimer == 10.0f)
-            {
-                IgnoresDamage = true;
-                Scalestimer -= Time.deltaTime;
-                if (IgnoresDamage = true && Scalestimer == 0.0f)
-                {
-                    IgnoresDamage = false;
-                }
-            }
+            Scalestimer = 0;
+
+            this.IgnoresDamage = true;
+
         }
     }
     public override void Fire4(bool value)
@@ -225,7 +232,7 @@ public class DragonClass : PlayerPawn
             float Stop = 15.0f;
             while (Stop > 0.0f)
             {
-               mage.cooldownPeriod1 = 99.9f;
+                mage.cooldownPeriod1 = 99.9f;
                 mage.cooldownPeriod2 = 99.9f;
 
                 knight.cooldownPeriod1 = 99.9f;
@@ -247,6 +254,7 @@ public class DragonClass : PlayerPawn
     {
         if (Time.time > Nextfire4)
         {
+            Debug.Log("Firebreathhh");
             Nextfire4 = Time.time + cooldownPeriod4;
 
             GameObject FlameBreath = Instantiate(Flame, FlamePoint.transform.position, FlamePoint.transform.rotation);

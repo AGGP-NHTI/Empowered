@@ -5,13 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
+    public static MainMenu instance;
     string CharacterSelectScene = "CharacterSelection";
     string TutorialSelectScene = "TutorialScene";
     public GameObject MainMenuObject;
     public GameObject OptionsMenuObject;
     public GameObject CreditsMenuObject;
 
+   
+    void Start()
+    {
+        Destroy(GameObject.Find("*thegameobjecttobedestroyed*"));
 
+    }
     private void Update()
     {
         if (MainMenuObject.activeSelf)
@@ -57,13 +63,21 @@ public class MainMenu : MonoBehaviour {
 
           
         }
-
+        
 
     }
 
 
 
-
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if ("MainMenu" == scene.name)
+        {
+            Debug.Log("It's the MainMenu!");
+        }
+        Debug.Log("OnSceneLoaded: " + scene.name);
+        Debug.Log(mode);
+    }
     public void PlayGame()
     {
         SceneManager.LoadScene(CharacterSelectScene);

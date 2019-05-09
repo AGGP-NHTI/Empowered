@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody))]
 public class KnightClass : PlayerPawn
@@ -44,6 +45,9 @@ public class KnightClass : PlayerPawn
             Destroy(gameObject);
             controller.OnDeath();
         }
+
+        GameObject.FindGameObjectWithTag("KnightDeathCircle").GetComponent<Image>().fillAmount = 1 - (KnightHealth / KnightMAXHealth);
+
     }
     protected override bool ProcessDamage(Class Source, float Value, DamageEventInfo EventInfo, Controller Instigator)
     {

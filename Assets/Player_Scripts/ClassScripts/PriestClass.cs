@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PriestClass : PlayerPawn
@@ -59,6 +60,9 @@ public class PriestClass : PlayerPawn
             Destroy(gameObject);
             SceneTransition.NextBossArenaCount += 1;
         }
+
+        GameObject.FindGameObjectWithTag("PriestDeathCircle").GetComponent<Image>().fillAmount = 1 - (PriestHealth / PriestMAXHealth);
+
     }
 
     public override void Horizontal(float value)

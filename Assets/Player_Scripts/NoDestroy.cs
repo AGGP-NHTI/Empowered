@@ -8,4 +8,11 @@ public class NoDestroy : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
     }
+    //private void Update()
+    //{
+    //    if(GameObject.FindGameObjectWithTag("CharacterSelection"))
+    //    {
+    //        Destroy(this);
+    //    }
+    //}
 }

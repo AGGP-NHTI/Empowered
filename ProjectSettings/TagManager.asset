@@ -18,6 +18,12 @@ TagManager:
   - lightning
   - DragonSlash
   - GroundOne
+  - DragonDeathCircle
+  - KnightDeathCircle
+  - MageDeathCircle
+  - PriestDeathCircle
+  - RangerDeathCircle
+  - Controllers
   layers:
   - Default
   - TransparentFX
