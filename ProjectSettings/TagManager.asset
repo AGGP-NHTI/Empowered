@@ -17,6 +17,7 @@ TagManager:
   - Undefined
   - lightning
   - DragonSlash
+  - GroundOne
   layers:
   - Default
   - TransparentFX

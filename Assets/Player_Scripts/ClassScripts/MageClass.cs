@@ -30,7 +30,7 @@ public class MageClass : PlayerPawn
 
     public Vector3 jump;
     public float jumpForce = 2.0f;
-    public bool isGrounded;
+    public bool isGrounded = false;
 
     Rigidbody rb;
 
@@ -118,11 +118,23 @@ public class MageClass : PlayerPawn
     {
         if (isGrounded)
         {
-            rb.AddForce(jump * jumpForce, ForceMode.Impulse);
-            isGrounded = false;
+                rb.AddForce(jump * jumpForce, ForceMode.Impulse);
         }
         
     }
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.name == "GroundOne")
+            Debug.Log("Hit the floor");
+        isGrounded = true;
+    }
+    void OnCollisionExit(Collision col)
+    {
+        if (col.gameObject.name == "GroundOne")
+            Debug.Log("Hit the floor");
+        isGrounded = false;
+    }
 
-    
+
+
 }
